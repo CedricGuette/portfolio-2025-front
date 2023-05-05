@@ -68,7 +68,7 @@
             "name": "La Panthère",
             "image": ["./thumbnails/lapanthere.jpg"],
             "git" : "https://github.com/CedricGuette/OC-Project-4-La-Panthere",
-            "live" : "./la-panthere/index.html",
+            "live" : "./la-panthere/",
             "beforeLive": true
         }
     },
