@@ -20,7 +20,7 @@
             "name": "Booki",
             "image": ["./thumbnails/bookie.jpg","./thumbnails/ohmyfood.jpg","./thumbnails/lapanthere.jpg"],
             "git" : "https://github.com/CedricGuette/OC-Project-2-Booki",
-            "live" : "../booki/",
+            "live" : "../booki/index.html",
             "beforeLive": false
         }
     },
@@ -44,7 +44,7 @@
             "name": "OhMyFood",
             "image": ["./thumbnails/ohmyfood.jpg"],
             "git" : "https://github.com/CedricGuette/OC-Project-3-Ohmyfood",
-            "live" : "../ohmyfood",
+            "live" : "../ohmyfood/index.html",
             "beforeLive": false
         }
     },
@@ -68,7 +68,7 @@
             "name": "La Panthère",
             "image": ["./thumbnails/lapanthere.jpg"],
             "git" : "https://github.com/CedricGuette/OC-Project-4-La-Panthere",
-            "live" : "./la-panthere",
+            "live" : "./la-panthere/index.html",
             "beforeLive": true
         }
     },
