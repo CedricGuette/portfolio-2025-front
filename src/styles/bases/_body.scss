@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: $neutral_color;
+    align-items: center;
+    white-space: pre-line;
+
+    .app-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        position: relative;
+        background: $neutral_color;
+        font-family: "Bahnschrift";
+
+        @include tablet-only {
+            width: 90%;
+            margin-top: 15px;
+        }
+
+        @include desktop-only {
+            width: 90%;
+            margin-top: 15px;    
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 50px;
+
+            article {
+                flex-basis: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: baseline;
+
+                @include tablet-only {
+                    width: 95%;    
+                }
+        
+                @include desktop-only {
+                    width: 95%;    
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,151 @@
+@keyframes slideshow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-874px);
+    }
+}
+
+@keyframes openingWindow {
+    0%{
+        opacity:0;
+        transform: scale(0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes closingWindow {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100%{
+        opacity:0;
+        transform: scale(0);
+    }
+}
+
+@keyframes topBarMoving {
+    0%{
+        top:100%;
+        transform: scaleY(1);
+        opacity: 0;
+    }
+
+    13%{
+        transform: scaleY(50);
+    }
+
+    25%{
+        top: 0%;
+        transform: scaleY(1);
+    }
+
+    38%{
+        transform: scaleY(50);
+    }
+
+    50%{
+        top: 100%;
+        transform: scaleY(1);
+    }
+
+    60%{
+        transform: scaleY(50);
+    }
+
+    70%{
+        top: 0%;
+        transform: scaleY(1);
+    }
+
+    80%{
+        transform: scaleY(50);
+    }
+
+    90%{
+        top: 100%;
+        transform: scaleY(1);
+    }
+
+    95%{
+        transform: scaleY(50);
+        opacity: 0.5;
+    }
+
+    99%{
+        top: 0%;
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes bottomBarMoving {
+    0%{
+        bottom:100%;
+        transform: scaleY(1);
+        opacity: 0;
+    }
+
+    13%{
+        transform: scaleY(50);
+    }
+
+    25%{
+        bottom: 0%;
+        transform: scaleY(1);
+    }
+
+    38%{
+        transform: scaleY(50);
+    }
+
+    50%{
+        bottom: 100%;
+        transform: scaleY(1);
+    }
+
+    60%{
+        transform: scaleY(50);
+    }
+
+    70%{
+        bottom: 0%;
+        transform: scaleY(1);
+    }
+
+    80%{
+        transform: scaleY(50);
+    }
+
+    90%{
+        bottom: 100%;
+        transform: scaleY(1);
+    }
+
+    95%{
+        transform: scaleY(50);
+        opacity: 0.5;
+    }
+
+    99%{
+        bottom: 0%;
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}

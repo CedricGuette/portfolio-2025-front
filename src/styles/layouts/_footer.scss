@@ -1,0 +1,19 @@
+footer {
+    
+    display: flex;
+    align-items: center;
+    background: $primary_color;
+    padding-top: 25px;
+    flex-direction: column;
+    color: $neutral_color;
+    font-weight: bold;
+    border-radius: 20px 20px 0 0;
+
+    img {
+        width: 250px;
+    }
+
+    .copyright {
+        padding: 15px 0 15px 0;
+    }
+}

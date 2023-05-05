@@ -1,0 +1,56 @@
+.slidingText {
+
+    $slidingTextColor: $primary_color;
+    overflow: hidden;
+    position: relative;
+    width: $slidingTextWidth;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    .slidingBox {
+
+        animation: slideshow 120s infinite linear; 
+        
+        span {
+            font-size: 15px;
+            
+            opacity: 0.7;
+            color: $slidingTextColor;
+            font-family: "Anton";
+    
+        }
+
+        :nth-child(2n+1) {
+            font-size: 16px;
+            position: relative;
+            top: 1px;
+        }
+
+        :nth-child(2n+0) {
+            color: transparent;
+            -webkit-text-stroke: 1px $slidingTextColor;
+        }
+        
+    }
+    
+    &.reversed {
+
+        $slidingTextColor: $tertiary_color;
+
+        .slidingBox {
+
+            animation: slideshow 120s infinite linear reverse; 
+            
+            span {
+                color: $slidingTextColor;
+            }
+    
+            :nth-child(2n+0) {
+                color: transparent;
+                -webkit-text-stroke: 1px $slidingTextColor;
+            }
+        }
+    }
+}

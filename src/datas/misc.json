@@ -1,0 +1,59 @@
+{
+    "fr": {
+        "nav": {
+            "presentation": "Qui suis-je",
+            "experience": "Expérience",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        },
+        "portfolio": {
+            "view": "Aperçu de ",
+            "resume": "En résumé :",
+            "technology": "Technologies utilisées :",
+            "github": "Voir sur GitHub",
+            "preview": "Version live",
+            "unavailable": "Non disponible"
+        },
+        "footer" : {
+            "copyright" : ""
+        }
+    },
+    "en": {
+        "nav": {
+            "presentation": "Who I am",
+            "experience": "Experience",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        },
+        "portfolio": {
+            "view": "A look to ",
+            "resume": "In a nutshell :",
+            "technology": "Used technologies :",
+            "github": "See on GitHub",
+            "preview": "Live Version",
+            "unavailable": "Unavailable"
+        },
+        "footer" : {
+            "copyright" : ""
+        }
+    },
+    "pt": {
+        "nav": {
+            "presentation": "Quem sou eu",
+            "experience": "Experiência",
+            "portfolio": "Portfólio",
+            "contact": "Contato"
+        },
+        "portfolio": {
+            "view": "Uma olhada no ",
+            "resume": "Resumindo :",
+            "technology": "Tecnologias usadas :",
+            "github": "Visulizar no GitHub",
+            "preview": "Versão ao vivo",
+            "unavailable": "Não disponivel"
+        },
+        "footer" : {
+            "copyright" : ""
+        }
+    }
+}

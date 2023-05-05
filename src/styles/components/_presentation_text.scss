@@ -1,0 +1,49 @@
+.presentationText {
+    margin-top: 25px;
+    width: 500px;
+    background: $primary_color;
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    p {
+        position: relative;
+        flex-basis: 80%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: $neutral_color;
+        top: 98%;
+        z-index: 4;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        animation: topBarMoving 1s ease 2 normal both;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: $neutral_color;
+        bottom: 98%;
+        z-index: 4;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        animation: bottomBarMoving 1s ease 2 normal both;
+    }
+}
