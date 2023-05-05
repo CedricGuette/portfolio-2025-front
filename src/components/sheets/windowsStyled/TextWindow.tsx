@@ -2,7 +2,7 @@ import ProjectResume from './ProjectResume';
 import miscLang from '../../../datas/misc.json'
 import { PortfolioProject, PortfolioProjectInt} from '../../../datas/porfolio';
 import { LangContext } from '../../utils/context/LangProvider';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useLayoutEffect, useState } from 'react';
 import { WindowPositionProvider } from '../../utils/context/WindowPositionProvider';
 import ImageHolder from './ImagesHolder';
 
@@ -28,7 +28,7 @@ function TextWindow(props: TextCodeProps) {
     const [codeState, setCodeState] = useState<number | null>(null)
 
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if(codeState === null) {
             setCodeState(OPEN);
         }

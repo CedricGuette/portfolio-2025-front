@@ -68,8 +68,7 @@
 
     &.third{
         z-index: 1;
-        animation: openingWindow 700ms ease-out 7
-        00ms normal both;
+        animation: openingWindow 700ms ease-out 700ms normal both;
 
         &.fade{
             animation: closingWindow 700ms ease-out both;
