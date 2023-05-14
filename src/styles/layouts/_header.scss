@@ -1,38 +1,10 @@
 header {
 
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
-
-    .title-logo {
-
-        img {
-            width: 300px;
-            margin-top: 15px;
-
-            @include tablet-only {
-
-            }
-    
-            @include desktop-only {
-                width: 400px;    
-            }
-        }
-    }
-
-    // &::before {
-    //     content: "";
-    //     width: $slidingTextWidth;
-    //     height: 2px;
-    //     position: absolute;
-    //     bottom: 24px;
-    //     left: 0;
-    //     right: 0;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     background: $primary_color;
-    // }
+    z-index: 3;
 
     &::after {
         content: "";
@@ -45,6 +17,7 @@ header {
         margin-left: auto;
         margin-right: auto;
         background: $primary_color;
+        z-index: 3;
     }
 
     nav {

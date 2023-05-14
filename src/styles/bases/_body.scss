@@ -1,6 +1,7 @@
-* {
+*, ::before, ::after {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -13,7 +14,6 @@ a {
     width: 100%;
     min-height: 100vh;
     height: 100%;
-    background: $neutral_color;
     align-items: center;
     white-space: pre-line;
 
@@ -26,25 +26,29 @@ a {
         position: relative;
         background: $neutral_color;
         font-family: "Bahnschrift";
+    
 
         @include tablet-only {
             width: 90%;
-            margin-top: 15px;
         }
 
         @include desktop-only {
-            width: 90%;
-            margin-top: 15px;    
+            width: 100%;
         }
 
         main {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            width: 100%;
+            width: 90%;
             margin-bottom: 50px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
 
-            article {
+            .portfolio {
                 flex-basis: 100%;
                 display: flex;
                 flex-wrap: wrap;

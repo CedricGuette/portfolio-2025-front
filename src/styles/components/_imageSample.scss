@@ -99,14 +99,14 @@
     &::before {
         content: "";
         display: inline-block;
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         border-radius: 3px;
         background: $neutral_color;
         border: 2px solid $secondary_color;
         position: absolute;
         z-index: 2;
-        right: 5px;
+        right: 4px;
         top: 5px;
     }
 
