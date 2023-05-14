@@ -1,14 +1,12 @@
-import ImageHolder from "./windowsStyled/ImagesHolder";
 import miscLang from '../../datas/misc.json'
 import { LangContext } from '../utils/context/LangProvider';
-import { WindowPositionProvider } from '../utils/context/WindowPositionProvider';
 import { useContext } from 'react';
+import TriplePhoto from "./introduction/TriplePhoto";
 
 
 
 function PresentationText() {
     const languageContext = useContext(LangContext);
-    const imageToInsert = ['./presentation/img_sample_1.jpg'];
 
     const misc = () => {
         if(languageContext?.lang === 'EN'){
@@ -21,11 +19,27 @@ function PresentationText() {
     }
 
 	return (
-        <div className='presentationText'>
-            <WindowPositionProvider>
-                <ImageHolder image={imageToInsert} imageText='Ma grosse tête' misc={misc()}/>
-            </WindowPositionProvider>
-            <p>COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU COUCOU</p>
+        <div className="introduction">
+            <TriplePhoto />
+            <div className="introductionText">
+                <h1>Développeur Fullstack Junior</h1>
+                <p className="firstText">
+                    Je m'appelle Cédric Guetté, 30 ans. Je suis passioné par le web depuis tout petit et j'ai appris au collège le HTML/CSS/PHP/SQL grace au site du zéro.
+                    Pendant des années je me suis contenté de faire des petites pages webs par ci, par là. L'idée d'en faire mon métiers me trottait depuis un bon moment.
+                </p>
+                <div className="secondText">
+                    <h2>Titre Professionel En Poche</h2>
+                    <p>
+                        J'ai récemment décidé de prendre cette direction en suivant une formation avec OpenClassrooms et en obtenant un titre professionel de développeur intégrateur web.
+                    </p>
+                </div>
+                <div className="thirdText">
+                    <h2>L'aventure Ne Fait Que Commencer</h2>
+                    <p className="thirdText">
+                        Je suis actuellement en train de m'inscrire à une formation de concepteur développeur web chez O'clock.
+                    </p>
+                </div>
+            </div>
         </div>
     )
 }

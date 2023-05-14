@@ -1,0 +1,87 @@
+.triplePhoto {
+
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 400px;
+        height: 400px;
+        border-radius: 20px;
+        border: 2px solid $primary_color;
+        position: absolute;
+
+        left: -50px;
+        top: -50px;
+        z-index: 0;
+        overflow: auto;
+    }
+
+    &::after {
+        content: "";
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        border: 2px solid $primary_color;
+        position: absolute;
+
+        left: 360px;
+        top: 360px;
+        z-index: 0;
+        overflow: auto;
+    }
+
+    .squareOne {
+        width: 400px;
+        height: 400px;
+        border-radius: 20px;
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 610px;
+            height: 420px;
+        }
+    }
+    
+    .squareTwo {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        position: absolute;
+        left: 410px;
+        top: 60px;
+        overflow: hidden;
+        z-index: 1;
+
+        img {
+            position: absolute;
+            left: -410px;
+            top: -60px;
+            min-width: 610px;
+            height: 420px;
+        }
+    }
+    
+    .squareThree {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        position: absolute;
+        left: 410px;
+        top: 270px;
+        overflow: hidden;
+        z-index: 1;
+
+        img {
+            position: absolute;
+            left: -410px;
+            top: -270px;
+            min-width: 610px;
+            height: 420px;
+        }
+    }
+}
