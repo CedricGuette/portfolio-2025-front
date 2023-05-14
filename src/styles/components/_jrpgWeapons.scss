@@ -1,0 +1,82 @@
+.two {
+    
+    .jrpgstat {
+
+        .body {
+
+            .equipment{
+                flex-basis: 40%;
+                font-size: 13px;
+
+
+                h3 {
+                    flex-basis: 100%;
+                    margin: 20px 0 20px 7%;
+                }
+
+                .weapons {
+                    width: 90%;
+                    position: relative;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    font-family: "Overpass";
+
+                    .weapon {
+                        margin: 10px 0 10px 0;
+                        flex-basis: 90%;
+                        height: 50px;
+                        border-radius: 5px;
+                        padding: 2px 0px 2px 2px;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(94,94,94,1) 100%);
+                            border: 1px solid black;
+                            border-radius: 5px;
+                            padding: 2px 0px 2px 15px;
+
+
+                        }
+
+                        &:hover::before{
+                            border: 2px solid #fff;
+                            background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(185,185,185,1) 100%);
+                        }
+
+                        .value {
+                            position: relative;
+                            z-index: 2;
+                            font-weight: bold;
+                            color: #fff;
+                            top: -25%;
+                            padding-left: 15px;
+
+                        }
+
+                        &:hover .value {
+                            color: #000;
+                        }
+
+
+                        img {
+                            height: 40px;
+                            position: relative;
+                            z-index: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

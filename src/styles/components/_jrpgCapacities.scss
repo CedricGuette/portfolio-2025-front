@@ -1,0 +1,165 @@
+.two {
+
+    .jrpgstat {
+
+        .body {
+
+            .stats{
+
+                .skills {
+
+                    .capacities {
+
+                        height: 90%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        .capacity {
+
+                            position: relative;
+                            flex-basis: 45%;
+                            border-radius: 5px;
+                            padding: 2px 0px 2px 15px;
+                            display: flex;
+                            color: #FFF;
+                            font-weight: bold;
+
+                            &:hover {
+                                color: #000;
+                            }
+                            
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(94,94,94,1) 100%);
+                                border: 1px solid black;
+                                border-radius: 5px;
+                                padding: 2px 0px 2px 15px;
+
+
+                            }
+
+                            &:hover::before{
+                                border: 2px solid #fff;
+                                background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(185,185,185,1) 100%);
+
+                            }
+
+                            img {
+                                height: 30px;
+                                margin-left: -3% ;
+                                position: relative;
+                                z-index: 1;
+                            }
+
+                            .valueName {
+                                position: relative;
+                                margin-top: auto;
+                                margin-bottom: auto;
+                                top: 0;
+                                bottom: 0;
+                                margin-left: 15px;
+                            }
+
+                            
+                            .bar {
+                                position: relative;
+                                margin-top: auto;
+                                margin-bottom: auto;
+                                margin-left: auto;
+                                top: 0;
+                                bottom: 0;
+                                right: 22%;
+                                z-index: 2;
+                                flex-basis: 30%;
+                                height: 12px;
+                                border-radius: 15px;
+                                background: rgba(74,74,74,1);
+                                border: 2px solid #fff;
+
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    z-index: 1;
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 15px;
+                                    border: 1px solid #000;
+                                }
+
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    z-index: 1;
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 15px;
+                                    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+                                    transform-origin: left center;
+                                }
+
+                                &.zero {
+                                    &::after {
+                                    transform: scaleX(0);
+                                    }
+                                }
+
+                                &.five {
+                                    &::after {
+                                    transform: scaleX(0.2);
+                                    }
+                                }
+
+                                &.ten {
+                                    &::after {
+                                    transform: scaleX(0.4);
+                                    }
+                                }
+
+                                &.fiveteen {
+                                    &::after {
+                                    transform: scaleX(0.6);
+                                    }
+                                }
+
+                                &.twenty {
+                                    &::after {
+                                    transform: scaleX(0.8);
+                                    }
+                                }
+
+                                &.twentyfive {
+                                    &::after {
+                                    transform: scaleX(1);
+                                    }
+                                }
+
+                            }
+
+                            .value {
+                                position: absolute;
+                                margin-right: 2%;
+                                top: 25%;
+                                right: 0;
+                            }
+
+                            &.empty::before {
+                                background: none;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

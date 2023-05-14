@@ -1,0 +1,72 @@
+[
+    {
+        "name" : "HTML",
+        "urlImage" : "./images/jrpg/capacities/html.png",
+        "value" : "25"
+    },
+    {
+        "name" : "CSS",
+        "urlImage" : "./images/jrpg/capacities/css.png",
+        "value" : "25"
+    },
+    {
+        "name" : "JavaScript",
+        "urlImage" : "./images/jrpg/capacities/js.png",
+        "value" : "25"
+    },
+    {
+        "name" : "TypeScript",
+        "urlImage" : "./images/jrpg/capacities/typescript.png",
+        "value" : "15"
+    },
+    {
+        "name" : "Sass",
+        "urlImage" : "./images/jrpg/capacities/sass.png",
+        "value" : "25"
+    },
+    {
+        "name" : "React.js",
+        "urlImage" : "./images/jrpg/capacities/react.png",
+        "value" : "20"
+    },
+    {
+        "name" : "Node.js",
+        "urlImage" : "./images/jrpg/capacities/node.png",
+        "value" : "20"
+    },
+    {
+        "name" : "Express.js",
+        "urlImage" : "./images/jrpg/capacities/express.png",
+        "value" : "20"
+    },
+    {
+        "name" : "HTML",
+        "urlImage" : "./images/jrpg/capacities/html.png",
+        "value" : "25"
+    },
+    {
+        "name" : "MongoDb",
+        "urlImage" : "./images/jrpg/capacities/mongodb.png",
+        "value" : "25"
+    },
+    {
+        "name" : "PHP",
+        "urlImage" : "./images/jrpg/capacities/php.png",
+        "value" : "10"
+    },
+    {
+        "name" : "SQL",
+        "urlImage" : "./images/jrpg/capacities/sql.png",
+        "value" : "15"
+    },
+    {
+        "name" : "Java",
+        "urlImage" : "./images/jrpg/capacities/java.png",
+        "value" : "05"
+    },
+    {
+        "name" : "Spring",
+        "urlImage" : "./images/jrpg/capacities/spring.png",
+        "value" : "05"
+    }
+]

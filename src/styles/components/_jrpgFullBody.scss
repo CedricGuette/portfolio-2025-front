@@ -1,0 +1,28 @@
+.two {
+    
+    .jrpgstat {
+
+        .body {
+
+            .stats{
+
+                .skills {
+
+                    flex-basis: 100%;
+                    height: 60%;
+                }
+            }
+
+            .caracter{
+
+                flex-basis: 20%;
+                object-fit: cover;
+
+                img {
+                    
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
