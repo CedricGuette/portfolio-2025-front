@@ -4,7 +4,8 @@
     height: 100vh;
 
     section {
-        height: 100vh;
+        min-height: 100vh;
+        height: 100%;
         overflow: auto;
         scroll-snap-align: start;
     }
@@ -19,10 +20,10 @@
     }
 
     .three {
-    background: $primary-color;
+    background: $tertiary-color;
     }
 
     .four {
-    background:  $secondary-color;
+    background:  $primary-color;
     }
 }

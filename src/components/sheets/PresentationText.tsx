@@ -25,7 +25,7 @@ function PresentationText() {
                 <h1>Développeur Fullstack Junior</h1>
                 <p className="firstText">
                     Je m'appelle Cédric Guetté, 30 ans. Je suis passioné par le web depuis tout petit et j'ai appris au collège le HTML/CSS/PHP/SQL grace au site du zéro.
-                    Pendant des années je me suis contenté de faire des petites pages webs par ci, par là. L'idée d'en faire mon métiers me trottait depuis un bon moment.
+                    Pendant des années je me suis contenté de faire des petites pages webs par ci, par là. L'idée d'en faire mon métiers me trottait dans la tête depuis un bon moment.
                 </p>
                 <div className="secondText">
                     <h2>Titre Professionel En Poche</h2>

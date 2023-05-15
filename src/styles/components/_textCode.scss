@@ -1,8 +1,6 @@
 .textBlock {
-    flex-basis: 90%;
     position: relative;
     font-family: "Roboto";
-    border: 2px solid $primary_color;
     display: flex;
     flex-wrap: wrap;
     margin: 20px 0 20px 0;
@@ -10,54 +8,34 @@
     justify-content: center;
     animation: openingWindow 700ms ease-out normal both;
 
-    @include tablet-only {
-        flex-basis: 100%;    
-    }
-
-    @include desktop-only {
-        flex-basis: 30%;    
-    }
-
     .codeTitle {
         padding: 10px;
-        height: 50px;
-        background: $primary_color;
-        font-size: 18px;
         text-align: center;
         flex-basis: 100%;
         margin-bottom: 20px;
-        color: $neutral_color;
     }
 
     .textCode {
         padding: 30px 30px 0 30px;
-        color: $primary_color;
         flex-basis: 100%;
         display: flex;
         flex-wrap: wrap;
-        font-size: 16px;
 
         @include tablet-only {
    
         }
     
         @include desktop-only {
-            font-size: 25px;
+
         }
     
 
         h3 {
-            color: $secondary_color;
             text-decoration: underline;
             flex-basis: 100%;
             margin-top: 20px;
             margin-bottom: 20px;
         }
-
-        p {
-            margin-left: 20px;
-        }
-
     }
 
     &::before {
@@ -88,9 +66,82 @@
     }
 }
 
-.textBlockclosed {
-    flex-basis: 30%;
-    height: 15px;
-    margin: 20px 0 20px 0;
-    padding-bottom: 10px;
+.portfolio {
+    .textBlock {
+        flex-basis: 90%;
+        border: 2px solid $primary_color;
+
+        @include tablet-only {
+            flex-basis: 100%;    
+        }
+    
+        @include desktop-only {
+            flex-basis: 30%;    
+        }
+    }
+
+    .codeTitle {
+        height: 50px;
+        background: $primary_color;
+        font-size: 18px;
+        color: $neutral_color;
+    }
+    
+    .textCode {
+        color: $primary_color;
+        font-size: 16px;
+
+        @include tablet-only {
+   
+        }
+    
+        @include desktop-only {
+            font-size: 25px;
+        }
+    
+
+        h3 {
+            color: $secondary_color;
+        }
+
+        p {
+            margin-left: 20px;
+        }
+    }
+}
+
+.prePortfolio {
+
+    .textBlock {
+        flex-basis: 90%;
+        border: 2px solid $primary_color;
+
+        @include tablet-only {
+            flex-basis: 100%;    
+        }
+    
+        @include desktop-only {
+            flex-basis: 90%;    
+        }
+    }
+
+    .codeTitle {
+        height: 50px;
+        background: $primary_color;
+        font-size: 17px;
+        color: $neutral_color;
+    }
+    
+    .textCode {
+        color: $primary_color;
+        font-size: 20px;
+
+        h3 {
+            color: $secondary_color;
+        }
+
+        p {
+            margin-left: 60px;
+        }
+    }
 }

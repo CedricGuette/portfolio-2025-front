@@ -5,17 +5,36 @@
         .body {
 
             .equipment{
-                flex-basis: 40%;
-                font-size: 13px;
+                flex-basis: 100%;
+                font-size: 10px;
+                margin-top: 10%;
+
+                @include tablet-only {
+        
+                }
+            
+                @include desktop-only {
+                    flex-basis: 40%;
+                    margin-top: 0;
+                    font-size: 13px;
+                }
 
 
                 h3 {
                     flex-basis: 100%;
-                    margin: 20px 0 20px 7%;
+                    margin: 0 0 15px 0;
+
+                    @include tablet-only {
+        
+                    }
+                
+                    @include desktop-only {
+                        margin: 20px 0 20px 7%;
+                    }
                 }
 
                 .weapons {
-                    width: 90%;
+                    width: 100%;
                     position: relative;
                     margin-left: auto;
                     margin-right: auto;
@@ -26,6 +45,14 @@
                     justify-content: space-around;
                     font-family: "Overpass";
 
+                    @include tablet-only {
+        
+                    }
+                
+                    @include desktop-only {
+                        width: 90%;
+                    }
+
                     .weapon {
                         margin: 10px 0 10px 0;
                         flex-basis: 90%;
@@ -33,6 +60,8 @@
                         border-radius: 5px;
                         padding: 2px 0px 2px 2px;
                         position: relative;
+                        display: flex;
+                        align-items: center;
 
                         &::before {
                             content: "";
@@ -59,8 +88,16 @@
                             z-index: 2;
                             font-weight: bold;
                             color: #fff;
-                            top: -25%;
-                            padding-left: 15px;
+                            padding-left: 7px;
+                            display: inline-block;
+
+                            @include tablet-only {
+        
+                            }
+                        
+                            @include desktop-only {
+                                padding-left: 15px;
+                            }
 
                         }
 

@@ -1,6 +1,21 @@
 .triplePhoto {
 
+    height: 200px;
+    width: 305px;
     position: relative;
+    transform: scale(0.5);
+
+    @include tablet-only {
+        height: 100px;
+        width: 610px;
+        transform: scale(1);
+    }
+
+    @include desktop-only {
+        height: 430px;
+        width: 610px;
+        transform: scale(1);
+    }
 
     &::before {
         content: "";
@@ -23,11 +38,9 @@
         border-radius: 20px;
         border: 2px solid $primary_color;
         position: absolute;
-
         left: 360px;
         top: 360px;
         z-index: 0;
-        overflow: auto;
     }
 
     .squareOne {

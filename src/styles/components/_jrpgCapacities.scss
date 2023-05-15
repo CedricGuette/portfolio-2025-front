@@ -10,11 +10,20 @@
 
                     .capacities {
 
-                        height: 90%;
+                        height: 100%;
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: space-evenly;
                         align-items: center;
+
+                        @include tablet-only {
+        
+                        }
+                    
+                        @include desktop-only {
+                            height: 90%;
+                        }
+
                         .capacity {
 
                             position: relative;
@@ -51,10 +60,19 @@
                             }
 
                             img {
-                                height: 30px;
-                                margin-left: -3% ;
+                                height: 20px;
+                                margin-left: -7% ;
                                 position: relative;
                                 z-index: 1;
+
+                                @include tablet-only {
+        
+                                }
+                            
+                                @include desktop-only {
+                                    height: 30px;
+                                    margin-left: -3% ;
+                                }
                             }
 
                             .valueName {
@@ -63,7 +81,17 @@
                                 margin-bottom: auto;
                                 top: 0;
                                 bottom: 0;
-                                margin-left: 15px;
+                                margin-left: 2px;
+                                font-size: 11px;
+
+                                @include tablet-only {
+        
+                                }
+                            
+                                @include desktop-only {
+                                    font-size: 15px;
+                                    margin-left: 15px;
+                                }
                             }
 
                             
@@ -74,13 +102,21 @@
                                 margin-left: auto;
                                 top: 0;
                                 bottom: 0;
-                                right: 22%;
+                                right: 19%;
                                 z-index: 2;
                                 flex-basis: 30%;
                                 height: 12px;
                                 border-radius: 15px;
                                 background: rgba(74,74,74,1);
                                 border: 2px solid #fff;
+
+                                @include tablet-only {
+        
+                                }
+                            
+                                @include desktop-only {
+                                    right: 22%;
+                                }
 
                                 &::before {
                                     content: "";
@@ -150,6 +186,15 @@
                                 margin-right: 2%;
                                 top: 25%;
                                 right: 0;
+                                font-size: 8px;
+
+                                @include tablet-only {
+        
+                                }
+                            
+                                @include desktop-only {
+                                    font-size: 15px;
+                                }
                             }
 
                             &.empty::before {

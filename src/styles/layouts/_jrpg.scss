@@ -16,9 +16,19 @@
     }
 
     h3 {
-        padding-left: 5% ;
+        padding-left: 3% ;
         margin-bottom: 15px;
         position: relative;
+        font-size: 15px;
+
+        @include tablet-only {
+        
+        }
+    
+        @include desktop-only {
+            font-size: 1.17em;
+            padding-left: 5% ;
+        }
 
         &::after {
             content: "";
@@ -28,7 +38,15 @@
             background: #fff;
             position: absolute;
             bottom: -10px;
-            left: 4%;
+            left: 2%;
+
+            @include tablet-only {
+        
+            }
+        
+            @include desktop-only {
+                left: 4%;
+            }
         }
     }
     
@@ -59,27 +77,61 @@
 
         .header {
             flex-basis: 100%;
-            height: 20vh;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
+            min-height: 20vh;
+
+            @include tablet-only {
+    
+            }
+        
+            @include desktop-only {
+                height: 20vh;
+            }
         }
 
         .body {
             flex-basis: 100%;
-            height: 60vh;
+            height: 100%;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
+
+            @include tablet-only {
+    
+            }
+        
+            @include desktop-only {
+                height: 60vh;
+            }
 
             .stats{
 
-                flex-basis: 40%;
+                flex-basis: 100%;
                 display: flex;
                 flex-wrap: wrap;
+                
+                @include tablet-only {
+        
+                }
+            
+                @include desktop-only {
+                    flex-basis: 40%;
+                }
 
                 .skills {
 
                     flex-basis: 100%;
-                    height: 60%;
+                    height: 100%;
+
+                    @include tablet-only {
+        
+                    }
+                
+                    @include desktop-only {
+                        height: 60%;
+                    }
                 }
             }
         }
@@ -87,10 +139,18 @@
         .footer {
             
             flex-basis: 100%;
-            height: 20vh;
+            min-height: 20vh;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+
+            @include tablet-only {
+    
+            }
+        
+            @include desktop-only {
+                height: 20vh;
+            }
         }
     }
 }
