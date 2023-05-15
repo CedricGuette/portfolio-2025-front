@@ -18,20 +18,33 @@ function Menu() {
     }
     return (
         <div className="menu">
-            <ul>
-                <li>
-                    <Link to='/'>{navBar().presentation}</Link>
-                </li>
-                <li className='link reversed'>
-                    <Link to='/portfolio'>{navBar().portfolio}</Link>
-                </li>
-                <li className='link'>
-                    <Link to='/'>{navBar().contact}</Link>
-                </li>
-            </ul>
+            <div className="menu__ref">
+            <span>Navigation :</span>
+                <ul>
+                    <li className='link'>
+                        <Link to='/'>{navBar().presentation}</Link>
+                    </li>
+                    <li className='link reversed'>
+                        <Link to='/portfolio'>{navBar().portfolio}</Link>
+                    </li>
+                    <li className='link'>
+                        <Link to='/'>{navBar().contact}</Link>
+                    </li>
+                </ul>
 
-            Sélection de la langue <br />
-            <LanguageSelector />
+                <span>Me suivre :</span>
+                <ul>
+                    <li className='link  reversed'>
+                        <Link to='/'>GitHub</Link>
+                    </li>
+                    <li className='link'>
+                        <Link to='/portfolio'>Twitter</Link>
+                    </li>
+                </ul>
+
+                <span>Sélection de la langue :</span>
+                <LanguageSelector />
+            </div>
         </div>
     )
 }

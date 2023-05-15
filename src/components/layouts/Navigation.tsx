@@ -11,9 +11,9 @@ function Navigation() {
 
     return (
         <nav>
+            { isOpen === true ? (<Menu />) : null}
             <div onClick={ toggleOpen } className={ isOpen === false ? 'openButton' : 'openButton opened'}>
             </div>
-            { isOpen === true ? (<Menu />) : null}
         </nav>
     )
 }

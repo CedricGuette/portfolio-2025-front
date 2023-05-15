@@ -38,15 +38,17 @@
                 }
 
                 .other {
-                    flex-basis: 35%;
+                    flex-basis: 33%;
                     display: flex;
                     justify-content: space-between;
+                    margin-left: 0%;
 
                     @include tablet-only {
         
                     }
                 
                     @include desktop-only {
+                        margin-left: 10%;
                         flex-basis: 27%;
                     }
 
