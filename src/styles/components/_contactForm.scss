@@ -1,0 +1,218 @@
+.four {
+    
+    .form {
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+        font-family: "Roboto";
+        color: $tertiary_color;
+        font-weight: bolder;
+
+        label {
+            font-size: 15px;
+
+            @include tablet-only {
+   
+            }
+
+            @include desktop-only {
+                font-size: 20px;
+            }
+        }
+
+        .name, .email, .request {
+            display: flex;
+            flex-wrap: wrap;
+
+            @include tablet-only {
+   
+            }
+
+            @include desktop-only {
+                display: block;
+                flex-wrap: nowrap;
+            }
+        }
+
+        input {
+            background: none;
+            border: none;
+            border-bottom: 4px solid $tertiary_color;
+            font-size: 15px;
+
+            @include tablet-only {
+   
+            }
+
+            @include desktop-only {
+                font-size: 25px;
+            }
+
+            &:focus {
+                outline: none;
+                border-bottom: 4px solid $secondary_color;
+                background-color: #ffffff33;
+            }
+        }
+
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            height: 20%;
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 40px;
+
+            @include tablet-only {
+   
+            }
+
+            @include desktop-only {
+                font-size: 70px;
+            }
+        }
+
+        p {
+            flex-basis: 80%;
+            display: flex;
+            justify-content: center;
+            font-size: 13px;
+
+            @include tablet-only {
+   
+            }
+
+            @include desktop-only {
+                font-size: 18px;
+            }
+        }
+
+        .formInputs {
+
+            flex-basis: 90%;
+            height: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .name, .email {
+
+                height: 20%;
+                display: flex;
+                flex-basis: 100%;
+
+                @include tablet-only {
+       
+                }
+    
+                @include desktop-only {
+                    flex-basis: 45%;
+                }
+
+                input {
+                    height: 50px;
+                    flex-basis: 100%;
+                    cursor:pointer;
+                    padding-left: 15px;
+
+                    &focus {
+                        cursor:pointer;
+                    }
+
+                    @include tablet-only {
+       
+                    }
+        
+                    @include desktop-only {
+                        flex-basis: 80%;
+                    }
+                }
+            }
+
+            .request {
+
+                flex-basis: 100%;
+                display: flex;
+
+                label {
+                    flex-basis: 10%;
+                }
+
+                textarea {
+
+                    font-size: 15px;
+                    background: none;
+                    height: 300px;
+                    flex-basis: 100%;
+                    border: 4px solid $tertiary_color;
+                    vertical-align: sub;
+                    padding: 15px;
+                    resize: none;
+                    cursor: pointer;
+                    margin-top: 5px;
+
+                    @include tablet-only {
+       
+                    }
+        
+                    @include desktop-only {
+                        flex-basis: 90%;
+                        margin-top: 0;
+                        font-size: 25px;
+                    }
+                    
+                    &:focus {
+                        outline: none;
+                        border: 4px solid $secondary_color;
+                        background-color: #ffffff33;
+                    }
+
+
+                }
+            }
+            .button-form {
+                flex-basis: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+                button {
+                    flex-basis: 20%;
+                    background: none;
+                    border: 4px solid $tertiary_color;
+                    font-family: "Roboto";
+                    font-weight: bolder;
+                    font-size: 15px;
+                    height: 50px;
+                    color: $tertiary_color;
+                    margin-top: 25px;
+                    margin-bottom: 40px;
+                    padding: 10px;
+
+                    @include tablet-only {
+       
+                    }
+        
+                    @include desktop-only {
+                        font-size: 20px;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        background: $tertiary_color; 
+                        border: 4px solid $neutral_color;
+                        color: $neutral_color;
+                    }
+                }
+            }
+        }
+    }
+}

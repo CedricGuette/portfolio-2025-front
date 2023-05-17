@@ -1,6 +1,7 @@
 .scroller {
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
     height: 100vh;
 
     section {

@@ -3,7 +3,8 @@
 
     height: 200px;
     width: 80%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -31,7 +32,9 @@
         
         img {
 
-            object-fit: cover;
+            -o-object-fit: cover;
+
+               object-fit: cover;
             width: 100%;
             height: 100%;
             
@@ -51,28 +54,34 @@
     }
     &.first{
         z-index: 3;
-        animation: openingWindow 700ms ease-out 2100ms normal both;
+        -webkit-animation: openingWindow 700ms ease-out 2100ms normal both;
+                animation: openingWindow 700ms ease-out 2100ms normal both;
 
         &.fade{
-            animation: closingWindow 700ms ease-out both;
+            -webkit-animation: closingWindow 700ms ease-out both;
+                    animation: closingWindow 700ms ease-out both;
         }
     }
 
     &.second{
         z-index: 2;
-        animation: openingWindow 700ms ease-out 1400ms normal both;
+        -webkit-animation: openingWindow 700ms ease-out 1400ms normal both;
+                animation: openingWindow 700ms ease-out 1400ms normal both;
 
         &.fade{
-            animation: closingWindow 700ms ease-out both;
+            -webkit-animation: closingWindow 700ms ease-out both;
+                    animation: closingWindow 700ms ease-out both;
         }
     }
 
     &.third{
         z-index: 1;
-        animation: openingWindow 700ms ease-out 700ms normal both;
+        -webkit-animation: openingWindow 700ms ease-out 700ms normal both;
+                animation: openingWindow 700ms ease-out 700ms normal both;
 
         &.fade{
-            animation: closingWindow 700ms ease-out both;
+            -webkit-animation: closingWindow 700ms ease-out both;
+                    animation: closingWindow 700ms ease-out both;
         }
     }
 

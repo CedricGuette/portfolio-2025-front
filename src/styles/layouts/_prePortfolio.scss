@@ -49,9 +49,9 @@
             flex-basis: 40%;
         }
 
-        h1 {
+        h2 {
             color: $primary-color;
-            font-size: 70px;
+            font-size: 40px;
             position: relative;
             z-index: 0;
 
@@ -60,6 +60,8 @@
             }
         
             @include desktop-only {
+
+                font-size: 70px;
 
                 &::before {
                     content: "";
@@ -89,15 +91,19 @@
 
         p {
             color: $neutral_color;
-            font-size: 40px;
             position: relative;
             z-index: 1;
+            width: 100%;
+            font-size: 25px;
+            padding: 3%;
 
             @include tablet-only {
         
             }
         
             @include desktop-only {
+
+                font-size: 40px;
                 
                 &::before {
                     content: "";
@@ -129,11 +135,21 @@
             position: relative;
             z-index: 2;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
 
             a {
 
-                flex-basis: 45%;
+                flex-basis: 80%;
+                margin-bottom: 60px;
+
+                @include tablet-only {
+        
+                }
+            
+                @include desktop-only {
+                    flex-basis: 45%;
+                }
 
                 .button {
                     height: 90px;

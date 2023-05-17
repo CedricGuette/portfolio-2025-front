@@ -8,6 +8,18 @@
     flex-wrap: wrap;
     position: relative;
 
+    .thirdText {
+
+        h2{
+            display: flex;
+            flex-direction: column;
+    
+            span {
+                flex-basis: 50%;
+            }
+        }
+    }
+
     p {
         position: relative;
         flex-basis: 80%;
@@ -29,7 +41,8 @@
         right: 0;
         margin-left: auto;
         margin-right: auto;
-        animation: topBarMoving 1s ease 2 normal both;
+        -webkit-animation: topBarMoving 1s ease 2 normal both;
+                animation: topBarMoving 1s ease 2 normal both;
     }
 
     &::after {
@@ -44,6 +57,7 @@
         right: 0;
         margin-left: auto;
         margin-right: auto;
-        animation: bottomBarMoving 1s ease 2 normal both;
+        -webkit-animation: bottomBarMoving 1s ease 2 normal both;
+                animation: bottomBarMoving 1s ease 2 normal both;
     }
 }

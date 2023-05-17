@@ -6,7 +6,8 @@
     margin: 20px 0 20px 0;
     padding-bottom: 10px;
     justify-content: center;
-    animation: openingWindow 700ms ease-out normal both;
+    -webkit-animation: openingWindow 700ms ease-out normal both;
+            animation: openingWindow 700ms ease-out normal both;
     flex-basis: 95%;
     border: 2px solid $primary_color;
 
@@ -97,7 +98,8 @@
     }
 
     &.fade{
-        animation: closingWindow 700ms ease-out both;
+        -webkit-animation: closingWindow 700ms ease-out both;
+                animation: closingWindow 700ms ease-out both;
     }
 }
 

@@ -149,3 +149,28 @@
         opacity: 0;
     }
 }
+
+@keyframes menuButtonTop {
+    0%{
+        transform-origin: right center;
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: scaleX(0.6) scaleY(1.2) translateY(20px) rotate(30deg) ;
+    }
+
+}
+
+@keyframes menuButtonBottom {
+    0%{
+        transform-origin: left center;
+        transform: rotate(0deg);
+        
+
+    }
+    100%{
+        transform: translate(-5px, 9px) rotate(-50deg) ;
+    }
+
+}

@@ -24,7 +24,8 @@
                 @include desktop-only {
                     display: block;
                     flex-basis: 20%;
-                    object-fit: cover;
+                    -o-object-fit: cover;
+                       object-fit: cover;
                 }
 
                 img {
