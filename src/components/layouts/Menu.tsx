@@ -41,10 +41,10 @@ function Menu() {
                 <span>Me suivre :</span>
                 <ul>
                     <li className='link reversed'>
-                        <Link to='/'>GitHub</Link>
+                        <a href='https://github.com/CedricGuette/'>GitHub</a>
                     </li>
                     <li className='link'>
-                        <Link to='/portfolio'>Twitter</Link>
+                        <a href='https://www.linkedin.com/in/Cédric-guetté-a519b1102/'>LinkedIn</a>
                     </li>
                 </ul>
 
