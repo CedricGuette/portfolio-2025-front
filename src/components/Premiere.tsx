@@ -8,8 +8,8 @@ function Premiere() {
 
     return(
             <article className='scroller'>
-                <section className='four'>
-                    <ContactForm />
+                <section className='two'>
+                    <Jrpg />
                 </section>
             </article>
     )

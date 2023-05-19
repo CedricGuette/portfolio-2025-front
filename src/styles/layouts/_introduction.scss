@@ -165,7 +165,7 @@
         @include desktop-only {
             content: "";
             position: absolute;
-            bottom: 10px;
+            bottom: 0;
             margin-left: auto;
             margin-right: auto;
             right: 0;
@@ -176,6 +176,7 @@
             border-left  : 70px solid transparent;
             border-right : 70px solid transparent;
             border-top   : 140px solid $primary_color;
+            animation: introductionArrow 2.5s ease-in-out infinite normal;
         }
         
     }
@@ -189,7 +190,7 @@
         @include desktop-only {
             content: "";
             position: absolute;
-            bottom: 15px;
+            bottom: 5px;
             margin-left: auto;
             margin-right: auto;
             right: 0;
@@ -200,6 +201,7 @@
             border-left  : 66px solid transparent;
             border-right : 66px solid transparent;
             border-top   : 132px solid $neutral_color;
+            animation: introductionArrow 2.5s ease-in-out infinite normal;
         }
     }
 

@@ -1,4 +1,5 @@
 import {useForm} from 'react-hook-form';
+import Navigation from '../layouts/Navigation';
 
 type Name = string;
 type Email = string;
@@ -16,15 +17,9 @@ function ContactForm() {
     const {register, handleSubmit} = useForm<Form>();
 
     const onSubmit = (data: Form) => {
-        const emailJSSettings = {
-            service_id: 'service_ul29bya',
-            template_id: 'template_ml42jbj',
-            user_id: 'WbcoSYeRynXBZwjO5',
-            template_params: data 
-        }
-        fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        fetch('http://api.cedric-guette.com:3006/api/mailto/send', {
             method: 'POST',
-            body: JSON.stringify(emailJSSettings),
+            body: JSON.stringify(data),
             headers: { 'Content-Type' : 'application/json'}
         })
         .then(response => console.log(response))
@@ -33,6 +28,7 @@ function ContactForm() {
 
     return(
         <form className='form' onSubmit={ handleSubmit(onSubmit) }>
+            <Navigation section='contactform'/>
             <h2>Des questions?</h2>
             <p>Je m'éforcerais de vous répondre dans les plus bref délais. <br/>
                 Vous pouvez m'écrire à cette adresse : contact@cedric-guette.com <br/><br/>

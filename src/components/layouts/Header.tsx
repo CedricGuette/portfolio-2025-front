@@ -6,7 +6,7 @@ function Header() {
 	return (
         <header>
             <Logo />
-            <Navigation />
+            <Navigation section=''/>
         </header>
     )
 }

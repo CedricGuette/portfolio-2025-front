@@ -1,6 +1,7 @@
 import ProjectCard from "../sheets/ProjectCard"
 import jsonData from '../../datas/portfolio.json'
 import { Link } from "react-router-dom";
+import Navigation from "../layouts/Navigation";
 
 function PrePortfolio() {
 
@@ -8,6 +9,7 @@ function PrePortfolio() {
 
     return(
         <div className='prePortfolio'>
+            <Navigation section='prePortfolioNav'/>
             <div className="projectCard">
                 <ProjectCard  project={ jsonData[lastProject] } index={0}/>
             </div>

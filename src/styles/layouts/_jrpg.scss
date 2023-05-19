@@ -3,6 +3,17 @@
     color: #fff;
     font-family: "metamorphous";
     position: relative;
+    max-height: 100vh;
+    min-width: 100vw;
+
+    @include tablet-only {
+        
+    }
+
+    @include desktop-only {
+
+    }
+
 
     h2 {
         display: flex;
@@ -53,10 +64,22 @@
     #backgroundVideo {
         position: fixed;
         right: 0;
-        bottom: 0;
+        top: 0;
         z-index: -2;
-        min-width: 100%;
-        min-height: 100%;
+        min-width: 100vw;
+        min-height: 100vh;
+        max-height: 100vh;
+
+
+        @include tablet-only {
+    
+        }
+    
+        @include desktop-only {
+            min-width: 100%;
+            min-height: 100%;
+            max-height: none;
+        }
     }
     
     &::before {
@@ -88,6 +111,15 @@
         
             @include desktop-only {
                 height: 20vh;
+            }
+
+            .title {
+
+                h2 {
+                    
+                    position: relative;
+                    
+                }
             }
         }
 

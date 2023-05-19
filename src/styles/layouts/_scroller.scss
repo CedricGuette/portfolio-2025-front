@@ -1,14 +1,38 @@
 .scroller {
     overflow-y: scroll;
-    -ms-scroll-snap-type: y mandatory;
-        scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
     height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+
+    @include tablet-only {
+    
+    }
+
+    @include desktop-only {
+        -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+        flex-wrap: wrap;
+        }
 
     section {
         min-height: 100vh;
+        min-width: 100vw;
         height: 100%;
+        width: 100%;
         overflow: auto;
         scroll-snap-align: start;
+
+        @include tablet-only {
+    
+        }
+    
+        @include desktop-only {
+
+        }
+    
     }
 
     .one {

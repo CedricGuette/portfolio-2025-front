@@ -7,6 +7,7 @@
         font-family: "Roboto";
         color: $tertiary_color;
         font-weight: bolder;
+        position: relative;
 
         label {
             font-size: 15px;
@@ -84,14 +85,14 @@
             flex-basis: 80%;
             display: flex;
             justify-content: center;
-            font-size: 13px;
+            font-size: 15px;
 
             @include tablet-only {
    
             }
 
             @include desktop-only {
-                font-size: 18px;
+                font-size: 33px;
             }
         }
 
@@ -203,6 +204,7 @@
         
                     @include desktop-only {
                         font-size: 20px;
+                        margin-bottom: 0;
                     }
 
                     &:hover {
