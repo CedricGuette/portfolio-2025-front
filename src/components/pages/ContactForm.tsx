@@ -17,7 +17,7 @@ function ContactForm() {
     const {register, handleSubmit} = useForm<Form>();
 
     const onSubmit = (data: Form) => {
-        fetch('https://api.cedric-guette.com:3006/api/mailto/send', {
+        fetch('https://api.cedric-guette.com/api/mailto/send', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: { 'Content-Type' : 'application/json'}
