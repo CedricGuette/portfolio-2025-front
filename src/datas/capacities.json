@@ -40,14 +40,14 @@
         "value" : "20"
     },
     {
-        "name" : "HTML",
-        "urlImage" : "./images/jrpg/capacities/html.png",
-        "value" : "25"
+        "name" : "Angular.js",
+        "urlImage" : "./images/jrpg/capacities/angular.png",
+        "value" : "05"
     },
     {
         "name" : "MongoDb",
         "urlImage" : "./images/jrpg/capacities/mongodb.png",
-        "value" : "25"
+        "value" : "20"
     },
     {
         "name" : "PHP",
