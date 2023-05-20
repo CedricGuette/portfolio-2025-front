@@ -20,7 +20,7 @@
             "name": "Booki",
             "image": ["./thumbnails/bookie.jpg","./thumbnails/ohmyfood.jpg","./thumbnails/lapanthere.jpg"],
             "git" : "https://github.com/CedricGuette/OC-Project-2-Booki",
-            "live" : "../booki/index.html",
+            "live" : "https://booki.cedric-guette.com",
             "beforeLive": false
         }
     },
@@ -44,7 +44,7 @@
             "name": "OhMyFood",
             "image": ["./thumbnails/ohmyfood.jpg"],
             "git" : "https://github.com/CedricGuette/OC-Project-3-Ohmyfood",
-            "live" : "../ohmyfood/index.html",
+            "live" : "https://ohmyfood.cedric-guette.com",
             "beforeLive": false
         }
     },
@@ -140,7 +140,7 @@
             "name": "kasa",
             "image": ["./thumbnails/kasa.jpg"],
             "git" : "https://github.com/CedricGuette/OC-Project-7-Kasa",
-            "live" : "",
+            "live" : "https://kasa.cedric-guette.com",
             "beforeLive": false
         }
     },

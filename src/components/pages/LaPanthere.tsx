@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function LaPanthere() {
     return (
-        <div><Link to='../portfolio'>Retour au portfolio</Link><a href='../../lapantherebefore/index.html'>AVANT</a> <a href='../../lapanthereafter/index.html'>APRES</a> <a href='../../lapanthereafter/rapport.pdf'>RAPPORT</a></div>
+        <div><Link to='../portfolio'>Retour au portfolio</Link><a href='https://lapanthere-apres.cedric-guette.com'>AVANT</a> <a href='https://lapanthere-avant.cedric-guette.com'>APRES</a> <a href='../../pdf/rapport.pdf'>RAPPORT</a></div>
     )
 }
 

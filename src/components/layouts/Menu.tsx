@@ -25,16 +25,16 @@ function Menu() {
                         <Link to='/'>{navBar().presentation}</Link>
                     </li>
                     <li className='link reversed'>
-                        <a href='./#qualif'>Qualifications</a>
+                        <Link to='./#qualif'>Qualifications</Link>
                     </li>
                     <li className='link'>
-                        <a href='./#portfolio'>Mes réalisations</a>
+                    <Link to='#portfolio'>Mes réalisations</Link>
                     </li>
                     <li className='link reversed sousMenu'>
                         <Link to='/portfolio'>{navBar().portfolio}</Link>
                     </li>
                     <li className='link'>
-                        <a href='./#contact'>{navBar().contact}</a>
+                    <Link to='./#contact'>{navBar().contact}</Link>
                     </li>
                 </ul>
 
