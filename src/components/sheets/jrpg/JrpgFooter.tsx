@@ -14,4 +14,4 @@ function JrpgFooter() {
     )
 }
 
-export default JrpgFooter
+export default JrpgFooter;

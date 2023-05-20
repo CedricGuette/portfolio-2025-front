@@ -1,4 +1,5 @@
 .scroller {
+
     overflow-y: scroll;
     -ms-scroll-snap-type: x mandatory;
     scroll-snap-type: x mandatory;
@@ -12,12 +13,14 @@
     }
 
     @include desktop-only {
+
         -ms-scroll-snap-type: y mandatory;
         scroll-snap-type: y mandatory;
         flex-wrap: wrap;
         }
 
     section {
+
         min-height: 100vh;
         min-width: 100%;
         height: 100%;
@@ -36,19 +39,23 @@
     }
 
     .one {
+
         background: $neutral_color;
         position: relative;
     }
     
     .two {
+
         background: none;
     }
 
     .three {
+
     background: $tertiary-color;
     }
 
     .four {
+
     background:  $primary-color;
     }
 }

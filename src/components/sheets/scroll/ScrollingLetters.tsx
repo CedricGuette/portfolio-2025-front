@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import { LangContext } from "../../utils/context/LangProvider";
 
 interface ScrollingLettersProps {
@@ -60,4 +60,4 @@ function ScrollingLetters(props: ScrollingLettersProps) {
     )
 }
 
-export default ScrollingLetters
+export default ScrollingLetters;

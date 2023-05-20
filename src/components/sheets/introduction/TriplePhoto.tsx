@@ -1,4 +1,4 @@
-import photo from '../../../assets/images/intophoto.jpg'
+import photo from '../../../assets/images/intophoto.jpg';
 
 function TriplePhoto() {
 
@@ -11,4 +11,4 @@ function TriplePhoto() {
     )
 }
 
-export default TriplePhoto
+export default TriplePhoto;

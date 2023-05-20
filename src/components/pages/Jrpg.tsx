@@ -18,4 +18,4 @@ function Jrpg() {
     )
 }
 
-export default Jrpg
+export default Jrpg;

@@ -1,4 +1,4 @@
-import flower from '../../assets/images/flowerlogo.png'
+import flower from '../../assets/images/flowerlogo.png';
 
 function Logo() {
 	return (
@@ -12,4 +12,4 @@ function Logo() {
     )
 }
 
-export default Logo
+export default Logo;

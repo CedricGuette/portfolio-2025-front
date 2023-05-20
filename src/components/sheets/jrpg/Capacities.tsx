@@ -16,4 +16,4 @@ function Capacities() {
     )
 }
 
-export default Capacities
+export default Capacities;

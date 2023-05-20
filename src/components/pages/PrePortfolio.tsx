@@ -1,7 +1,7 @@
-import ProjectCard from "../sheets/ProjectCard"
-import jsonData from '../../datas/portfolio.json'
-import { Link } from "react-router-dom";
-import Navigation from "../layouts/Navigation";
+import ProjectCard from '../sheets/ProjectCard';
+import jsonData from '../../datas/portfolio.json';
+import { Link } from 'react-router-dom';
+import Navigation from '../layouts/Navigation';
 
 function PrePortfolio() {
 
@@ -40,4 +40,4 @@ function PrePortfolio() {
     )
 }
 
-export default PrePortfolio
+export default PrePortfolio;

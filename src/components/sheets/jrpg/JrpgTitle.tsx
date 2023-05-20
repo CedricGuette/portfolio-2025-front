@@ -9,4 +9,4 @@ function JrpgTitle() {
     )
 }
 
-export default JrpgTitle
+export default JrpgTitle;

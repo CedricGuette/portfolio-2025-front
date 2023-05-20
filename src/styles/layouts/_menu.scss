@@ -46,11 +46,13 @@ nav {
         &.closed {
 
             &::before {
+
                 -webkit-animation: menuCloseButtonTop 700ms ease-out normal both;
                 animation: menuCloseButtonTop 700ms ease-out normal both;
             }
         
             &::after {
+
                 -webkit-animation: menuCloseButtonBottom 700ms ease-out normal both;
                 animation: menuCloseButtonBottom 700ms ease-out normal both;
             }
@@ -85,8 +87,8 @@ nav {
         top: -10px;
         right: 0px;
     
-    
         &__ref {
+
             padding: 25px;
             position: relative;
             width: 300px;
@@ -107,6 +109,7 @@ nav {
     
     
         ul {
+
             list-style: none;
             margin-left: 15px;
     
@@ -115,12 +118,14 @@ nav {
                 margin-bottom: 20px;
     
                 a {
+
                     position: relative;
                     color: $tertiary_color;
                     font-size: 18px;
      
     
                     &::after {
+
                         content: '';
                         position: absolute;
                         width: 100%;
@@ -153,6 +158,7 @@ nav {
                     }
     
                     &:hover::before {
+
                         transform: scaleX(1);
                     } 
                 }
@@ -161,10 +167,12 @@ nav {
             .reversed {
                 a {
                     &::after {
+
                         transform-origin: bottom left;
                     }
     
                     &::before {
+
                         transform-origin: top right;
                     }
                 }
@@ -172,18 +180,21 @@ nav {
         }
     
         ul.lang {
+
             display: flex;
             font-weight: bold;
             justify-content: space-between;
 
     
             li {
+
                 cursor: pointer;
                 font-size: 15px;
                 color: $tertiary_color;
             }
     
             li.activated {
+
                 color: $secondary_color;
                 text-decoration: overline;
             }
@@ -191,10 +202,12 @@ nav {
     }
 
     .sousMenu {
+
         margin-left: 25px;
         position: relative;
 
         &::before {
+            
             content: "";
             width: 10px;
             height: 10px;

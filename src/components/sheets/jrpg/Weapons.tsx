@@ -31,4 +31,4 @@ function Weapons() {
     )
 }
 
-export default Weapons
+export default Weapons;

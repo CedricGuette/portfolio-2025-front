@@ -14,4 +14,4 @@ function Weapon(props: WeaponProps) {
     )
 }
 
-export default Weapon
+export default Weapon;

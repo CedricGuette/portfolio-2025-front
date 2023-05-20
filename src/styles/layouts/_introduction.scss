@@ -19,12 +19,15 @@
         flex-basis: 100%;
         margin-bottom: 40px;       
         left: -10%;
+
         @include tablet-only {
+
             top: 0;
             left: 0;
         }
     
         @include desktop-only {
+
             flex-basis: 20%;
             top: 75%;
             left: 0;
@@ -32,6 +35,7 @@
     }
 
     &Text {
+
         position: relative;
         flex-basis: 100%;
         display: flex;
@@ -43,10 +47,12 @@
         }
     
         @include desktop-only {
+
             flex-basis: 50%;
         }
 
         h1 {
+
             position: relative;
             z-index: 1;
             flex-basis: 100%;
@@ -61,6 +67,7 @@
             }
         
             @include desktop-only {
+
                 justify-content: start;
                 font-size: 45px;
                 margin-bottom: 35px;
@@ -68,6 +75,7 @@
         }
 
         h2 {
+
             font-size: 20px;
             color: $tertiary_color;
             margin: 0 0 15px 0;
@@ -79,6 +87,7 @@
             }
         
             @include desktop-only {
+
                 justify-content: start;
                 font-size: 35px;
                 margin: 50px 0 20px 0;
@@ -86,6 +95,7 @@
         }
 
         p {
+
             font-size: 17px;
             color: $primary_color;
             padding: 20px;
@@ -95,12 +105,14 @@
             }
         
             @include desktop-only {
+
                 font-size: 25px;
                 padding: 0;
             }
         }
 
         .secondText, .thirdText {
+
             flex-basis: 100%;
 
             @include tablet-only {
@@ -108,6 +120,7 @@
             }
         
             @include desktop-only {
+
                 flex-basis: 50%;
             }
         }
@@ -119,6 +132,7 @@
             }
         
             @include desktop-only {
+
                 content: "";
                 position: absolute;
                 top: -55px;
@@ -163,6 +177,7 @@
         }
     
         @include desktop-only {
+
             content: "";
             position: absolute;
             bottom: 0;
@@ -188,6 +203,7 @@
         }
     
         @include desktop-only {
+
             content: "";
             position: absolute;
             bottom: 5px;
@@ -204,5 +220,4 @@
             animation: introductionArrow 2.5s ease-in-out infinite normal;
         }
     }
-
 }

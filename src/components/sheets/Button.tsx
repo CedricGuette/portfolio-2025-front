@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import gitImg from '../../assets/images/svg/github.svg'
+import gitImg from '../../assets/images/svg/github.svg';
 
 interface ButtonProps {
     type: number;
@@ -55,4 +55,4 @@ function Button(props: ButtonProps) {
     )
 }
 
-export default Button
+export default Button;

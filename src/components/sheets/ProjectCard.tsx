@@ -1,6 +1,6 @@
-import { PortfolioLanguage } from "../../datas/porfolio";
-import { LangContext } from "../utils/context/LangProvider";
-import TextWindow from "./windowsStyled/TextWindow";
+import { PortfolioLanguage } from '../../datas/porfolio';
+import { LangContext } from '../utils/context/LangProvider';
+import TextWindow from './windowsStyled/TextWindow';
 import { useContext } from 'react';
 
 interface ProjectCardProps {

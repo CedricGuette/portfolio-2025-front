@@ -1,7 +1,9 @@
 header {
+
     font-family: "Bahnschrift";
 
     .logo {
+
         color: $primary-color;
         font-size: 25px;
         margin-top: 15px;
@@ -15,12 +17,14 @@ header {
         }
 
         @include desktop-only {
+
             font-size: 37px;
 
 
         }
 
         .image {
+
             width: 100%;
             height: 70px;
             position: relative;
@@ -28,6 +32,7 @@ header {
             margin-bottom: 5px;
 
             &::before {
+
                 content: "";
                 position: absolute;
                 top: 62px;
@@ -38,6 +43,7 @@ header {
             }
 
             &::after {
+
                 content: "";
                 position: absolute;
                 top: 62px;
@@ -53,10 +59,12 @@ header {
             position: relative;
 
             .name {
+
                 font-family: "BrunoAce";
                 flex-basis: 100%;
     
                 &::before {
+
                     content: "";
                     width: 250px;
                     height: 3px;
@@ -70,12 +78,14 @@ header {
                     }
             
                     @include desktop-only {
+
                         width: 350px;
                     }
                 }
             }
     
             .function {
+
                 font-stretch: condensed;
                 font-weight: 100;
                 position: absolute;
@@ -87,6 +97,7 @@ header {
                 }
         
                 @include desktop-only {
+                    
                     top: 37px;
                 }
             }

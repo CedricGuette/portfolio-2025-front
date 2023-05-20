@@ -29,4 +29,3 @@ export const defineDefaultValueNumber = () => {
 export const defineDefaultValueBoolean = () => {
     return [false, false, false]
 }
-

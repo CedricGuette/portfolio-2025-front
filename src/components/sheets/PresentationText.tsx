@@ -1,7 +1,7 @@
 import miscLang from '../../datas/misc.json'
 import { LangContext } from '../utils/context/LangProvider';
 import { useContext } from 'react';
-import TriplePhoto from "./introduction/TriplePhoto";
+import TriplePhoto from './introduction/TriplePhoto';
 import ScrollingLetters from './scroll/ScrollingLetters';
 
 
@@ -45,4 +45,4 @@ function PresentationText() {
     )
 }
 
-export default PresentationText
+export default PresentationText;

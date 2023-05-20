@@ -31,4 +31,4 @@ function Capacity(props : CapacityProps) {
 
 }
 
-export default Capacity
+export default Capacity;

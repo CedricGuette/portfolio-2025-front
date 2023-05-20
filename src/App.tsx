@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom';
 import Presentation from './components/pages/Presentation';
 import Portfolio from './components/pages/Portfolio';
 import LaPanthere from './components/pages/LaPanthere';

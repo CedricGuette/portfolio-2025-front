@@ -1,8 +1,8 @@
-import jsonData from '../../datas/portfolio.json'
+import jsonData from '../../datas/portfolio.json';
 import Footer from '../layouts/Footer';
 import FreeSpace from '../layouts/FreeSpace';
 import Header from '../layouts/Header';
-import ProjectCard from "../sheets/ProjectCard";
+import ProjectCard from '../sheets/ProjectCard';
 
 function Portfolio() {
 

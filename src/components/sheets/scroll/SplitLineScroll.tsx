@@ -1,4 +1,4 @@
-import ScrollingLetters from './ScrollingLetters'
+import ScrollingLetters from './ScrollingLetters';
 
 interface SplitLineSplitProps {
     textToSplit: string;
@@ -19,4 +19,4 @@ function SplitLineScroll(props: SplitLineSplitProps ) {
     )
 }
 
-export default SplitLineScroll
+export default SplitLineScroll;

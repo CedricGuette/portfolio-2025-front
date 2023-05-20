@@ -1,5 +1,5 @@
 import ProjectResume from './ProjectResume';
-import miscLang from '../../../datas/misc.json'
+import miscLang from '../../../datas/misc.json';
 import { PortfolioProject, PortfolioProjectInt} from '../../../datas/porfolio';
 import { LangContext } from '../../utils/context/LangProvider';
 import { useContext, useEffect, useLayoutEffect, useState } from 'react';

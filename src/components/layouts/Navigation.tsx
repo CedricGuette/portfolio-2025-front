@@ -1,5 +1,5 @@
-import { useState } from "react"
-import Menu from "./Menu";
+import { useState } from 'react';
+import Menu from './Menu';
 
 interface NavigationProps {
     section: string;
@@ -30,4 +30,4 @@ function Navigation(props: NavigationProps) {
 }
 
 
-export default Navigation
+export default Navigation;

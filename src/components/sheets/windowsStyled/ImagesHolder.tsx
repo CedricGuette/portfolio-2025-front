@@ -1,8 +1,8 @@
 import { PortfolioProjectInt } from "../../../datas/porfolio";
-import ImageWindow from "./ImageWindow";
-import { MiscPortfolio } from "../../../datas/misc";
-import { useContext, useEffect, useState, useLayoutEffect, useCallback } from "react";
-import { WindowPosition, defineDefaultValueBoolean } from "../../utils/context/WindowPositionProvider";
+import ImageWindow from './ImageWindow';
+import { MiscPortfolio } from '../../../datas/misc';
+import { useContext, useEffect, useState, useLayoutEffect, useCallback } from 'react';
+import { WindowPosition, defineDefaultValueBoolean } from '../../utils/context/WindowPositionProvider';
 
 const OPEN = 1;
 const CLOSING = 2;

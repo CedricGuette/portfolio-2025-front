@@ -5,4 +5,4 @@ function FreeSpace() {
     )
 }
 
-export default FreeSpace
+export default FreeSpace;

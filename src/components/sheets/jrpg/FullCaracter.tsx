@@ -7,4 +7,4 @@ function FullCaracter() {
     )
 }
 
-export default FullCaracter
+export default FullCaracter;

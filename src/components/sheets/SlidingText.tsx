@@ -25,4 +25,4 @@ function SlidingText(props: AppProps) {
     )
 }
 
-export default SlidingText
+export default SlidingText;

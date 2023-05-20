@@ -16,4 +16,4 @@ function Artefacts() {
     )
 }
 
-export default Artefacts
+export default Artefacts;

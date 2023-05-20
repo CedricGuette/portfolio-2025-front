@@ -1,4 +1,4 @@
-import logo from '../../assets/images/logo11.png'
+import logo from '../../assets/images/logo11.png';
 
 
 function Footer() {
@@ -12,4 +12,4 @@ function Footer() {
     )
 }
 
-export default Footer
+export default Footer;

@@ -7,6 +7,7 @@
             .stats{
 
                 .head {
+
                     padding-left: 5%;
                     padding-right: 1%;
                     flex-basis: 100%;
@@ -26,6 +27,7 @@
                     }
 
                     &::before {
+
                         content: "";
                         width: 75%;
                         height: 100%;
@@ -39,6 +41,7 @@
                     }
 
                     img{
+
                         height: 100%;
                     }
 
@@ -59,6 +62,7 @@
                         }
                     
                         @include desktop-only {
+
                             padding-left: 15px;
                             padding-right: 0;
                         }
@@ -77,6 +81,7 @@
                             }
                         
                             @include desktop-only {
+
                                 font-size: 22px;
                                 padding-left: 0;
                                 padding-right: 0;
@@ -96,11 +101,13 @@
                             }
                         
                             @include desktop-only {
+
                                 font-size: 22px;
                                 margin-right: 10px;
                             }
     
                             .points {
+
                                 flex-basis: 100%;
                                 font-size: 10px;
 
@@ -109,11 +116,13 @@
                                 }
                             
                                 @include desktop-only {
+
                                     font-size: 20px;
                                 }
                             }
     
                             .bar {
+
                                 flex-basis: 100%;
                                 height: 15px;
                                 border-radius: 15px;
@@ -124,6 +133,7 @@
                                 
     
                                 &::after {
+
                                     content: "";
                                     width: 109%;
                                     height: 17px;
@@ -139,6 +149,7 @@
                                     }
                                 
                                     @include desktop-only {
+
                                         width: 104%;
                                     }
                                 }
@@ -153,6 +164,7 @@
                             flex-wrap: wrap;
     
                             .points {
+
                                 flex-basis: 100%;
                                 font-size: 10px;
 
@@ -161,11 +173,13 @@
                                 }
                             
                                 @include desktop-only {
+
                                     font-size: 20px;
                                 }
                             }
     
                             .bar {
+
                                 flex-basis: 100%;
                                 height: 15px;
                                 border-radius: 15px;
@@ -174,6 +188,7 @@
                                 position: relative;
     
                                 &::after {
+
                                     content: "";
                                     width: 109%;
                                     height: 17px;
@@ -189,6 +204,7 @@
                                     }
                                 
                                     @include desktop-only {
+                                        
                                         width: 104%;
                                     }
                                 }

@@ -16,8 +16,8 @@
                 animation: slideshow 120s infinite linear; 
         
         span {
+
             font-size: 15px;
-            
             opacity: 0.7;
             color: $slidingTextColor;
             font-family: "Anton";
@@ -25,12 +25,14 @@
         }
 
         :nth-child(2n+1) {
+
             font-size: 16px;
             position: relative;
             top: 1px;
         }
 
         :nth-child(2n+0) {
+
             color: transparent;
             -webkit-text-stroke: 1px $slidingTextColor;
         }
@@ -50,6 +52,7 @@
             }
     
             :nth-child(2n+0) {
+
                 color: transparent;
                 -webkit-text-stroke: 1px $slidingTextColor;
             }

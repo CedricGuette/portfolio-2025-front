@@ -13,4 +13,4 @@ function JrpBody() {
     )
 }
 
-export default JrpBody
+export default JrpBody;

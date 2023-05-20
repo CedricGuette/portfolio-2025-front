@@ -1,27 +1,17 @@
 .freeSpace {
+
     flex: 1;
     position: relative;
     bottom: 5px;
 
     .slidingText {
+
         position: absolute;
         bottom: 0;
     }
 
-    // &::before {
-    //     content: "";
-    //     width: $slidingTextWidth;
-    //     height: 2px;
-    //     position: absolute;
-    //     bottom: 24px;
-    //     left: 0;
-    //     right: 0;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     background: $tertiary_color;
-    // }
-
     &::after {
+
         content: "";
         width: $slidingTextWidth;
         height: 2px;
@@ -33,4 +23,4 @@
         margin-right: auto;
         background: $tertiary_color;
     }
-  }
+}

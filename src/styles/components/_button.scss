@@ -1,4 +1,5 @@
 .buttonContainer {
+
     display: flex;
     flex-basis: 100%;
     padding-top: 20px;
@@ -6,6 +7,7 @@
     flex-wrap: wrap;
 
     .singleButton {
+
         flex-basis: 95%;
         padding-bottom: 20px;
 
@@ -14,6 +16,7 @@
         }
     
         @include desktop-only {
+
             flex-basis: 48%;
         }
     }
@@ -41,11 +44,13 @@
         }
     
         @include desktop-only {
+
             font-size: 13px;
             padding-left: 10px;
         }
         
         img {
+
             position: absolute;
             left: 4% ;
             width: 20px;
@@ -53,20 +58,22 @@
         }
 
         &.github {
+
             background: $tertiary_color;
             font-size: 12px;
         }
     
         &.live{
+
             color: $neutral_color;
             background: $secondary_color;
         }
     
         &.unavailable {
+
             background: $neutral_color;
             color: $primary_color;
             cursor: not-allowed;
         }
-    
     }
 }

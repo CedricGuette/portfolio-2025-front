@@ -1,9 +1,9 @@
-import miscLang from '../../../datas/misc.json'
+import miscLang from '../../../datas/misc.json';
 import { LangContext } from '../../utils/context/LangProvider';
 import { useContext } from 'react';
 import { PortfolioProject, PortfolioProjectInt } from '../../../datas/porfolio';
 import Button from '../Button';
-import ScrollingLetters from "../scroll/ScrollingLetters"
+import ScrollingLetters from '../scroll/ScrollingLetters';
 import SplitLineScroll from '../scroll/SplitLineScroll';
 
 

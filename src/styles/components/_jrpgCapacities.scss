@@ -35,10 +35,12 @@
                             font-weight: bold;
 
                             &:hover {
+
                                 color: #000;
                             }
                             
                             &::before {
+
                                 content: "";
                                 position: absolute;
                                 left: 0;
@@ -54,12 +56,14 @@
                             }
 
                             &:hover::before{
+
                                 border: 2px solid #fff;
                                 background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(185,185,185,1) 100%);
 
                             }
 
                             img {
+
                                 height: 20px;
                                 margin-left: -7% ;
                                 position: relative;
@@ -70,12 +74,14 @@
                                 }
                             
                                 @include desktop-only {
+
                                     height: 30px;
                                     margin-left: -3% ;
                                 }
                             }
 
                             .valueName {
+
                                 position: relative;
                                 margin-top: auto;
                                 margin-bottom: auto;
@@ -89,6 +95,7 @@
                                 }
                             
                                 @include desktop-only {
+
                                     font-size: 15px;
                                     margin-left: 15px;
                                 }
@@ -96,6 +103,7 @@
 
                             
                             .bar {
+
                                 position: relative;
                                 margin-top: auto;
                                 margin-bottom: auto;
@@ -115,10 +123,12 @@
                                 }
                             
                                 @include desktop-only {
+
                                     right: 22%;
                                 }
 
                                 &::before {
+
                                     content: "";
                                     position: absolute;
                                     top: 0;
@@ -131,6 +141,7 @@
                                 }
 
                                 &::after {
+
                                     content: "";
                                     position: absolute;
                                     top: 0;
@@ -144,36 +155,42 @@
                                 }
 
                                 &.zero {
+
                                     &::after {
                                     transform: scaleX(0);
                                     }
                                 }
 
                                 &.five {
+
                                     &::after {
                                     transform: scaleX(0.2);
                                     }
                                 }
 
                                 &.ten {
+
                                     &::after {
                                     transform: scaleX(0.4);
                                     }
                                 }
 
                                 &.fiveteen {
+
                                     &::after {
                                     transform: scaleX(0.6);
                                     }
                                 }
 
                                 &.twenty {
+
                                     &::after {
                                     transform: scaleX(0.8);
                                     }
                                 }
 
                                 &.twentyfive {
+
                                     &::after {
                                     transform: scaleX(1);
                                     }
@@ -182,6 +199,7 @@
                             }
 
                             .value {
+
                                 position: absolute;
                                 margin-right: 2%;
                                 top: 25%;
@@ -193,11 +211,13 @@
                                 }
                             
                                 @include desktop-only {
+
                                     font-size: 15px;
                                 }
                             }
 
                             &.empty::before {
+                                
                                 background: none;
                                 border: none;
                             }

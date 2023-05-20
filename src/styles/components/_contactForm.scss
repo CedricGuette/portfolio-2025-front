@@ -1,6 +1,7 @@
 .four {
     
     .form {
+
         display: flex;
         width: 100%;
         min-height: 100vh;
@@ -10,6 +11,7 @@
         position: relative;
 
         label {
+
             font-size: 15px;
 
             @include tablet-only {
@@ -17,11 +19,13 @@
             }
 
             @include desktop-only {
+
                 font-size: 20px;
             }
         }
 
         .name, .email, .request {
+
             display: flex;
             flex-wrap: wrap;
 
@@ -30,12 +34,14 @@
             }
 
             @include desktop-only {
+
                 display: block;
                 flex-wrap: nowrap;
             }
         }
 
         input {
+
             background: none;
             border: none;
             border-bottom: 4px solid $tertiary_color;
@@ -46,10 +52,12 @@
             }
 
             @include desktop-only {
+
                 font-size: 25px;
             }
 
             &:focus {
+
                 outline: none;
                 border-bottom: 4px solid $secondary_color;
                 background-color: #ffffff33;
@@ -64,12 +72,12 @@
         align-items: center;
 
         h2 {
+
             height: 20%;
             flex-basis: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-
             font-size: 40px;
 
             @include tablet-only {
@@ -77,11 +85,13 @@
             }
 
             @include desktop-only {
+
                 font-size: 70px;
             }
         }
 
         p {
+
             flex-basis: 80%;
             display: flex;
             justify-content: center;
@@ -92,6 +102,7 @@
             }
 
             @include desktop-only {
+
                 font-size: 33px;
             }
         }
@@ -116,16 +127,19 @@
                 }
     
                 @include desktop-only {
+
                     flex-basis: 45%;
                 }
 
                 input {
+
                     height: 50px;
                     flex-basis: 100%;
                     cursor:pointer;
                     padding-left: 15px;
 
                     &focus {
+
                         cursor:pointer;
                     }
 
@@ -134,6 +148,7 @@
                     }
         
                     @include desktop-only {
+
                         flex-basis: 80%;
                     }
                 }
@@ -145,6 +160,7 @@
                 display: flex;
 
                 label {
+
                     flex-basis: 10%;
                 }
 
@@ -166,12 +182,14 @@
                     }
         
                     @include desktop-only {
+
                         flex-basis: 90%;
                         margin-top: 0;
                         font-size: 25px;
                     }
                     
                     &:focus {
+
                         outline: none;
                         border: 4px solid $secondary_color;
                         background-color: #ffffff33;
@@ -181,11 +199,13 @@
                 }
             }
             .button-form {
+
                 flex-basis: 100%;
                 display: flex;
                 justify-content: flex-end;
 
                 button {
+
                     flex-basis: 20%;
                     background: none;
                     border: 4px solid $tertiary_color;
@@ -203,11 +223,13 @@
                     }
         
                     @include desktop-only {
+
                         font-size: 20px;
                         margin-bottom: 0;
                     }
 
                     &:hover {
+                        
                         cursor: pointer;
                         background: $tertiary_color; 
                         border: 4px solid $neutral_color;

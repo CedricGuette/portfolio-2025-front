@@ -21,4 +21,4 @@ function JrpgPlayerHead() {
     )
 }
 
-export default JrpgPlayerHead
+export default JrpgPlayerHead;

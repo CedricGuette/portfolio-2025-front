@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import navJson from '../../datas/misc.json'
-import LanguageSelector from './LanguageSelector'
-import { useContext } from "react";
-import { LangContext } from "../utils/context/LangProvider";
+import navJson from '../../datas/misc.json';
+import LanguageSelector from './LanguageSelector';
+import { useContext } from 'react';
+import { LangContext } from '../utils/context/LangProvider';
 
 function Menu() {
 
@@ -55,4 +55,4 @@ function Menu() {
     )
 }
 
-export default Menu
+export default Menu;

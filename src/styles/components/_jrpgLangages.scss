@@ -5,6 +5,7 @@
         .footer {
 
             .others {
+
                 flex-basis: 100%;
                 display: flex;
                 align-items: center;
@@ -16,6 +17,7 @@
                 }
             
                 @include desktop-only {
+
                     flex-basis: 35%;
                     justify-content: space-around;
                     margin-right: 0;
@@ -24,6 +26,7 @@
                 h3 {
             
                     &::after {
+
                         width: 100%;
                         left: 5%;
                     }
@@ -33,11 +36,13 @@
                     }
                 
                     @include desktop-only {
+
                         left: 15%;
                     }
                 }
 
                 .other {
+
                     flex-basis: 33%;
                     display: flex;
                     justify-content: space-between;
@@ -48,11 +53,13 @@
                     }
                 
                     @include desktop-only {
+
                         margin-left: 10%;
                         flex-basis: 27%;
                     }
 
                     img {
+                        
                         margin-left: 10px;
                         height: 25px;
 
