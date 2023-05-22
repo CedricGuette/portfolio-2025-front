@@ -90,7 +90,7 @@
         },
         "int" :{
             "name": "Kanap",
-            "image": ["./thumbnails/kanap.jpg"],
+            "image": ["./thumbnails/kanap.jpg","./thumbnails/kanap2.jpg","./thumbnails/kanap3.jpg"],
             "git" : "https://github.com/CedricGuette/OC-project-5-Kanap",
             "live" : "",
             "beforeLive": false
@@ -114,7 +114,7 @@
         },
         "int" :{
             "name": "Hot Takes",
-            "image": ["./thumbnails/pasdevisu.jpg"],
+            "image": ["./thumbnails/hottakes.jpg","./thumbnails/hottakes2.jpg","./thumbnails/hottakes3.jpg"],
             "git" : "https://github.com/CedricGuette/OC-Project-6-Hot-Takes",
             "live" : "",
             "beforeLive": false
@@ -138,7 +138,7 @@
         },
         "int" :{
             "name": "kasa",
-            "image": ["./thumbnails/kasa.jpg"],
+            "image": ["./thumbnails/kasa.jpg","./thumbnails/kasa2.jpg","./thumbnails/kasa3.jpg"],
             "git" : "https://github.com/CedricGuette/OC-Project-7-Kasa",
             "live" : "https://kasa.cedric-guette.com",
             "beforeLive": false
