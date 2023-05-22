@@ -1,8 +1,15 @@
-function Artefacts() {
+import { PresentationSection } from '../../../datas/presentation';
+
+interface ArtefactsProps {
+    presentationData: PresentationSection;
+}
+
+
+function Artefacts(props: ArtefactsProps) {
 
     return(
         <div className="faces">
-            <h3>Artéfacts :</h3>
+            <h3>{ props.presentationData.artefact } :</h3>
             <div className="face">
                 <img src="./images/jrpg/misc/photo.png" alt="Fujifilm XT-3" />
             </div>

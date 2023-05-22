@@ -1,21 +1,22 @@
-import miscLang from '../../datas/misc.json'
+import presentationData from '../../datas/presentation.json';
 import { LangContext } from '../utils/context/LangProvider';
 import { useContext } from 'react';
 import TriplePhoto from './introduction/TriplePhoto';
 import ScrollingLetters from './scroll/ScrollingLetters';
+import SplitLineScroll from './scroll/SplitLineScroll';
 
 
 
 function PresentationText() {
     const languageContext = useContext(LangContext);
 
-    const misc = () => {
+    const presentation = () => {
         if(languageContext?.lang === 'EN'){
-            return miscLang.en.portfolio
+            return presentationData.en
         } else if(languageContext?.lang === 'PT'){
-            return miscLang.pt.portfolio
+            return presentationData.pt
         } else {
-            return miscLang.fr.portfolio
+            return presentationData.fr
         }
     }
 
@@ -23,21 +24,20 @@ function PresentationText() {
         <div className="introduction">
             <TriplePhoto />
             <div className="introductionText">
-                <h1>{ <ScrollingLetters  textToScroll='Développeur Fullstack Junior' /> }</h1>
+                <h1>{ <ScrollingLetters  textToScroll={ presentation().title1 } /> }</h1>
                 <p className="firstText">
-                    Je m'appelle Cédric Guetté, 30 ans. Je suis passioné par le web depuis tout petit et j'ai appris au collège le HTML/CSS/PHP/SQL grace au site du zéro.
-                    Pendant des années je me suis contenté de faire des petites pages webs par ci, par là. L'idée d'en faire mon métiers me trottait dans la tête depuis un bon moment.
+                    { presentation().content1 }
                 </p>
                 <div className="secondText">
-                    <h2>{ <ScrollingLetters  textToScroll='Titre Professionel En Poche' /> }</h2>
+                    <h2>{ <ScrollingLetters  textToScroll={ presentation().title2 } /> }</h2>
                     <p>
-                        J'ai récemment décidé de prendre cette direction en suivant une formation avec OpenClassrooms et en obtenant un titre professionel de développeur intégrateur web.
+                        { presentation().content2 }
                     </p>
                 </div>
                 <div className="thirdText">
-                    <h2>{ <ScrollingLetters  textToScroll="L'aventure Ne Fait Que n Commencer" /> }{ <ScrollingLetters  textToScroll="" /> }</h2>
+                    <h2>{ <SplitLineScroll  textToSplit={ presentation().title3 } /> }{ <ScrollingLetters  textToScroll="" /> }</h2>
                     <p className="thirdText">
-                        Je suis actuellement en train de m'inscrire à une formation de concepteur développeur web chez O'clock.
+                        { presentation().content3 }
                     </p>
                 </div>
             </div>

@@ -1,0 +1,325 @@
+.five {
+
+    font-size: 35px;
+    font-weight: lighter;
+    color: $tertiary_color;
+    font-family: "Bahnschrift";
+
+
+    @include tablet-only {
+
+    }
+
+    @include desktop-only {
+
+        right: 2%;
+        top: 15px;
+    }
+
+    .menu {
+
+        padding-top: 5%;
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background: $neutral_color;
+        z-index: 20;
+
+        .menuSection {
+
+            flex-basis: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 2%;
+
+            @include tablet-only {
+    
+            }
+    
+            @include desktop-only {
+    
+                flex-basis: 50%;
+            }
+
+        }
+
+        span {
+
+            display: block;
+            margin-bottom: 20px;
+            font-size: 20px;
+            padding-left: 20px;
+            font-weight: bold;
+            flex-basis: 100%;
+
+            @include tablet-only {
+    
+            }
+    
+            @include desktop-only {
+                font-size: 35px;
+                flex-basis: 50%;
+                padding-left: 0;
+            }
+        }
+
+        .copyright {
+
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 4%;
+            
+            span {
+                display: flex;
+                justify-content: center;
+                font-size: 15px;
+
+                @include tablet-only {
+    
+                }
+        
+                @include desktop-only {
+    
+                    font-size: 25px;
+                }
+            }
+        }
+    
+        ul {
+
+            list-style: none;
+            margin-left: 15px;
+    
+            li {
+    
+                margin-bottom: 20px;
+    
+                a {
+
+                    position: relative;
+                    color: $tertiary_color;
+                    font-size: 20px;
+
+                    @include tablet-only {
+    
+                    }
+            
+                    @include desktop-only {
+
+                        font-size: 25px;
+                    }
+        
+    
+                    &::after {
+
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 2px;
+                        bottom: -10px;
+                        left: 0;
+                        background-color: $tertiary_color;
+                        transform-origin: top right;
+                        transition: transform 0.6s ease-out;
+                    }
+    
+                    &:hover::after {
+
+                        transform: scaleX(1);
+                    }
+    
+                    &::before {
+
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 2px;
+                        top: -11px;
+                        left: 0;
+                        background-color: $tertiary_color;
+                        transform-origin: bottom left;
+                        transition: transform 0.6s ease-out;
+                    }
+    
+                    &:hover::before {
+
+                        transform: scaleX(1);
+                    } 
+                }
+            }
+    
+            .reversed {
+                a {
+                    &::after {
+
+                        transform-origin: bottom left;
+                    }
+    
+                    &::before {
+
+                        transform-origin: top right;
+                    }
+                }
+            }
+        }
+    
+        ul.lang {
+
+            display: flex;
+            font-weight: bold;
+            justify-content: space-around;
+            flex-basis: 100%;
+
+    
+            li {
+
+                cursor: pointer;
+                font-size: 15px;
+                color: $tertiary_color;
+
+                @include tablet-only {
+    
+                }
+        
+                @include desktop-only {
+
+                    font-size: 20px;
+                }
+            }
+    
+            li.activated {
+
+                color: $secondary_color;
+                text-decoration: overline;
+            }
+        }
+    }
+
+    .sousMenu {
+
+        margin-left: 25px;
+        position: relative;
+
+        &::before {
+            
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-left: 2px solid $tertiary_color;
+            border-bottom: 2px solid $tertiary_color;
+            position: absolute;
+            left: -15px;
+            top: 10px;
+        }
+    }
+
+    .logo {
+
+        color: $primary-color;
+        font-size: 25px;
+        margin-top: 15px;
+        height: 160px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 228px;
+
+        @include tablet-only {
+    
+        }
+
+        @include desktop-only {
+
+            width: 325px;
+            font-size: 37px;
+        }
+
+        .image {
+
+            width: 70px;
+            height: 70px;
+            position: relative;
+            left: 40%;
+            margin-bottom: 5px;
+
+            &::before {
+
+                content: "";
+                position: absolute;
+                top: 62px;
+                left: -52px;
+                width: 55px;
+                height: 3px;
+                background: $primary-color;
+            }
+
+            &::after {
+
+                content: "";
+                position: absolute;
+                top: 62px;
+                left: 60px;
+                width: 55px;
+                height: 3px;
+                background: $primary-color;
+            }
+        }
+
+        .text {
+
+            position: relative;
+
+            .name {
+
+                font-family: "BrunoAce";
+                flex-basis: 100%;
+    
+                &::before {
+
+                    content: "";
+                    width: 250px;
+                    height: 3px;
+                    background: $primary-color;
+                    position: absolute;
+                    top: 0px;
+                    left: -12px;
+
+                    @include tablet-only {
+    
+                    }
+            
+                    @include desktop-only {
+
+                        width: 350px;
+                    }
+                }
+            }
+    
+            .function {
+
+                font-stretch: condensed;
+                font-weight: 100;
+                position: absolute;
+                top: 27px;
+                width: 228px;
+                display: flex;
+                justify-content: center;
+
+                @include tablet-only {
+    
+                }
+        
+                @include desktop-only {
+                    width: 325px;
+                    top: 37px;
+                }
+            }
+        }
+    }
+}

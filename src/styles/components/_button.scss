@@ -39,6 +39,11 @@
         margin: 0 15px 0 15px;
         position: relative;
 
+        &:hover {
+
+            box-shadow: 1px 1px 5px darken($primary_color, 15%);
+        }
+
         @include tablet-only {
    
         }
@@ -61,12 +66,20 @@
 
             background: $tertiary_color;
             font-size: 12px;
+
+            &:hover {
+                background: darken($tertiary_color, 5%);
+            }
         }
     
         &.live{
 
             color: $neutral_color;
             background: $secondary_color;
+
+            &:hover {
+                background: darken($secondary_color, 5%);
+            }
         }
     
         &.unavailable {

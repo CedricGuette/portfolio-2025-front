@@ -1,12 +1,18 @@
 import Capacities from './Capacities';
 import JrpgPlayerHead from './JrpgPlayerHead';
+import { PresentationSection } from '../../../datas/presentation';
 
-function Stats() {
+interface StatsProps {
+    presentationData: PresentationSection;
+}
+
+
+function Stats(props: StatsProps) {
 
     return(
         <div className="stats">
             <JrpgPlayerHead />
-            <Capacities />
+            <Capacities presentationData={ props.presentationData }/>
         </div>
     )
 }

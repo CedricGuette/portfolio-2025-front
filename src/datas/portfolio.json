@@ -6,19 +6,19 @@
             "technology": "> HTML\n > CSS"
         },
         "en": { 
-            "title": "Procjet for OpenClassrooms : Booki",
-            "resume": "During this project, I integrated a model given on figma. It had to be in desktop first.",
+            "title": "Project for OpenClassrooms : Booki",
+            "resume": "During this project, I\n integrated a model given on\n figma. It had to be in\n desktop first.",
             "technology": "> HTML\n > CSS"
         }
         ,
         "pt": {
             "title": "Projeto para OpenClassrooms : Booki",
-            "resume": "Durante esse projeto, eu transformei um modelo fornecido\n com figma. O projeto tinha que estar em \"desktop first\".",
+            "resume": "Durante esse projeto, eu\n transformei um modelo\n fornecido com figma. O\n projeto tinha que estar em\n \"desktop first\".",
             "technology": "> HTML\n > CSS"
         },
         "int" :{
             "name": "Booki",
-            "image": ["./thumbnails/bookie.jpg","./thumbnails/ohmyfood.jpg","./thumbnails/lapanthere.jpg"],
+            "image": ["./thumbnails/bookie.jpg"],
             "git" : "https://github.com/CedricGuette/OC-Project-2-Booki",
             "live" : "https://booki.cedric-guette.com",
             "beforeLive": false
@@ -31,18 +31,18 @@
             "technology": "> HTML\n > SASS"
         },
         "en" : {
-            "title": "Procjet for OpenClassrooms : OhMyFood",
-            "resume": "This project was a little more sophisticated integration.\n It was about setting up more advanced animations as well as\n following a \"mobile first\" logic.",
+            "title": "Project for OpenClassrooms : OhMyFood",
+            "resume": "This project was a little\n more sophisticated\n integration. It was about\n setting up more advanced\n animations as well as\n following a \"mobile first\"\n logic.",
             "technology": "> HTML\n > SASS"
         },
         "pt" : {
             "title": "Projeto para OpenClassrooms : OhMyFood",
-            "resume": "Esse projeto foi um trabalho um pouco mais sofisticado.\n Eu tinha que tratar com animações mais avançadas também,\n e seguir uma lógica de \"mobile first\".",
+            "resume": "Esse projeto foi um trabalho\n um pouco mais sofisticado.\n Eu tinha que tratar com\n animações mais avançadas\n também, e seguir uma lógica\n de \"mobile first\".",
             "technology": "> HTML\n > SASS"
         },
         "int" :{
             "name": "OhMyFood",
-            "image": ["./thumbnails/ohmyfood.jpg"],
+            "image": ["./thumbnails/ohmyfood2.jpg", "./thumbnails/ohmyfood.jpg"],
             "git" : "https://github.com/CedricGuette/OC-Project-3-Ohmyfood",
             "live" : "https://ohmyfood.cedric-guette.com",
             "beforeLive": false
@@ -55,18 +55,18 @@
             "technology": "> HTML\n > SASS \n > Google Lighthouse \n > Divers logiciels d'accessibilité"
         },
         "en" : {
-            "title": "Procjet for OpenClassrooms : La Panthère",
-            "resume": "For this project I had to carry about SEO optimization and\n accessibility. On one hand by implementing best practices,\n on the other one by maximizing performances of the given\n site.",
+            "title": "Project for OpenClassrooms : La Panthère",
+            "resume": "For this project I had to\n carry about SEO optimization\n and accessibility. On one\n hand by implementing best\n practices, on the other one\n by maximizing performances\n of the given site.",
             "technology": "> HTML\n > SASS \n > Google Lighthouse \n > Some accessibility software"
         },
         "pt" : {
             "title": "Projeto para OpenClassrooms : La Panthère",
-            "resume": "Para esee projeto, eu tinha que otimização o SEO e a\n acessibilidade. Por um lado, usando as melhores práticas,\n por um outro, maximizando o desempenho do site.",
+            "resume": "Para esse projeto, eu tinha\n que otimização o SEO e a\n acessibilidade. Por um lado,\n usando as melhores práticas,\n por um outro, maximizando o\n desempenho do site.",
             "technology": "> HTML\n > SASS \n > Google Lighthouse \n > Alguns programas de acessibilidade" 
         },
         "int" :{
             "name": "La Panthère",
-            "image": ["./thumbnails/lapanthere.jpg"],
+            "image": ["./thumbnails/lapanthere.jpg", "./thumbnails/lapanthere2.jpg"],
             "git" : "https://github.com/CedricGuette/OC-Project-4-La-Panthere",
             "live" : "./la-panthere/",
             "beforeLive": true
@@ -79,13 +79,13 @@
             "technology": "> JavaScript (POO)"
         },
         "en" : {
-            "title": "Procjet for OpenClassrooms : Kanap",
-            "resume": "This project aimed to set a dynamic display from http GET\n requests. Then to set up a cart and finally to order thanks\n to a last http POST request.",
+            "title": "Project for OpenClassrooms : Kanap",
+            "resume": "This project aimed to set a\n dynamic display from http\n GET requests. Then to set up\n a cart and finally to order\n thanks to a last http POST\n request.",
             "technology": "> JavaScript (OOP)"
         },
         "pt" : {
             "title": "Projeto para OpenClassrooms : Kanap",
-            "resume": "Esse projeto teve como objetivo de configurar dinamicamente\n um site com solicitações http GET, configurar uma cesta e,\n finalmente, fazer o pedido graças a uma última solicitação\n http POST.",
+            "resume": "Esse projeto teve como\n objetivo de configurar\n dinamicamente um site com\n solicitações http GET,\n configurar uma cesta e,\n finalmente, fazer o pedido\n graças a uma última\n solicitação http POST.",
             "technology": "> JavaScript (POO)"
         },
         "int" :{
@@ -103,13 +103,13 @@
             "technology": "> Javascript \n > Node \n > Express \n > MongoDb"
         },
         "en" : {
-            "title": "Projet pour OpenClassrooms : Hot Takes",
-            "resume": "Pour ce projet il a fallut s'occuper du backend. J'ai utilisé pour se faire Node avec Express et une solution noSQL : MongoDB.",
+            "title": "Project for OpenClassrooms : Hot Takes",
+            "resume": "For this project I had to do\n with backend. I've used Node\n with Express and a noSQL\n solution : MongoDB",
             "technology": "> Javascript \n > Node \n > Express \n > MongoDb"
         },
         "pt" : {
-            "title": "Projet pour OpenClassrooms : Hot Takes",
-            "resume": "Pour ce projet il a fallut s'occuper du backend. J'ai utilisé pour se faire Node avec Express et une solution noSQL : MongoDB.",
+            "title": "Projeto para OpenClassrooms : Hot Takes",
+            "resume": "Pra esse projeto eu tinha\n que admministrar o backend.\n Eu usei Node e Express com\n uma solução noSQL :\n MongoDBQL",
             "technology": "> Javascript \n > Node \n > Express \n > MongoDb"
         },
         "int" :{
@@ -127,13 +127,13 @@
             "technology": "> HTML\n > SASS \n > Javascript \n > React"
         },
         "en" : {
-            "title": "Procjet for OpenClassrooms : kasa",
-            "resume": "This was my last project for OpenClassRooms. We had to set\n up a site using React and all this from\n a figma model and a mocked version of the backend.",
+            "title": "Project for OpenClassrooms : kasa",
+            "resume": "This was my last project for\n OpenClassRooms. We had to\n set up a site using React\n and all this from a figma\n model and a mocked version\n of the backend.",
             "technology": "> HTML\n > SASS \n > Javascript \n > React"
         },
         "pt" : {
             "title": "Projeto para OpenClassrooms : kasa",
-            "resume": "Esse foi meu último projeto para OpenClassRooms. Tivemos que\n configurar um site com React a partir de um modelo figma\n e uma versão simulada do back-end.",
+            "resume": "Esse foi meu último projeto\n pra OpenClassRooms. Tivemos\n que configurar um site com\n React a partir de um modelo\n figma e uma versão simulada\n do back-end.",
             "technology": "> HTML\n > SASS \n > Javascript \n > React"
         },
         "int" :{
@@ -151,20 +151,20 @@
             "technology": "> HTML\n > SASS \n > Typescript \n > React"
         },
         "en" : {
-            "title": "Projet personnel : Portfolio",
-            "resume": "Premier projet personnel et site sur lequel vous naviguez en ce moment. En plus de son coté utile, j'ai put me familliariser avec Typescript.",
+            "title": "Personal project : Portfolio",
+            "resume": "First personal project and\n the site you are currently\n navigating on. In addition\n to it useful side, it made\n me encounter with\n Typescript.",
             "technology": "> HTML\n > SASS \n > Typescript \n > React"
         },
         "pt" : {
-            "title": "Projet personnel : Portfolio",
-            "resume": "Premier projet personnel et site sur lequel vous naviguez en ce moment. En plus de son coté utile, j'ai put me familliariser avec Typescript.",
+            "title": "Projeto pessoal : Portfolio",
+            "resume": "Primeiro projeto pessoal e\n site em que você esta\n navigando atualmente. Além\n de seu lado útil, ele me\n permitiu de mim familiarizar\n com o Typescript.",
             "technology": "> HTML\n > SASS \n > Typescript \n > React"
         },
         "int" :{
             "name": "Portfolio",
             "image": ["./thumbnails/portfolio.jpg"],
             "git" : "https://github.com/CedricGuette/OC-Project-2-Booki",
-            "live" : "",
+            "live" : "http://cedric-guette.com/",
             "beforeLive": false
         }
     }

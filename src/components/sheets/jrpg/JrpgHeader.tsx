@@ -1,12 +1,17 @@
 import Artefacts from './Artefacts';
 import JrpgTitle from './JrpgTitle';
+import { PresentationSection } from '../../../datas/presentation';
 
-function JrpgHeader() {
+interface JrpgHeaderProps {
+    presentationData: PresentationSection;
+}
+
+function JrpgHeader(props: JrpgHeaderProps) {
 
     return(
         <div className="header">
-            <JrpgTitle />
-            <Artefacts />
+            <JrpgTitle presentationData={ props.presentationData }/>
+            <Artefacts presentationData={ props.presentationData }/>
         </div>
     )
 }

@@ -1,3 +1,6 @@
+import presentationData from '../../datas/presentation.json';
+import { LangContext } from '../utils/context/LangProvider';
+import { useContext } from 'react';
 import {useForm} from 'react-hook-form';
 import Navigation from '../layouts/Navigation';
 
@@ -13,6 +16,17 @@ type Form = {
 };
 
 function ContactForm() {
+    const languageContext = useContext(LangContext);
+
+    const presentation = () => {
+        if(languageContext?.lang === 'EN'){
+            return presentationData.en
+        } else if(languageContext?.lang === 'PT'){
+            return presentationData.pt
+        } else {
+            return presentationData.fr
+        }
+    }
     
     const {register, handleSubmit} = useForm<Form>();
 
@@ -29,31 +43,30 @@ function ContactForm() {
     return(
         <form className='form' onSubmit={ handleSubmit(onSubmit) }>
             <Navigation section='contactform'/>
-            <h2>Des questions?</h2>
-            <p>Je m'éforcerais de vous répondre dans les plus bref délais. <br/>
-                Vous pouvez m'écrire à cette adresse : contact@cedric-guette.com <br/><br/>
-                Ou alors vous pouvez remplir ce formulaire :
+            <h2>{ presentation().title5 }</h2>
+            <p>
+                { presentation().content5 }
             </p>
             <div className="formInputs">
                 <div className='name'>
-                    <label htmlFor='name'>Vos nom et prénom:</label>
+                    <label htmlFor='name'>{ presentation().names }:</label>
                     <input
                     {...register('name')}
                     type='text' className='formControle' id='name' name='name'/>
                 </div>
                 <div className='email'>
-                <label htmlFor='email'>Votre adresse email:</label>
+                <label htmlFor='email'>{ presentation().email }:</label>
                     <input 
                     {...register('email')}
                     type='text' className='formControle' id='email' name='email'/>
                 </div>
                 <div className='request'>
-                <label htmlFor='request'>Votre question:</label>
+                <label htmlFor='request'>{ presentation().question }:</label>
                     <textarea
                     {...register('request')}
                     className='formControle' id='request' name='request'/>
                 </div>
-                    <div className='button-form'><button>Envoyer</button></div>
+                    <div className='button-form'><button>{ presentation().send }</button></div>
 
             </div>
         </form>

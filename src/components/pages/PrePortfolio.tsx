@@ -1,9 +1,23 @@
+import presentationData from '../../datas/presentation.json';
+import { LangContext } from '../utils/context/LangProvider';
+import { useContext } from 'react';
 import ProjectCard from '../sheets/ProjectCard';
 import jsonData from '../../datas/portfolio.json';
 import { Link } from 'react-router-dom';
 import Navigation from '../layouts/Navigation';
 
 function PrePortfolio() {
+    const languageContext = useContext(LangContext);
+
+    const presentation = () => {
+        if(languageContext?.lang === 'EN'){
+            return presentationData.en
+        } else if(languageContext?.lang === 'PT'){
+            return presentationData.pt
+        } else {
+            return presentationData.fr
+        }
+    }
 
     const lastProject = jsonData.length - 1;
 
@@ -14,21 +28,20 @@ function PrePortfolio() {
                 <ProjectCard  project={ jsonData[lastProject] } index={0}/>
             </div>
             <div className="preProtfolioText">
-                <h2>Mes réalisations :</h2>
+                <h2>{ presentation().title4 } :</h2>
                 <p>
-                    Voici les deux dernières de mes réalisations.
-                    Si vous souhaitez en voir plus, vous pouvez vous rendre sur mon GitHub, ou alors poursuivre la visite de mon site par mon portfolio complet.
+                    { presentation().content4 }
                 </p>
                 <div className="links">
 
                     <Link to='./portfolio'>
                         <div className="button">
-                            Mon Portfolio
+                            { presentation().myPortfolio }
                         </div>
                     </Link>
                     <a href='https://github.com/CedricGuette/'>
                         <div className="button">
-                            Mon GitHub
+                            { presentation().myGithub }
                         </div>
                     </a>    
                 </div>

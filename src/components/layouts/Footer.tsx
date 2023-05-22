@@ -1,13 +1,30 @@
-import logo from '../../assets/images/logo11.png';
+import logo from '../../assets/images/flowerlogo.png';
+import navJson from '../../datas/misc.json';
+import { useContext } from 'react';
+import { LangContext } from '../utils/context/LangProvider';
 
 
 function Footer() {
+    const languageContext = useContext(LangContext); 
+
+    const misc = () => {
+        if(languageContext?.lang === 'EN'){
+            return navJson.en
+        } else if(languageContext?.lang === 'PT'){
+            return navJson.pt
+        } else {
+            return navJson.fr
+        }
+    }
+
 	return (
         <footer>
             <div className='title-logo'>
                 <img src={logo} alt='Logo de Cédric Guetté'/>
             </div>
-            <span className='copyright'>Copyright, tous droits reservés à Cédric Guetté 2023 </span>
+            <div className="copyright">
+                    <span>{ misc().footer.copyright } 2023 Cédric Guetté</span>
+            </div>
         </footer>
     )
 }

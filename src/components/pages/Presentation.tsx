@@ -1,14 +1,16 @@
 import Header from '../layouts/Header';
+import Logo from '../layouts/Logo';
 import PresentationText from '../sheets/PresentationText';
 import ContactForm from './ContactForm';
 import Jrpg from './Jrpg';
 import PrePortfolio from './PrePortfolio';
+import PresentationFooter from './PresentationFooter';
 
 
 function Presentation() {
 	return (
         <article className='scroller'>
-            <section className='one'>
+            <section className='one' id='whoIAm'>
                 <Header />
                 <PresentationText />
             </section>
@@ -21,7 +23,10 @@ function Presentation() {
             <section className='four' id='contact'>
                 <ContactForm />
             </section>
-
+            <section className='five'>
+                <Logo />
+                <PresentationFooter />
+            </section>
         </article>
     )
 }

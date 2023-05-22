@@ -28,11 +28,14 @@ export const LangProvider = (props: ContextProviderProps) => {
             localStorage.setItem('LANG', lang)
         }
     if (lang === 'EN') {
-            document.documentElement.setAttribute('lang', 'en')
+            document.documentElement.setAttribute('lang', 'en');
+            document.title = 'Cédric Guetté - Fullstack Developer';
         } else if(lang === 'PT') {
-            document.documentElement.setAttribute('lang', 'pt')
+            document.documentElement.setAttribute('lang', 'pt');
+            document.title = 'Cédric Guetté - Desenvelvedor Fullstack';
         } else {
-            document.documentElement.setAttribute('lang', 'fr')
+            document.documentElement.setAttribute('lang', 'fr');
+            document.title = 'Cédric Guetté - Développeur Fullstack';
         }
     }, [lang]);
 

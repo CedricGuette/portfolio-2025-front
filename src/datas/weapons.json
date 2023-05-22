@@ -3,7 +3,7 @@
         "possesed": [
             {
                 "imageUrl" : "./images/jrpg/weapons/sword_1.png",
-                "text": "Première arme en autodidacte"
+                "text": "Premières armes en autodidacte"
             },
             {
                 "imageUrl" : "./images/jrpg/weapons/sword_2.png",
@@ -30,26 +30,26 @@
         "possesed": [
             {
                 "imageUrl" : "./images/jrpg/weapons/sword_1.png",
-                "text": "Première arme en autodidacte"
+                "text": "First spurs won self-taught"
             },
             {
                 "imageUrl" : "./images/jrpg/weapons/sword_2.png",
-                "text": "Cours libres sur le site du zéro"
+                "text": "Free classes on Le site du zéro"
             },
             {
                 "imageUrl" : "./images/jrpg/weapons/sword_3.png",
-                "text": "Formation de développeur intégrateur web avec OpenClassrooms (Bac+2)"
+                "text": "Web Developer and integrator formation with OpenClassrooms (Bac+2)"
             },
             {
                 "imageUrl" : "./images/jrpg/weapons/sword_4.png",
-                "text": "Formation continue"
+                "text": "Continue self-taught formation"
             }
         ]
         ,
         "quest": [
             {
                 "imageUrl" : "./images/jrpg/weapons/sword_5.png",
-                "text": "Formation de concepteur développeur web avec O'clock (Bac+3/4)"
+                "text": "Web conceptor developer formation with O'clock (Bac+3/4)"
             }
         ]
     },
@@ -57,26 +57,26 @@
         "possesed": [
             {
                 "imageUrl" : "./images/jrpg/weapons/sword_1.png",
-                "text": "Première arme en autodidacte"
+                "text": "Primeiras armas em autodidata"
             },
             {
                 "imageUrl" : "./images/jrpg/weapons/sword_2.png",
-                "text": "Cours libres sur le site du zéro"
+                "text": "Aulas grátis no site du zéro"
             },
             {
                 "imageUrl" : "./images/jrpg/weapons/sword_3.png",
-                "text": "Formation de développeur intégrateur web avec OpenClassrooms (Bac+2)"
+                "text": "Curso de desenvolvedor e integrador Web com OpenClassrooms (Bac+2)"
             },
             {
                 "imageUrl" : "./images/jrpg/weapons/sword_4.png",
-                "text": "Formation continue"
+                "text": "curso autodidata continuo"
             }
         ]
         ,
         "quest": [
             {
                 "imageUrl" : "./images/jrpg/weapons/sword_5.png",
-                "text": "Formation de concepteur développeur web avec O'clock (Bac+3/4)"
+                "text": "Curso de criador desenvolvedor web com O'clock (Bac+3/4)"
             }
         ]
     }

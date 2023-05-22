@@ -1,8 +1,12 @@
 {
     "fr": {
         "nav": {
+            "navigation": "Navigation",
+            "follow": "Me Suivre",
+            "language": "Sélection de la langue",
             "presentation": "Qui suis-je",
-            "experience": "Expérience",
+            "experience": "Qualifications",
+            "realisation":"Mes Réalisations",
             "portfolio": "Portfolio",
             "contact": "Contact"
         },
@@ -15,13 +19,17 @@
             "unavailable": "Non disponible"
         },
         "footer" : {
-            "copyright" : ""
+            "copyright" : "Copyright ©, tous droits reservés"
         }
     },
     "en": {
         "nav": {
+            "navigation": "Navigation",
+            "follow": "Follow Me",
+            "language": "Language selection",
             "presentation": "Who I am",
-            "experience": "Experience",
+            "experience": "Qualifications",
+            "realisation":"My Realisations",
             "portfolio": "Portfolio",
             "contact": "Contact"
         },
@@ -34,13 +42,17 @@
             "unavailable": "Unavailable"
         },
         "footer" : {
-            "copyright" : ""
+            "copyright" : "Copyright ©, all rights reserved"
         }
     },
     "pt": {
         "nav": {
+            "navigation": "Navegação",
+            "follow": "Me Siga",
+            "language": "Seleção da lingua",
             "presentation": "Quem sou eu",
-            "experience": "Experiência",
+            "experience": "Qualificações",
+            "realisation":"Minhas Realizações",
             "portfolio": "Portfólio",
             "contact": "Contato"
         },
@@ -53,7 +65,7 @@
             "unavailable": "Não disponivel"
         },
         "footer" : {
-            "copyright" : ""
+            "copyright" : "Copyright ©, todos direitos reservado"
         }
     }
 }

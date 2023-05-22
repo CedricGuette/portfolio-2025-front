@@ -181,6 +181,13 @@
                     align-items: center;
                     font-size: 35px;
                     box-shadow: 5px 5px 10px $neutral_color;
+
+                    &:hover {
+
+                        background: darken($neutral_color, 15%);
+                        box-shadow: 5px 5px 10px darken($neutral_color, 15%);
+                        color: lighten($secondary_color, 8%)
+                    }
                 } 
             }
         }

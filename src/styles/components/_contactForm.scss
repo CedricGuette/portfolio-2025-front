@@ -217,6 +217,10 @@
                     margin-top: 25px;
                     margin-bottom: 40px;
                     padding: 10px;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    z-index: 1;
 
                     @include tablet-only {
        
@@ -229,11 +233,26 @@
                     }
 
                     &:hover {
-                        
-                        cursor: pointer;
-                        background: $tertiary_color; 
-                        border: 4px solid $neutral_color;
+
                         color: $neutral_color;
+                        &::after{
+                            opacity: 1;
+                            transform: scale(2, 6) ;
+                        }
+                    }
+                
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background: linear-gradient(to right, darken($tertiary-color, 10%), darken($secondary-color,10%));
+                        opacity: 0;
+                        z-index: -1; 
+                        transform: scale(0, 0) rotate(90deg);
+                        transition: all 1000ms;
                     }
                 }
             }
