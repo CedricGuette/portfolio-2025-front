@@ -24,6 +24,9 @@
 
                 h3 {
 
+                    width: 330px;
+                    display: flex;
+                    justify-content: center;
                     flex-basis: 100%;
                     margin: 0 0 15px 0;
 
@@ -34,6 +37,48 @@
                     @include desktop-only {
 
                         margin: 20px 0 20px 7%;
+                    }
+
+                    &::before {
+
+                        content: "";
+                        width: 293px;
+                        height: 30px;
+                        position: absolute;
+                        background: $neutral_color;
+                        border-radius: 25px;
+                        opacity: 0.7;
+                        z-index: -1;
+                        left: 8%;
+                        top:-6px;
+
+                        @include desktop-only {
+
+                            width: 320px;
+                            top:-4px;
+                        }
+                    }
+
+                    &.smallBack{
+
+                        width: 92px;
+
+                        @include desktop-only {
+
+                            width: 102px;
+                        }
+                    
+                        &::before {
+
+                            width: 90px;
+                            left: 8%;
+
+                            @include desktop-only {
+
+                                width: 92px;
+                                left: 22%;
+                            }
+                        }
                     }
                 }
 
@@ -69,6 +114,7 @@
                         position: relative;
                         display: flex;
                         align-items: center;
+                        cursor: pointer;
 
                         &::before {
 
@@ -86,7 +132,7 @@
 
                         }
 
-                        &:hover::before{
+                        &.active::before{
 
                             border: 2px solid #fff;
                             background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(185,185,185,1) 100%);
@@ -112,7 +158,7 @@
 
                         }
 
-                        &:hover .value {
+                        &.active .value {
 
                             color: #000;
                         }

@@ -24,6 +24,10 @@
                 }
 
                 h3 {
+                    position: relative;
+                    width: 200px;
+                    display: flex;
+                    justify-content: center;
             
                     &::after {
 
@@ -36,8 +40,30 @@
                     }
                 
                     @include desktop-only {
+                        width: 230px;
+                        left: 10%;
+                    }
 
-                        left: 15%;
+                    &::before {
+
+                        content: "";
+                        width: 180px;
+                        height: 30px;
+                        position: absolute;
+                        background: $neutral_color;
+                        border-radius: 25px;
+                        opacity: 0.7;
+                        z-index: -1;
+                        left: 7%;
+
+                        top:-6px;
+
+                        @include desktop-only {
+
+                            width: 220px;
+                            top:-4px;
+                            left: 10%;
+                        }
                     }
                 }
 

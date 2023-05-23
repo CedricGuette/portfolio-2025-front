@@ -8,6 +8,39 @@
 
                 .skills {
 
+                    h3 {
+
+                        width: 210px;
+                        display: flex;
+                        justify-content: center;
+
+                        @include desktop-only {
+    
+                            width: 285px;
+                        }
+
+                        &::before {
+
+                            content: "";
+                            width: 210px;
+                            height: 30px;
+                            position: absolute;
+                            background: $neutral_color;
+                            border-radius: 25px;
+                            opacity: 0.7;
+                            z-index: -1;
+                            left: 3%;
+                            top:-6px;
+    
+                            @include desktop-only {
+    
+                                width: 285px;
+                                top:-4px;
+                                left: 7%;
+                            }
+                        }
+                    }
+
                     .capacities {
 
                         height: 100%;
@@ -34,7 +67,7 @@
                             color: #FFF;
                             font-weight: bold;
 
-                            &:hover {
+                            &.active {
 
                                 color: #000;
                             }
@@ -55,7 +88,7 @@
 
                             }
 
-                            &:hover::before{
+                            &.active::before{
 
                                 border: 2px solid #fff;
                                 background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(185,185,185,1) 100%);

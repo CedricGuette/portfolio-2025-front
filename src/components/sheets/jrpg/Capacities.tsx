@@ -13,7 +13,7 @@ function Capacities(props: CapacitiesProps) {
             <h3>{ props.presentationData.developer }</h3>
             <div className="capacities">
                 {capacitiesList.map((data, index) => (
-                    <Capacity key={`${ index }-${ data.name }`} name={ data.name } image={ data.urlImage } value= { data.value }/>
+                    <Capacity key={`${ index }-${ data.name }`} name={ data.name } image={ data.urlImage } value= { data.value } id={ data.id }/>
                     )
                 )}   
             </div>

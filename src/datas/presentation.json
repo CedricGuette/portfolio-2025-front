@@ -1,7 +1,7 @@
 {
     "fr": {
         "title1" : "Développeur Fullstack Junior",
-        "content1": "Je m'appelle Cédric Guetté, 30 ans. Je suis passioné par le web depuis tout petit et j'ai appris au collège le HTML/CSS/PHP/SQL grace au site du zéro. Pendant des années je me suis contenté de faire des petites pages webs par ci, par là. L'idée d'en faire mon métiers me trottait dans la tête depuis un bon moment.",
+        "content1": "Je m'appelle Cédric Guetté, 30 ans. Je suis passioné par le web depuis tout petit et j'ai appris au collège le HTML/CSS/PHP/SQL grâce au site du zéro. Pendant des années, je me suis contenté de faire des petites pages webs par ci, par là. L'idée d'en faire mon métier me trottait dans la tête depuis un bon moment.",
         "title2": "Titre Professionel En Poche",
         "content2": "J'ai récemment décidé de prendre cette direction en suivant une formation avec OpenClassrooms et en obtenant un titre professionel de développeur intégrateur web.",
         "title3": "L'aventure Ne Fait Que \n Commencer",
@@ -21,6 +21,9 @@
         "names": "Vos nom et prénom",
         "email": "Votre adresse email",
         "question": "Votre question",
+        "errorname": "Veuillez rentrer un nom",
+        "errormail": "Veuillez rentrer une adresse email",
+        "errorrequest": "Veuillez écrire une question",
         "send": "Envoyer" 
     },
     "en": {
@@ -45,6 +48,9 @@
         "names": "Your lastname and firstname",
         "email": "Your email adress",
         "question": "Your Request",
+        "errorname": "Please enter a name",
+        "errormail": "Please enter an email adress",
+        "errorrequest": "Please write a request",
         "send": "Send"  
     },
     "pt": {
@@ -69,6 +75,9 @@
         "names": "Seu sobrenome e nome",
         "email": "Seu endereço de email",
         "question": "Sua pergunta",
+        "errorname": "Por favor entra um nome",
+        "errormail": "Por favor entra um endereço de email",
+        "errorrequest": "Por favor escreve uma pergunta",
         "send": "Enviar" 
     }
 }

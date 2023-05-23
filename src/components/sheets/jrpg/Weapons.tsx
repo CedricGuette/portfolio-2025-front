@@ -34,17 +34,17 @@ function Weapons(props: WeaponsProps) {
 
     return(
         <div className="equipment">
-            <h3>{ props.presentationData.weapon }</h3> 
+            <h3 className='smallBack'>{ props.presentationData.weapon }</h3> 
             <div className="weapons">
                 {weaponsPossesed().map((data, index) => (
-                    <Weapon key={`${ index } - weapon`} text={ data.text } image={ data.imageUrl } />
+                    <Weapon key={`${ index } - weapon`} text={ data.text } image={ data.imageUrl } idList={ data.idList } id={ parseInt(data.id) } />
                     )
                 )}  
             </div>
             <h3>{ props.presentationData.quest }</h3>
             <div className="weapons">
                 {weaponsQuest().map((data, index) => (
-                    <Weapon key={`${ index } - weapon`} text={ data.text } image={ data.imageUrl } />
+                    <Weapon key={`${ index } - weapon`} text={ data.text } image={ data.imageUrl } idList={ data.idList } id={ parseInt(data.id) } />
                     )
                 )}  
             </div>

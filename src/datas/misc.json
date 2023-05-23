@@ -18,6 +18,10 @@
             "preview": "Version live",
             "unavailable": "Non disponible"
         },
+        "notfound":{
+            "message": "Oh oh, on dirait que la page que vous cherchez n'existe pas!",
+            "home": "Retour à l'accueil"
+        },
         "footer" : {
             "copyright" : "Copyright ©, tous droits reservés"
         }
@@ -41,6 +45,10 @@
             "preview": "Live Version",
             "unavailable": "Unavailable"
         },
+        "notfound":{
+            "message": "Oh oh, it looks like the page you are trying to reach doesn't exist!",
+            "home": "Back to homepage"
+        },
         "footer" : {
             "copyright" : "Copyright ©, all rights reserved"
         }
@@ -63,6 +71,10 @@
             "github": "Visulizar no GitHub",
             "preview": "Versão ao vivo",
             "unavailable": "Não disponivel"
+        },
+        "notfound":{
+            "message": "Oh oh, parece que a página que você esta procurando não existe!",
+            "home": "Voltar pra page inicial"
         },
         "footer" : {
             "copyright" : "Copyright ©, todos direitos reservado"

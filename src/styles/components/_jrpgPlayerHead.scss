@@ -17,6 +17,7 @@
                     overflow: hidden;
                     position: relative;
                     display: flex; 
+                    margin-bottom: 10px;
 
                     @include tablet-only {
         
@@ -24,6 +25,7 @@
                 
                     @include desktop-only {
                         height: 170px;
+                        margin-bottom: 0;
                     }
 
                     &::before {

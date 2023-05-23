@@ -1,0 +1,47 @@
+main {
+    &.notFound {
+
+        color: $primary-color;
+
+        h1 {
+            margin-top: 25px;
+            position: relative;
+            flex-basis: 100%;
+            font-size: 150px;
+            display: flex;
+            justify-content: center;
+
+            @include tablet-only {
+        
+            }
+        
+            @include desktop-only {
+                margin-top: 50px;
+                font-size: 300px;
+            }
+        }
+
+        p {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            font-size: 12px;
+            font-weight: bold;
+
+            @include tablet-only {
+        
+            }
+        
+            @include desktop-only {
+
+                font-size: 25px;
+            }
+        }
+
+        a {
+            color: $tertiary-color;
+            font-size: 20px;
+        }
+    }
+}

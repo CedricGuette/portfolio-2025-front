@@ -39,13 +39,17 @@
                         
                         position: relative;
                         z-index: 1;
+                        width: 130px;
+                        display: flex;
+                        justify-content: center;
 
                         @include tablet-only {
         
                         }
                     
                         @include desktop-only {
-    
+
+                            width: 220px;
                         }
                     }
 
@@ -59,11 +63,11 @@
                         border-radius: 25px;
                         opacity: 0.5;
                         z-index: 0;
-                        left: 100px;
+                        left: 105px;
 
                         @include desktop-only {
 
-                            width: 210px;
+                            width: 220px;
                         }
                     }
                 }
@@ -91,6 +95,8 @@
                 h3 {
 
                     font-size: 15px;
+                    display: flex;
+                    justify-content: center;
 
                     &::after {
 
@@ -105,6 +111,27 @@
                     @include desktop-only {
 
                         font-size: 1.17em;
+                    }
+
+                    &::before {
+
+                        content: "";
+                        width: 100px;
+                        height: 30px;
+                        position: absolute;
+                        background: $neutral_color;
+                        border-radius: 25px;
+                        opacity: 0.5;
+                        z-index: -1;
+                        left: 2%;
+                        top:-6px;
+
+                        @include desktop-only {
+
+                            width: 120px;
+                            top:-4px;
+                            left: 17%;
+                        }
                     }
                 }
 

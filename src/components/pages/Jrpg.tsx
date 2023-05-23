@@ -5,6 +5,7 @@ import Navigation from '../layouts/Navigation';
 import JrpBody from '../sheets/jrpg/JrpgBody';
 import JrpgFooter from '../sheets/jrpg/JrpgFooter';
 import JrpgHeader from '../sheets/jrpg/JrpgHeader';
+import { WeaponProvider } from '../utils/context/WeaponProvider';
 
 function Jrpg() {
     const languageContext = useContext(LangContext);
@@ -26,7 +27,9 @@ function Jrpg() {
                 <source src="./videos/bois.mp4" type="video/mp4" />
             </video>
             <JrpgHeader presentationData={presentation()}/>
-            <JrpBody presentationData={presentation()}/>
+            <WeaponProvider>
+                <JrpBody presentationData={presentation()}/>
+            </WeaponProvider>
             <JrpgFooter presentationData={presentation()}/>
         </div>
     )

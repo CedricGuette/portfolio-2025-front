@@ -3,13 +3,14 @@ import ContactForm from './pages/ContactForm';
 import Jrpg from './pages/Jrpg';
 import PrePortfolio from './pages/PrePortfolio';
 import PresentationText from './sheets/PresentationText';
+import NotFound from './pages/NotFound';
 
 function Premiere() {
 
     return(
             <article className='scroller'>
                 <section className='two'>
-                    <Jrpg />
+                    <NotFound />
                 </section>
             </article>
     )

@@ -1,0 +1,35 @@
+{
+    "fr": {
+        "back": "Retour au portfolio",
+        "title": "La Panthère",
+        "posttitle": "Pour ce projet je vous fourni deux versions lives. La version qui m'a été donnée ainsi que sa version optimisée par mes soins",
+        "subtitle1": "Voici la version que j'ai du optimiser :",
+        "link1": "Version initiale",
+        "subtitle2": "Voici la version optimisée :",
+        "link2": "Version optimisée",
+        "subtitle3": "Voici le rapport d'optimisation :",
+        "link3": "Rapport (uniquement en français)"
+    },
+    "en": {
+        "back": "Back to portfolio",
+        "title": "La Panthère",
+        "posttitle": "For this project I have to provide you two live version. The first one that they gave me to optimize it and then the final version of this project",
+        "subtitle1": "There is the original version :",
+        "link1": "Initial version",
+        "subtitle2": "There is the optimized version :",
+        "link2": "Optimized version",
+        "subtitle3": "There is the optimization rapport :",
+        "link3": "Rapport (only available in french)"
+    },
+    "pt": {
+        "back": "Voltar para o portfólio",
+        "title": "La Panthère",
+        "posttitle": "Pra esse projeto eu vou ter que dar duas versões ao vivo. A primeira, que eles me deram pra melhorar. E a segunda que eu otimizei",
+        "subtitle1": "Aqui está a versão ini version inicial :",
+        "link1": "Versão inicial",
+        "subtitle2": "Aqui está a versão otimizada :",
+        "link2": "Versão otimizada",
+        "subtitle3": "Aqui está o relatório de otimização :",
+        "link3": "Relatório (disponível so em francês)"
+    }
+}
