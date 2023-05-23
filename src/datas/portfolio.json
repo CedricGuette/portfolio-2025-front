@@ -2,7 +2,7 @@
     { 
         "fr" : {
             "title": "Projet pour OpenClassrooms : Booki",
-            "resume": "Durant ce projet,\n j'ai intégré une maquette\n fourni sur figma. Le projet\n se devait d'être en desktop\n first.",
+            "resume": "Durant ce projet,\n j'ai intégré une maquette\n fournie sur figma. Le projet\n se devait d'être en desktop\n first.",
             "technology": "> HTML\n > CSS"
         },
         "en": { 
@@ -99,7 +99,7 @@
     {
         "fr": {
             "title": "Projet pour OpenClassrooms : Hot Takes",
-            "resume": "Pour ce projet il a fallut\n s'occuper du backend. J'ai\n utilisé pour se faire Node\n avec Express et une solution\n noSQL : MongoDB.",
+            "resume": "Pour ce projet il a fallu\n s'occuper du backend. J'ai\n utilisé pour se faire Node\n avec Express et une solution\n noSQL : MongoDB.",
             "technology": "> Javascript \n > Node \n > Express \n > MongoDb"
         },
         "en" : {
