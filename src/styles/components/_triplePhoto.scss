@@ -58,10 +58,10 @@
         img {
 
             position: absolute;
-            top: 0;
+            top: -10px;
             left: 0;
-            min-width: 610px;
-            height: 420px;
+            min-width:  610px;
+            height:  500px;
         }
     }
     
@@ -80,9 +80,9 @@
 
             position: absolute;
             left: -410px;
-            top: -60px;
-            min-width: 610px;
-            height: 420px;
+            top: -70px;
+            min-width:  610px;
+            height:  500px;
         }
     }
     
@@ -101,9 +101,9 @@
             
             position: absolute;
             left: -410px;
-            top: -270px;
+            top: -280px;
             min-width: 610px;
-            height: 420px;
+            height:  500px;
         }
     }
 }
