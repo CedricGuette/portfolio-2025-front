@@ -57,7 +57,7 @@ function ContactForm() {
 
         if((data.name && data.email) && data.request) {
             
-            fetch('https://api.cedric-guette.com/api/mailto/send', {
+            fetch('http://localhost:3006/api/mailto/send', {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: { 'Content-Type' : 'application/json'}

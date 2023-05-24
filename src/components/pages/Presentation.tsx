@@ -8,6 +8,7 @@ import PresentationFooter from './PresentationFooter';
 
 
 function Presentation() {
+
 	return (
         <article className='scroller'>
             <section className='one' id='whoIAm'>
