@@ -63,14 +63,15 @@ function ContactForm() {
                 headers: { 'Content-Type' : 'application/json'}
             })
             .then(response => {
+
                 setResponseWindow(true);
                 setResponseForm(response.status + ' ' + response.statusText );
-                // console.log(response);
+                console.log(response);
             })
             .catch(error => {
                 setResponseWindow(true);
                 setResponseForm(error.status + ' ' + error.statusText );
-                // console.log(error);
+                console.log(error);
             })
         }
     }
