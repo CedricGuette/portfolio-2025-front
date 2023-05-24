@@ -57,21 +57,20 @@ function ContactForm() {
 
         if((data.name && data.email) && data.request) {
             
-            fetch('https://cedric-guette.com/api/mailto/send', {
+            fetch('https://api.cedric-guette.com/api/mailto/send', {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: { 'Content-Type' : 'application/json'}
             })
             .then(response => {
-
                 setResponseWindow(true);
                 setResponseForm(response.status + ' ' + response.statusText );
-                console.log(response);
+                // console.log(response);
             })
             .catch(error => {
                 setResponseWindow(true);
                 setResponseForm(error.status + ' ' + error.statusText );
-                console.log(error);
+                // console.log(error);
             })
         }
     }
