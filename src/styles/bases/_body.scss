@@ -31,17 +31,6 @@ a {
         position: relative;
         background: $neutral_color;
         font-family: "Bahnschrift";
-    
-
-        @include tablet-only {
-
-            width: 90%;
-        }
-
-        @include desktop-only {
-
-            width: 100%;
-        }
 
         main {
             
@@ -56,6 +45,16 @@ a {
             left: 0;
             right: 0;
 
+            @include tablet-only {
+
+                width: 100%;
+            }
+
+            @include desktop-only {
+
+                width: 90%;    
+            }
+
             .portfolio {
 
                 flex-basis: 100%;
@@ -66,7 +65,7 @@ a {
 
                 @include tablet-only {
 
-                    width: 95%;    
+                    width: 100%;    
                 }
         
                 @include desktop-only {

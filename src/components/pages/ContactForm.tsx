@@ -64,13 +64,15 @@ function ContactForm() {
             })
             .then(response => {
                 setResponseWindow(true);
-                setResponseForm(response.status + ' ' + response.statusText );
-                // console.log(response);
+                if(response.status === 201) {
+                    setResponseForm(presentation().success);
+                } else {
+                    setResponseForm(presentation().error1);
+                }
             })
             .catch(error => {
                 setResponseWindow(true);
-                setResponseForm(error.status + ' ' + error.statusText );
-                // console.log(error);
+                setResponseForm(presentation().error1);
             })
         }
     }

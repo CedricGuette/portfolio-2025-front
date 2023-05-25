@@ -12,15 +12,10 @@ header {
         margin-left: auto;
         margin-right: auto;
 
-        @include tablet-only {
-    
-        }
 
         @include desktop-only {
 
             font-size: 37px;
-
-
         }
 
         .image {
@@ -72,10 +67,6 @@ header {
                     position: absolute;
                     top: 0px;
                     left: -12px;
-
-                    @include tablet-only {
-    
-                    }
             
                     @include desktop-only {
 
@@ -93,10 +84,6 @@ header {
                 width: 228px;
                 display: flex;
                 justify-content: center;
-
-                @include tablet-only {
-    
-                }
         
                 @include desktop-only {
 

@@ -9,11 +9,6 @@ nav {
     top: 35px;
     font-family: "Bahnschrift";
 
-
-    @include tablet-only {
-
-    }
-
     @include desktop-only {
 
         right: 2%;
@@ -122,7 +117,6 @@ nav {
                     position: relative;
                     color: $tertiary_color;
                     font-size: 18px;
-     
     
                     &::after {
 
@@ -165,6 +159,7 @@ nav {
             }
     
             .reversed {
+                
                 a {
                     &::after {
 

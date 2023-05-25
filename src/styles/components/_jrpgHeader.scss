@@ -12,11 +12,6 @@
                 align-items: center;
 
                 @include tablet-only {
-    
-                }
-            
-                @include desktop-only {
-
                     flex-basis: 30%;
                 }
 
@@ -26,10 +21,6 @@
                     text-shadow: 3px 3px 2px $neutral_color;
                     left: 7%;
 
-                    @include tablet-only {
-        
-                    }
-                
                     @include desktop-only {
 
                         font-size: 1.5em;
@@ -43,10 +34,6 @@
                         display: flex;
                         justify-content: center;
 
-                        @include tablet-only {
-        
-                        }
-                    
                         @include desktop-only {
 
                             width: 220px;
@@ -82,13 +69,21 @@
                 align-items: center;
 
                 @include tablet-only {
-        
+
+                    flex-basis: 40%;
+                }
+
+                @include small-desktop-only {
+
+                    margin-top: 20px;
                 }
             
                 @include desktop-only {
-
-                    margin-right: 0;
+                    
+                    
+                    margin-top: 0;
                     flex-basis: 30%;
+                    margin-right: 0;
                     justify-content: space-around;
                 }
 
@@ -102,10 +97,6 @@
 
                         width: 100%;
                         left: 15%;
-                    }
-
-                    @include tablet-only {
-        
                     }
                 
                     @include desktop-only {
@@ -140,7 +131,7 @@
                     height: 25px;
 
                     @include tablet-only {
-        
+                        height: 40px;       
                     }
                 
                     @include desktop-only {

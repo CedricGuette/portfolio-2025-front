@@ -3,7 +3,6 @@ import navJson from '../../datas/misc.json';
 import { useContext } from 'react';
 import { LangContext } from '../utils/context/LangProvider';
 
-
 function Footer() {
     const languageContext = useContext(LangContext); 
 

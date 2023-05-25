@@ -1,0 +1,146 @@
+.lapantherePresentation {
+
+    color: $primary-color;
+    display: flex;
+    flex-wrap: wrap;
+
+    h1 {
+        
+        color: $secondary-color;
+        font-size: 40px;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        @include tablet-only {
+
+            font-size: 50px;
+        }
+        
+        @include desktop-only {
+        
+            font-size: 70px;
+            margin-top: 0;
+        }
+
+    }
+
+    h2 {
+
+        margin-bottom: 15px;
+    }
+
+    .back {
+
+        position: relative;
+        flex-basis: 80%;
+        margin-top: 20px;
+
+        a {
+            color: $tertiary-color;
+            font-size: 15px;
+
+            @include tablet-only {
+
+            }
+            
+            @include desktop-only {
+            
+                font-size: 20px;
+            }
+
+            .arrow {
+
+                width: 15px;
+                height: 15px;
+                border-top: 3px solid $tertiary-color;
+                border-left: 3px solid $tertiary-color;
+                transform: rotate(-45deg);
+                position: absolute;
+                top: 1px;
+                left: -15px;
+
+                @include tablet-only {
+
+                }
+                
+                @include desktop-only {
+                
+                    top:3px;
+                }
+            }
+        }
+    }
+
+    p {
+
+        margin: 25px;
+        font-size: 18px;
+
+        @include tablet-only {
+
+        }
+        
+        @include desktop-only {
+        
+            margin: 70px;
+            font-size: 25px;
+        }
+    }
+
+    .avant, .apres {
+
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include tablet-only {
+
+        }
+        
+        @include desktop-only {
+        
+            flex-basis: 30%;
+            margin-bottom: 0;
+        }
+
+        img {
+
+            max-width: 500px;
+            width: 100%;
+
+            @include tablet-only {
+
+            }
+            
+            @include desktop-only {
+            
+                width: 100%;
+            }
+        }
+    }
+
+    .rapport {
+
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+
+        h2 {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+
+            color: $tertiary-color;
+            font-size: 20px;
+        }
+    }
+}

@@ -7,15 +7,6 @@
     max-height: 100vh;
     min-width: 100vw;
 
-    @include tablet-only {
-        
-    }
-
-    @include desktop-only {
-
-    }
-
-
     h2 {
 
         display: flex;
@@ -35,10 +26,6 @@
         margin-bottom: 15px;
         position: relative;
         font-size: 15px;
-
-        @include tablet-only {
-        
-        }
     
         @include desktop-only {
 
@@ -56,10 +43,6 @@
             position: absolute;
             bottom: -10px;
             left: 2%;
-
-            @include tablet-only {
-        
-            }
         
             @include desktop-only {
                 left: 4%;
@@ -76,11 +59,6 @@
         min-width: 100vw;
         min-height: 100vh;
         max-height: 100vh;
-
-
-        @include tablet-only {
-    
-        }
     
         @include desktop-only {
 
@@ -115,10 +93,6 @@
             flex-wrap: wrap;
             justify-content: space-between;
             min-height: 20vh;
-
-            @include tablet-only {
-    
-            }
         
             @include desktop-only {
 
@@ -142,10 +116,6 @@
             flex-wrap: wrap;
             justify-content: space-between;
 
-            @include tablet-only {
-    
-            }
-        
             @include desktop-only {
 
                 height: 60vh;
@@ -157,10 +127,6 @@
                 display: flex;
                 flex-wrap: wrap;
                 
-                @include tablet-only {
-        
-                }
-            
                 @include desktop-only {
 
                     flex-basis: 40%;
@@ -171,10 +137,6 @@
                     flex-basis: 100%;
                     height: 100%;
 
-                    @include tablet-only {
-        
-                    }
-                
                     @include desktop-only {
 
                         height: 60%;
@@ -190,10 +152,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-
-            @include tablet-only {
-    
-            }
         
             @include desktop-only {
 

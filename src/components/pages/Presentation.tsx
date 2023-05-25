@@ -1,6 +1,6 @@
 import Header from '../layouts/Header';
 import Logo from '../layouts/Logo';
-import PresentationText from '../sheets/PresentationText';
+import PresentationText from './PresentationText';
 import ContactForm from './ContactForm';
 import Jrpg from './Jrpg';
 import PrePortfolio from './PrePortfolio';

@@ -12,6 +12,8 @@
 
                 @include tablet-only {
         
+                    margin-top: 5%;
+                    font-size: 14px;
                 }
             
                 @include desktop-only {
@@ -30,10 +32,6 @@
                     flex-basis: 100%;
                     margin: 0 0 15px 0;
 
-                    @include tablet-only {
-        
-                    }
-                
                     @include desktop-only {
 
                         margin: 20px 0 20px 7%;
@@ -52,8 +50,19 @@
                         left: 8%;
                         top:-6px;
 
+                        @include tablet-only {
+
+                            left: 9%;
+                        }
+
+                        @include small-desktop-only {
+
+                            left: 11%;
+                        }
+
                         @include desktop-only {
 
+                            left: 8%;
                             width: 320px;
                             top:-4px;
                         }
@@ -62,7 +71,7 @@
                     &.smallBack{
 
                         width: 92px;
-
+                        
                         @include desktop-only {
 
                             width: 102px;
@@ -72,6 +81,16 @@
 
                             width: 90px;
                             left: 8%;
+
+                            @include tablet-only {
+
+                                left: 14%;
+                            }
+
+                            @include small-desktop-only {
+
+                                left: 20%;
+                            }
 
                             @include desktop-only {
 
@@ -95,10 +114,6 @@
                     justify-content: space-around;
                     font-family: "Overpass";
 
-                    @include tablet-only {
-        
-                    }
-                
                     @include desktop-only {
 
                         width: 90%;
@@ -128,8 +143,6 @@
                             border: 1px solid black;
                             border-radius: 5px;
                             padding: 2px 0px 2px 15px;
-
-
                         }
 
                         &.active::before{
@@ -148,21 +161,15 @@
                             display: inline-block;
 
                             @include tablet-only {
-        
-                            }
-                        
-                            @include desktop-only {
 
                                 padding-left: 15px;
                             }
-
                         }
 
                         &.active .value {
 
                             color: #000;
                         }
-
 
                         img {
                             

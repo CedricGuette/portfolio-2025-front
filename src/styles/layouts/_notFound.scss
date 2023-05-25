@@ -12,7 +12,8 @@ main {
             justify-content: center;
 
             @include tablet-only {
-        
+                font-size: 300px;
+                margin-top: 50px;
             }
         
             @include desktop-only {
@@ -31,6 +32,7 @@ main {
 
             @include tablet-only {
         
+                font-size: 25px;
             }
         
             @include desktop-only {

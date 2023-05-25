@@ -9,3 +9,9 @@
          @content;
     }
 }
+
+@mixin small-desktop-only {
+    @media screen and (min-width: 1024px) and (min-height: 600px){
+         @content;
+    }
+}

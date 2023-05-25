@@ -3,36 +3,54 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-    height: 100%;
+    flex-basis: 100%;
+    height: auto;
     font-family: "Bahnschrift";
+    position: relative;
 
-    @include tablet-only {
-    
-    }
-
-    @include desktop-only {
-        height: 25%;
-    }
-
-    .triplePhoto {
-
-        flex-basis: 100%;
-        margin-bottom: 40px;       
-        left: -10%;
-
-        @include tablet-only {
-
-            top: 0;
-            left: 0;
-        }
+    &::before {
     
         @include desktop-only {
 
-            flex-basis: 20%;
-            top: 75%;
+            content: "";
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            right: 0;
             left: 0;
+            bottom: -2vw;
+            z-index: 0;
+            width  : 0;
+            height : 0;
+            border-left  : 70px solid transparent;
+            border-right : 70px solid transparent;
+            border-top   : 70px solid $primary_color;
+            animation: introductionArrow2 2.5s ease-in-out infinite normal;
+        }
+        
+    }
+
+    &::after {
+    
+        @include desktop-only {
+
+            content: "";
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            right: 0;
+            left: 0;
+            bottom: -2vw;
+            z-index: 0;
+            width  : 0;
+            height : 0;
+            border-left  : 66px solid transparent;
+            border-right : 66px solid transparent;
+            border-top   : 66px solid $neutral_color;
+            animation: introductionArrow 2.5s ease-in-out infinite normal;
         }
     }
+
 
     &Text {
 
@@ -43,7 +61,13 @@
         margin-top: 100px;
 
         @include tablet-only {
-    
+
+            flex-basis: 90%;
+        }
+
+        @include small-desktop-only {
+
+            flex-basis: 50%;
         }
     
         @include desktop-only {
@@ -56,58 +80,81 @@
             position: relative;
             z-index: 1;
             flex-basis: 100%;
-            font-size: 25px;
+            font-size: 6vw;
             color: $secondary_color;
             margin-bottom: 0;
             display: flex;
             justify-content: center;
 
             @include tablet-only {
-    
+
+                font-size: 4.5vw;
+                margin-left: 20px;
+                justify-content: start;   
+            }
+
+            @include small-desktop-only {
+
+                font-size: 2.7vw;
+                margin-left: 0px;
             }
         
             @include desktop-only {
 
-                justify-content: start;
-                font-size: 45px;
-                margin-bottom: 35px;
+                margin-left: 0;
+                font-size: 3vw;
             }
         }
 
         h2 {
 
-            font-size: 20px;
+            font-size: 4.8vw;
             color: $tertiary_color;
             margin: 0 0 15px 0;
             display: flex;
             justify-content: center;
 
             @include tablet-only {
-    
+
+                font-size: 3vw;
+                justify-content: start;
+                margin: 50px 0 20px 20px;
+            }
+
+            @include small-desktop-only {
+
+                font-size: 1.9vw;
+                margin: 50px 0 20px 0;
             }
         
             @include desktop-only {
 
-                justify-content: start;
-                font-size: 35px;
+                font-size: 1.8vw;
                 margin: 50px 0 20px 0;
             }
         }
 
         p {
 
-            font-size: 17px;
+            font-size: 4vw;
             color: $primary_color;
             padding: 20px;
 
             @include tablet-only {
-    
+
+                font-size: 2.8vw;
+            }
+
+            @include small-desktop-only {
+
+                padding: 10px;
+                font-size: 1.5vw;
             }
         
             @include desktop-only {
 
-                font-size: 25px;
-                padding: 0;
+                padding: 10px;
+                font-size: 1.5vw;
             }
         }
 
@@ -116,21 +163,12 @@
             flex-basis: 100%;
 
             @include tablet-only {
-    
-            }
-        
-            @include desktop-only {
-
                 flex-basis: 50%;
             }
         }
 
         &::before {
-
-            @include tablet-only {
-    
-            }
-        
+     
             @include desktop-only {
 
                 content: "";
@@ -140,19 +178,15 @@
                 z-index: 0;
                 width  : 0;
                 height : 0;
-                border-left  : 70px solid transparent;
-                border-right : 70px solid transparent;
-                border-top   : 140px solid $primary_color;
+                border-left  : 60px solid transparent;
+                border-right : 60px solid transparent;
+                border-top   : 130px solid $primary_color;
                 transform: rotate(50deg);
             }
         }
 
         &::after {
 
-            @include tablet-only {
-    
-            }
-        
             @include desktop-only {
 
                 content: "";
@@ -162,62 +196,80 @@
                 z-index: 0;
                 width  : 0;
                 height : 0;
-                border-left  : 66px solid transparent;
-                border-right : 66px solid transparent;
-                border-top   : 132px solid $neutral_color;
+                border-left  : 56px solid transparent;
+                border-right : 56px solid transparent;
+                border-top   : 122px solid $neutral_color;
                 transform: rotate(50deg);
             }
         }
     }
 
-    &::before {
+    .presentationText {
 
-        @include tablet-only {
+        margin-top: 25px;
+        width: 500px;
+        background: $primary_color;
+        border-radius: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
     
-        }
+        .thirdText {
     
-        @include desktop-only {
-
-            content: "";
-            position: absolute;
-            bottom: 0;
-            margin-left: auto;
-            margin-right: auto;
-            right: 0;
-            left: 0;
-            z-index: 0;
-            width  : 0;
-            height : 0;
-            border-left  : 70px solid transparent;
-            border-right : 70px solid transparent;
-            border-top   : 140px solid $primary_color;
-            animation: introductionArrow 2.5s ease-in-out infinite normal;
-        }
+            h2{
+    
+                display: flex;
+                flex-direction: column;
         
-    }
-
-    &::after {
-
-        @include tablet-only {
+                span {
     
+                    flex-basis: 50%;
+                }
+            }
         }
     
-        @include desktop-only {
-
-            content: "";
-            position: absolute;
-            bottom: 5px;
+        p {
+    
+            position: relative;
+            flex-basis: 80%;
+            left: 0;
+            right: 0;
             margin-left: auto;
             margin-right: auto;
-            right: 0;
+        }
+    
+        &::before {
+    
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background: $neutral_color;
+            top: 98%;
+            z-index: 4;
             left: 0;
-            z-index: 0;
-            width  : 0;
-            height : 0;
-            border-left  : 66px solid transparent;
-            border-right : 66px solid transparent;
-            border-top   : 132px solid $neutral_color;
-            animation: introductionArrow 2.5s ease-in-out infinite normal;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            -webkit-animation: topBarMoving 1s ease 2 normal both;
+            animation: topBarMoving 1s ease 2 normal both;
+        }
+    
+        &::after {
+    
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background: $neutral_color;
+            bottom: 98%;
+            z-index: 4;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            -webkit-animation: bottomBarMoving 1s ease 2 normal both;
+                    animation: bottomBarMoving 1s ease 2 normal both;
         }
     }
 }

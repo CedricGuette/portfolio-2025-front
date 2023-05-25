@@ -23,17 +23,24 @@ function LaPanthere() {
     return (
         <div className="app-body">
             <Header />
-            <main>
-                <Link to='../portfolio'>{ lapanthere().back }</Link>
+            <main className='lapantherePresentation'>
+                <div className="back">
+                    <Link to='../portfolio'><div className="arrow"></div>{ lapanthere().back }</Link>
+                </div>
                 <h1>{ lapanthere().title }</h1>
                 <p>{ lapanthere().posttitle }</p>
                 <article className="avant">
                     <h2>{ lapanthere().subtitle1 }</h2>
-                    <a href='https://lapanthere-apres.cedric-guette.com'>{ lapanthere().link1 }</a>
+                    
+                    <a href='https://lapanthere-avant.cedric-guette.com'>
+                         <img src="../../thumbnails/lapantherepresentation1.jpg" alt={ lapanthere().subtitle1 } /> 
+                    </a>
                 </article>
                 <article className="apres">
                     <h2>{ lapanthere().subtitle2 }</h2>
-                    <a href='https://lapanthere-avant.cedric-guette.com'>{ lapanthere().link2 }</a>
+                    <a href='https://lapanthere-apres.cedric-guette.com'>
+                        <img src="../../thumbnails/lapantherepresentation2.jpg" alt={ lapanthere().subtitle2 } />
+                    </a>
                 </article>
                 <article className="rapport">
                     <h2>{ lapanthere().subtitle3 }</h2>

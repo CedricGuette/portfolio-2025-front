@@ -16,10 +16,6 @@
             .caracter{
 
                 display: none;
-
-                @include tablet-only {
-        
-                }
             
                 @include desktop-only {
                     

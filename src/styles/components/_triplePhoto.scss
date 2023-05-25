@@ -1,109 +1,127 @@
-.triplePhoto {
-
-    height: 200px;
-    width: 305px;
-    position: relative;
-    transform: scale(0.5);
-
-    @include tablet-only {
-
-        height: 100px;
-        width: 610px;
-        transform: scale(1);
-    }
-
-    @include desktop-only {
-
-        height: 430px;
-        width: 610px;
-        transform: scale(1);
-    }
-
-    &::before {
-
-        content: "";
-        width: 400px;
-        height: 400px;
-        border-radius: 20px;
-        border: 2px solid $primary_color;
-        position: absolute;
-        left: -50px;
-        top: -50px;
-        z-index: 0;
-        overflow: auto;
-    }
-
-    &::after {
-
-        content: "";
-        width: 100px;
-        height: 100px;
-        border-radius: 20px;
-        border: 2px solid $primary_color;
-        position: absolute;
-        left: 360px;
-        top: 360px;
-        z-index: 0;
-    }
-
-    .squareOne {
-
-        width: 400px;
-        height: 400px;
-        border-radius: 20px;
-        position: absolute;
-        overflow: hidden;
-        z-index: 1;
-
-        img {
-
-            position: absolute;
-            top: -10px;
-            left: 0;
-            min-width:  610px;
-            height:  500px;
-        }
-    }
+.tripleContainer {
     
-    .squareTwo {
+    display: flex;
+    align-items: center;
 
-        width: 200px;
-        height: 200px;
-        border-radius: 20px;
-        position: absolute;
-        left: 410px;
-        top: 60px;
-        overflow: hidden;
-        z-index: 1;
+    .triplePhoto {
 
-        img {
+        max-height: 430px;
+        max-width: 610px;
+        position: relative;
+        margin-right: 50vw;
+        margin-bottom: 22vw;
+        margin-top: 10vw;
+        scale: (1);
 
-            position: absolute;
-            left: -410px;
-            top: -70px;
-            min-width:  610px;
-            height:  500px;
-        }
-    }
     
-    .squareThree {
+        @include tablet-only {
+            margin-top: 10vw;
+            margin-right: 43vw;
+            margin-bottom: 30vw;
+            scale: (0.8);
+        }
 
-        width: 150px;
-        height: 150px;
-        border-radius: 20px;
-        position: absolute;
-        left: 410px;
-        top: 270px;
-        overflow: hidden;
-        z-index: 1;
-
-        img {
-            
+        @include small-desktop-only {
+            scale: (0.5);
+            margin-right: 15vw;
+            margin-top: 3vw;
+            margin-bottom: 12vw;
+        }
+    
+        @include desktop-only {
+            margin-top: 0;
+            margin-right: 15vw;
+            margin-bottom: 17vw;
+            margin-left: 0;
+            scale: (0.5);
+        }
+    
+        &::before {
+    
+            content: "";
+            width: 40vw;
+            height: 40vw;
+            border-radius: 2vw;
+            border: 2px solid $primary_color;
             position: absolute;
-            left: -410px;
-            top: -280px;
-            min-width: 610px;
-            height:  500px;
+            left: -5vw;
+            top: -5vw;
+            z-index: 0;
+            overflow: auto;
+        }
+    
+        &::after {
+    
+            content: "";
+            width: 10vw;
+            height: 10vw;
+            border-radius: 2vw;
+            border: 2px solid $primary_color;
+            position: absolute;
+            left: 36vw;
+            top: 36vw;
+            z-index: 0;
+        }
+    
+        .squareOne {
+    
+            width: 40vw;
+            height: 40vw;
+            border-radius: 2vw;
+            position: absolute;
+            overflow: hidden;
+            z-index: 1;
+    
+            img {
+    
+                position: absolute;
+                top: -1vw;
+                left: 0;
+                min-width:  61vw;
+                height:  50vw;
+            }
+        }
+        
+        .squareTwo {
+    
+            width: 20vw;
+            height: 20vw;
+            border-radius: 2vw;
+            position: absolute;
+            left: 41vw;
+            top: 6vw;
+            overflow: hidden;
+            z-index: 1;
+    
+            img {
+    
+                position: absolute;
+                left: -41vw;
+                top: -7vw;
+                min-width:  61vw;
+                height:  50vw;
+            }
+        }
+        
+        .squareThree {
+    
+            width: 15vw;
+            height: 15vw;
+            border-radius: 2vw;
+            position: absolute;
+            left: 41vw;
+            top: 27vw;
+            overflow: hidden;
+            z-index: 1;
+    
+            img {
+                
+                position: absolute;
+                left: -41vw;
+                top: -28vw;
+                min-width: 61vw;
+                height:  50vw;
+            }
         }
     }
 }

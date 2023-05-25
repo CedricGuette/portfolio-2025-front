@@ -24,7 +24,9 @@
         "errorname": "Veuillez rentrer un nom",
         "errormail": "Veuillez rentrer une adresse email",
         "errorrequest": "Veuillez écrire une question",
-        "send": "Envoyer" 
+        "send": "Envoyer",
+        "success": "Votre message a bien été envoyé",
+        "error1": "Le message n'a pas été envoyé"
     },
     "en": {
         "title1" : "Fullstack Developper Junior",
@@ -51,7 +53,9 @@
         "errorname": "Please enter a name",
         "errormail": "Please enter an email adress",
         "errorrequest": "Please write a request",
-        "send": "Send"  
+        "send": "Send",
+        "success": "Your request has been successfully sent",
+        "error1": "Your request missed to be sent"
     },
     "pt": {
         "title1" : "Desenvolvedor Fullstack Junior",
@@ -78,6 +82,8 @@
         "errorname": "Por favor entra um nome",
         "errormail": "Por favor entra um endereço de email",
         "errorrequest": "Por favor escreve uma pergunta",
-        "send": "Enviar" 
+        "send": "Enviar",
+        "success": "Sua mensagem foi enviada",
+        "error1": "A mensagem não foi enviada"
     }
 }

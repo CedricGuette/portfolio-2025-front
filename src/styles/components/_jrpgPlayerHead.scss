@@ -20,12 +20,23 @@
                     margin-bottom: 10px;
 
                     @include tablet-only {
-        
+
+                        height: 170px;
+                        margin-bottom: 20px; 
+                        margin-top: -60px;     
+                    }
+ 
+                    @include small-desktop-only {
+
+                        margin-bottom: -20px; 
+                        margin-top: -30px;   
                     }
                 
                     @include desktop-only {
+
                         height: 170px;
                         margin-bottom: 0;
+                        margin-top: 0; 
                     }
 
                     &::before {
@@ -40,6 +51,16 @@
                         z-index: -1;
                         top: 0;
                         right: 5%;
+
+                        @include small-desktop-only {
+
+                            width: 80%;
+                        }
+
+                        @include desktop-only {
+
+                            width: 75%;
+                        }
                     }
 
                     img{
@@ -58,15 +79,19 @@
                         padding-top: 15px;
                         padding-right: 5%;
 
-                        
                         @include tablet-only {
-        
+
+                            padding-right: 0;
+                        }
+
+                        @include small-desktop-only {
+
+                            padding-left: 30px;
                         }
                     
                         @include desktop-only {
 
                             padding-left: 15px;
-                            padding-right: 0;
                         }
     
                         .namePC {
@@ -79,7 +104,8 @@
                             padding-left: 5%;
 
                             @include tablet-only {
-        
+
+                                font-size: 22px;
                             }
                         
                             @include desktop-only {
@@ -97,10 +123,6 @@
                             display: flex;
                             flex-wrap: wrap;
                             margin-right: 0;
-
-                            @include tablet-only {
-        
-                            }
                         
                             @include desktop-only {
 
@@ -114,12 +136,7 @@
                                 font-size: 10px;
 
                                 @include tablet-only {
-        
-                                }
-                            
-                                @include desktop-only {
-
-                                    font-size: 20px;
+                                    font-size: 20px;    
                                 }
                             }
     
@@ -132,8 +149,6 @@
                                 border: 2px solid black;
                                 position: relative;
 
-                                
-    
                                 &::after {
 
                                     content: "";
@@ -147,7 +162,12 @@
                                     z-index: -1;
 
                                     @include tablet-only {
-        
+                                        width: 104%;
+                                    }
+
+                                    @include small-desktop-only {
+
+                                        width: 103%;
                                     }
                                 
                                     @include desktop-only {
@@ -155,7 +175,6 @@
                                         width: 104%;
                                     }
                                 }
-    
                             }
                         }
     
@@ -171,12 +190,8 @@
                                 font-size: 10px;
 
                                 @include tablet-only {
-        
-                                }
-                            
-                                @include desktop-only {
 
-                                    font-size: 20px;
+                                    font-size: 20px;   
                                 }
                             }
     
@@ -202,7 +217,13 @@
                                     z-index: -1;
   
                                     @include tablet-only {
-        
+
+                                        width: 104%;       
+                                    }
+
+                                    @include small-desktop-only {
+
+                                        width: 103%;
                                     }
                                 
                                     @include desktop-only {

@@ -92,7 +92,7 @@
             "name": "Kanap",
             "image": ["./thumbnails/kanap.jpg","./thumbnails/kanap2.jpg","./thumbnails/kanap3.jpg"],
             "git" : "https://github.com/CedricGuette/OC-project-5-Kanap",
-            "live" : "",
+            "live" : "https://kanap.cedric-guette.com",
             "beforeLive": false
         }
     }, 

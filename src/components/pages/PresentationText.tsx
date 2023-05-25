@@ -1,9 +1,9 @@
 import presentationData from '../../datas/presentation.json';
 import { LangContext } from '../utils/context/LangProvider';
 import { useContext } from 'react';
-import TriplePhoto from './introduction/TriplePhoto';
-import ScrollingLetters from './scroll/ScrollingLetters';
-import SplitLineScroll from './scroll/SplitLineScroll';
+import TriplePhoto from '../sheets/introduction/TriplePhoto';
+import ScrollingLetters from '../sheets/scroll/ScrollingLetters';
+import SplitLineScroll from '../sheets/scroll/SplitLineScroll';
 
 
 

@@ -212,3 +212,31 @@
         }
     }
 }
+
+.prePortfolio {
+
+    .imageSample {
+
+        @include desktop-only {
+
+            height: 200px;
+            width: 60%;
+        }
+    }
+
+    .imageHolder {
+
+        position: relative;
+        max-height: 400px;
+        transition: max-height 700ms ease-out;
+        width: 100%;
+    
+        .holder {
+    
+            @include desktop-only {
+    
+                height: 200px;
+            }
+        }
+    }
+}

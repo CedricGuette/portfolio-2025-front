@@ -46,7 +46,7 @@ function PrePortfolio() {
                     </a>    
                 </div>
             </div>
-            <div className="projectCard">
+            <div className="projectCard second">
                 <ProjectCard  project={ jsonData[lastProject - 1] } index={1}/>   
             </div>
         </div>
