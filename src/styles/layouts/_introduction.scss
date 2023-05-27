@@ -25,7 +25,8 @@
             border-left  : 70px solid transparent;
             border-right : 70px solid transparent;
             border-top   : 70px solid $primary_color;
-            animation: introductionArrow2 2.5s ease-in-out infinite normal;
+            -webkit-animation: introductionArrow2 2.5s ease-in-out infinite normal;
+                    animation: introductionArrow2 2.5s ease-in-out infinite normal;
         }
         
     }
@@ -47,7 +48,8 @@
             border-left  : 66px solid transparent;
             border-right : 66px solid transparent;
             border-top   : 66px solid $neutral_color;
-            animation: introductionArrow 2.5s ease-in-out infinite normal;
+            -webkit-animation: introductionArrow 2.5s ease-in-out infinite normal;
+                    animation: introductionArrow 2.5s ease-in-out infinite normal;
         }
     }
 

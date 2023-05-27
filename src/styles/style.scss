@@ -15,18 +15,18 @@
 @import './layouts/prePortfolio';
 @import './layouts/notFound';
 
+@import './components/freeSpace';
 @import './components/button';
 @import './components/slidinText';
 @import './components/textCode';
-@import './components/freeSpace';
 @import './components/imageSample';
 @import './components/triplePhoto';
-@import './components/jrpgHeader';
-@import './components/jrpgPlayerHead';
-@import './components/jrpgCapacities';
-@import './components/jrpgWeapons';
-@import './components/jrpgFullBody';
-@import './components/jrpgLangages';
+@import './components/jrpg/jrpgHeader';
+@import './components/jrpg/jrpgPlayerHead';
+@import './components/jrpg/jrpgCapacities';
+@import './components/jrpg/jrpgWeapons';
+@import './components/jrpg/jrpgFullBody';
+@import './components/jrpg/jrpgLangages';
 @import './components/contactForm';
 @import './components/presentationFooter';
 @import './components/lapanthere';
