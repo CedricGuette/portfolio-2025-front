@@ -55,10 +55,10 @@ function Menu() {
                 <span>{navBar().follow} :</span>
                 <ul>
                     <li className='link reversed' onClick={ closeNavigation }>
-                        <a href='https://github.com/CedricGuette/'>GitHub</a>
+                        <a href='https://github.com/CedricGuette'>GitHub</a>
                     </li>
                     <li className='link' onClick={ closeNavigation }>
-                        <a href='https://www.linkedin.com/in/Cédric-guetté-a519b1102/'>LinkedIn</a>
+                        <a href='https://www.linkedin.com/in/Cédric-guetté'>LinkedIn</a>
                     </li>
                 </ul>
 
