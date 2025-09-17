@@ -1,4 +1,5 @@
-import { createContext, useState, useLayoutEffect } from 'react';
+import { createContext, useState, useLayoutEffect, useContext } from 'react';
+import { CookiesContext } from './CookiesProvider';
 
 type LangContextType = {
     lang: string | null;
@@ -13,6 +14,8 @@ export const LangContext = createContext<LangContextType | null>(null);
 
 export const LangProvider = (props: ContextProviderProps) => {
 
+    const cookiesContext = useContext(CookiesContext);
+
     const initialLang = () => {
       if(localStorage.getItem('LANG') !== null) {
         return localStorage.getItem('LANG')
@@ -24,7 +27,7 @@ export const LangProvider = (props: ContextProviderProps) => {
     const[lang, setLang] = useState(initialLang)
 
     useLayoutEffect(() => {
-        if(lang){
+        if(lang && cookiesContext?.cookies){
             localStorage.setItem('LANG', lang)
         }
     if (lang === 'EN') {
@@ -37,7 +40,7 @@ export const LangProvider = (props: ContextProviderProps) => {
             document.documentElement.setAttribute('lang', 'fr');
             document.title = 'Cédric Guetté - Développeur Fullstack';
         }
-    }, [lang]);
+    }, [lang, cookiesContext]);
 
   return (
     <LangContext.Provider value={{ lang, setLang }}>

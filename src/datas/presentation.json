@@ -1,11 +1,5 @@
 {
     "fr": {
-        "title1" : "Développeur Fullstack Junior",
-        "content1": "Je m'appelle Cédric Guetté, 31 ans. Je suis passionné par le web depuis tout petit et j'ai appris au collège le HTML/CSS/PHP/SQL grâce au site du zéro. Pendant des années, je me suis contenté de faire des petites pages webs par ci, par là. L'idée d'en faire mon métier me trottait dans la tête depuis un bon moment.",
-        "title2": "Titre Professionel En Poche",
-        "content2": "J'ai récemment décidé de prendre cette direction en suivant une formation avec OpenClassrooms et en obtenant un titre professionel de développeur intégrateur web.",
-        "title3": "L'aventure Ne Fait Que \n Commencer",
-        "content3": "Je suis actuellement en train de m'inscrire à une formation de développeur d'application Java chez Openclassrooms.",
         "stat": "Stats de Cédric",
         "artefact": "Artéfacts",
         "developer": "Développeur Fullstack",
@@ -29,12 +23,6 @@
         "error1": "Le message n'a pas été envoyé"
     },
     "en": {
-        "title1" : "Fullstack Developper Junior",
-        "content1": "I am Cédric Guetté. I'm 31. I've been passionated by web universe since I was young and I've learned HTML/CSS/PHP/SQL when I was in middle school tanks to \"le site du zéro\". During years, I've only done some pages here and there. It's been a long time that making it my work was in my mind.",
-        "title2": "I've Got My Professional Title",
-        "content2": "Recently Ive decided to follow this direction doing a formation with OpenClassrooms and reaching a web developer and integrator professional title.",
-        "title3": "Journey Has Only Started",
-        "content3": "I'm currently enrolling in another formation with Openclassrooms, this one is about developing Java applications.",
         "stat": "Cédric's Stats",
         "artefact": "Artefacts",
         "developer": "Fullstack Developer",
@@ -58,12 +46,6 @@
         "error1": "Your request missed to be sent"
     },
     "pt": {
-        "title1" : "Desenvolvedor Fullstack Junior",
-        "content1": "Eu sou Cédric Guetté e tenho 31 anos. Eu amo internet desde pequeno e eu aprendi quando eu era no colégio o HTML/CSS/PHP/SQL com o site \"Le site du zéro\". Por anos eu me contentei de fazer algumas pequenas paginas aqui e alí. A ideia de fazer disso meu trabalho estava em minha mente há muito tempo.",
-        "title2": "Título Profissional na Mão",
-        "content2": "Recentemente eu decidi de seguir o meu coração. Eu fiz um curso com OpenClassrooms e agora eu tenho um título profissional de desenvolvedor e integrador web.",
-        "title3": "A Aventura Apenas Começou",
-        "content3": "Atualmente estou me cadastrando em outra classe de desenvolvedor de aplicativo em Java com OpenClassrooms.",
         "stat": "Stats do Cédric",
         "artefact": "Artefato",
         "developer": "Desenvolvedor Fullstack",

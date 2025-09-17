@@ -1,0 +1,82 @@
+.cookies {
+    font-family: "Bahnschrift";
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &__panel{
+        width: 700px;
+        z-index: 11;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+        border: 2px solid $tertiary-color;
+        border-radius: 15px;
+        background-color: $neutral_color;
+        color: $tertiary-color;
+
+        .lang-choice{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            .lang{
+                margin-left: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    button {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top:0;
+        left:0;
+        background-color: black;
+        opacity: 50%;
+        z-index: 10;
+    }
+}
+
+
+.cookie-button-open {
+    position: absolute;
+    font-family: "Bahnschrift";
+    bottom: -2px;
+    left: 10px;
+    width: 160px;
+    height: 50px;
+    color: $secondary_color;
+    background-color: $neutral_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0 0; 
+    margin-left: 20px;
+    font-weight: bold;
+    border: 2px solid $tertiary-color;
+    z-index: 10;
+
+    &:hover{
+        cursor: pointer;
+        color: $neutral_color;
+        background-color: $tertiary-color;
+        border: 2px solid $secondary_color;
+    }
+}

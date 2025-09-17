@@ -1,10 +1,11 @@
 import presentationData from '../../datas/presentation.json';
 import { LangContext } from '../utils/context/LangProvider';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import ProjectCard from '../sheets/ProjectCard';
-import jsonData from '../../datas/portfolio.json';
 import { Link } from 'react-router-dom';
 import Navigation from '../layouts/Navigation';
+import { AlertBoxContext } from '../utils/context/AlertBoxContext';
+import { ProjectType } from '../../datas/Project';
 
 function PrePortfolio() {
     const languageContext = useContext(LangContext);
@@ -19,13 +20,46 @@ function PrePortfolio() {
         }
     }
 
-    const lastProject = jsonData.length - 1;
+    const alertBox = useContext(AlertBoxContext);
+
+    const emptyProject = {
+        "id": 0,
+        "projectNameFrench": "",
+        "projectDescriptionFrench": "",
+        "projectNameEnglish": "",
+        "projectDescriptionEnglish": "",
+        "projectNamePortuguese": "",
+        "projectDescriptionPortuguese": "",
+        "projectTechnologies": "",
+        "projectGitHubLink": "",
+        "projectLiveLink": "",
+        "imageOne": "",
+        "imageTwo": "",
+        "imageThree": ""
+    };
+
+    const [project, setProject] = useState<Array<ProjectType>>([emptyProject, emptyProject])
+    
+    useEffect(() => {
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/api/project`,
+            {
+            method : "GET",
+        }) 
+        .then((response) => response.json())
+        .then((data) => {
+            setProject(data);
+        })
+        .catch((error) => {
+            alertBox?.setAlertBoxType("error");
+            alertBox?.setAlertBox(error.toString());
+        });
+    }, [alertBox]);
 
     return(
         <div className='prePortfolio'>
             <Navigation section='prePortfolioNav'/>
             <div className="projectCard">
-                <ProjectCard  project={ jsonData[lastProject] } index={0}/>
+                {project.length >= 1 ?<ProjectCard  props={ project[project.length - 1] } index={0}/> : ""}
             </div>
             <div className="preProtfolioText">
                 <h2>{ presentation().title4 } :</h2>
@@ -47,7 +81,7 @@ function PrePortfolio() {
                 </div>
             </div>
             <div className="projectCard second">
-                <ProjectCard  project={ jsonData[lastProject - 1] } index={1}/>   
+                {project.length >= 2 ? <ProjectCard  props={ project[project.length - 2] } index={1}/> : ""}
             </div>
         </div>
     )

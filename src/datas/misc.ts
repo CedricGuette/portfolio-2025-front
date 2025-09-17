@@ -8,6 +8,7 @@ export type MiscObject = {
 export type MiscLang = {
     nav: MiscNav,
     portfolio: MiscPortfolio,
+    legalMentions: MiscLegalMentions,
     footer: MiscFooter
 }
 
@@ -15,7 +16,8 @@ export type MiscNav = {
     presentation: string,
     experience: string,
     portfolio: string,
-    contact: string
+    contact: string,
+    legalMentions: string
 }
 
 export type MiscPortfolio = {
@@ -25,6 +27,12 @@ export type MiscPortfolio = {
     github: string,
     preview: string,
     unavailable: string
+}
+
+export type MiscLegalMentions = {
+    owned: string,
+    contact: string,
+    hosted: string,
 }
 
 export type MiscFooter = {

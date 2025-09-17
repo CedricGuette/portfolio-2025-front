@@ -5,12 +5,6 @@ export type PresentationObject = {
 }
 
 export type PresentationSection = {
-    "title1" : string,
-    "content1": string,
-    "title2": string,
-    "content2": string,
-    "title3": string,
-    "content3": string,
     "stat": string,
     "artefact": string,
     "developer": string,
@@ -27,4 +21,14 @@ export type PresentationSection = {
     "email": string,
     "question": string,
     "send": string 
+}
+
+export type PresentationType = {
+    "id": number,
+    "firstTitle" : string,
+    "firstText": string,
+    "secondTitle": string,
+    "secondText": string,
+    "thirdTitle": string,
+    "thirdText": string,
 }

@@ -1,18 +1,13 @@
 import miscLang from '../../../datas/misc.json';
 import { LangContext } from '../../utils/context/LangProvider';
 import { useContext } from 'react';
-import { PortfolioProject, PortfolioProjectInt } from '../../../datas/porfolio';
 import Button from '../Button';
 import ScrollingLetters from '../scroll/ScrollingLetters';
 import SplitLineScroll from '../scroll/SplitLineScroll';
+import { ProjectType } from '../../../datas/Project';
 
 
-interface ProjectResumeProp {
-    project: PortfolioProject | undefined;
-    projectint?: PortfolioProjectInt;
-}
-
-function ProjectResume(props: ProjectResumeProp) {
+function ProjectResume({props}: {props: ProjectType}) {
 
     const languageContext = useContext(LangContext);
 
@@ -27,21 +22,31 @@ function ProjectResume(props: ProjectResumeProp) {
         }
     }
 
+    const portfolioDescription = () => {
+        if(languageContext?.lang === 'EN') { 
+            return props.projectDescriptionEnglish
+        } else if(languageContext?.lang === 'PT') { 
+            return props.projectDescriptionPortuguese
+        } else {
+            return props.projectDescriptionFrench
+        }
+    }
+
 	return (
         <div className='textCode'>
             <h3>{<ScrollingLetters textToScroll = {misc().resume} />}</h3>
-            <p>{<SplitLineScroll textToSplit = {(props.project === undefined ? '' : props.project.resume)}/>}</p>
+            <p>{<SplitLineScroll textToSplit = {(props === undefined ? '' : portfolioDescription())}/>}</p>
             <h3>{<ScrollingLetters textToScroll = {misc().technology} />}</h3>
-            <p>{<SplitLineScroll textToSplit = {props.project === undefined ? '' : props.project.technology} /> }</p>
-            {props.projectint?.git !== '' || props.projectint.live !== '' ? (
+            <p>{<SplitLineScroll textToSplit = {props === undefined ? '' : props.projectTechnologies} /> }</p>
+            {props.projectGitHubLink !== '' || props.projectLiveLink !== '' ? (
                 <div className='buttonContainer'>
-                    {props.projectint?.git ? (
-                        <Button type={1} link={props.projectint.git} text={misc().github}/>
+                    {props.projectGitHubLink ? (
+                        <Button type={1} link={props.projectGitHubLink} text={misc().github}/>
                     ) : (<Button type={0} link='' text={misc().unavailable}/>)}
-                    {props.projectint?.live ? ( props.projectint.beforeLive === true ? (
-                        <Button type={3} link={props.projectint.live} text={misc().preview}/>
+                    {props.projectLiveLink ? ( props.projectLiveLink ? (
+                        <Button type={3} link={props.projectLiveLink} text={misc().preview}/>
                     ): (
-                        <Button type={2} link={props.projectint.live} text={misc().preview}/>
+                        <Button type={2} link={props.projectLiveLink} text={misc().preview}/>
                     )) : (<Button type={0} link='' text={misc().unavailable}/>)}
                 </div>
             ) : null}<div className='freeSpaceInBlock'></div>

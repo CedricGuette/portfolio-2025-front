@@ -138,7 +138,7 @@ function ImageWindow(props: ImageSampleProps) {
         return (
             <div onClick={pickWindow} className={`imageSample ${ position } ${positionState}`}>        
                 {props.text ? (<div className='imageText'>{props.text}<div onClick={closeWindow} className='closeButton'>x</div></div>) : null}
-                <div className='imgContainer'><img src={props.image} alt='nada' /></div>
+                <div className='imgContainer'><img src={process.env.REACT_APP_BACKEND_URL + props.image} alt='nada' /></div>
             </div>
         )
     } else {

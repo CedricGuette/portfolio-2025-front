@@ -1,28 +1,50 @@
 import ProjectResume from './ProjectResume';
 import miscLang from '../../../datas/misc.json';
-import { PortfolioProject, PortfolioProjectInt} from '../../../datas/porfolio';
 import { LangContext } from '../../utils/context/LangProvider';
 import { useContext, useEffect, useLayoutEffect, useState } from 'react';
 import { WindowPositionProvider } from '../../utils/context/WindowPositionProvider';
 import ImageHolder from './ImagesHolder';
+import { ProjectType } from '../../../datas/Project';
 
 const OPEN = 1;
 const CLOSING = 2;
 const CLOSED = 3;
 
-interface TextCodeProps {
-    titleh2?: string;
-    titleh3?: string;
-    text?: string;
-    image?: Array<string>;
-    imageText?: string;
-    project?: PortfolioProject;
-    projectint?: PortfolioProjectInt;
-}
-
-function TextWindow(props: TextCodeProps) {
+function TextWindow({props}: {props: ProjectType}) {
 
     const languageContext = useContext(LangContext);
+
+    const portfolioTitle = () => {
+        if(languageContext?.lang === 'EN') { 
+            return props.projectNameEnglish
+        } else if(languageContext?.lang === 'PT') { 
+            return props.projectNamePortuguese
+        } else {
+            return props.projectNameFrench
+        }
+    }
+
+    const portfolioDescription = () => {
+        if(languageContext?.lang === 'EN') { 
+            return props.projectDescriptionEnglish
+        } else if(languageContext?.lang === 'PT') { 
+            return props.projectDescriptionPortuguese
+        } else {
+            return props.projectDescriptionFrench
+        }
+    }
+
+    const portfolioInt = () => {
+        const int = {
+            name: props.projectNameEnglish,
+            image: images,
+            git: props.projectGitHubLink,
+            live: props.projectLiveLink,
+            beforeLive: false
+        }
+
+        return int;
+    }
 
 
     const [codeState, setCodeState] = useState<number | null>(null)
@@ -62,18 +84,23 @@ function TextWindow(props: TextCodeProps) {
         setCodeState(CLOSING);
 
     }
-    const projectInt = props.projectint ? props.projectint : {"name":"undifined", "image":["undefined"],"git":"undefined", "live":"undefined", "beforeLive": false};
-    const images = props.image ? props.image : ['undefined'];
+    const images = props.imageOne === "" ?
+        ['undefined'] : 
+        (props.imageTwo === "" ?
+            [props.imageOne] : 
+            (props.imageThree === "" ?
+                [props.imageOne, props.imageTwo] : [props.imageOne, props.imageTwo, props.imageThree]));
     
     if(codeState !== CLOSED) {
         return (
             <WindowPositionProvider>
                 <div className={ codeState === CLOSING ? 'textBlock fade' : 'textBlock'}>
-                    <h2 className='codeTitle'>{props.project ? (props.project?.title) : props.titleh2}<div onClick={closeWindow} className='closeButton'>x</div></h2>
-                    {props.image ? <ImageHolder image={images} imageText={props.imageText ? props.imageText : ''} projectint={projectInt} misc={misc()} /> : null}
-                    {props.project !== undefined ? <ProjectResume project={props.project} projectint={props.projectint}/> : (<div className='textCode'>
-                        <h3>{props.titleh3}</h3>
-                        <p>{props.text}</p>
+                    <h2 className='codeTitle'>{portfolioTitle()}<div onClick={closeWindow} className='closeButton'>x</div></h2>
+                    {images ? <ImageHolder image={images} imageText={""//props.imageText ? props.imageText : ''
+                    } projectint={portfolioInt()} misc={misc()} /> : null}
+                    {portfolioDescription() !== undefined ? <ProjectResume props={props} /> : (<div className='textCode'>
+                        <h3>{portfolioTitle()}</h3>
+                        <p>{portfolioDescription()}</p>
                     </div>)}
                 </div>
             </WindowPositionProvider>

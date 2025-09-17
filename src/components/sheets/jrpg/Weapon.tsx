@@ -35,7 +35,7 @@ function Weapon(props: WeaponProps) {
 
     return(
         <div className={isSelected ? 'weapon active' : 'weapon'} onClick={ handleSelected }>
-            <img src={ props.image } alt='sword' />
+            <img src={process.env.REACT_APP_BACKEND_URL + props.image } alt='sword' />
             <span className="value">{ props.text }</span>
         </div>
     )

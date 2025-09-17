@@ -15,14 +15,19 @@ function Footer() {
             return navJson.fr
         }
     }
-
+    
+    const year = () => {
+        const date = new Date(Date.now());
+        return date.getFullYear();
+    }
+    
 	return (
         <footer>
             <div className='title-logo'>
                 <img src={logo} alt='Logo de Cédric Guetté'/>
             </div>
             <div className="copyright">
-                    <span>{ misc().footer.copyright } 2023 Cédric Guetté</span>
+                    <span>{ misc().footer.copyright } 2023-{year()} Cédric Guetté</span>
             </div>
         </footer>
     )

@@ -17,6 +17,11 @@ function PresentationFooter() {
         }
     }
 
+    const year = () => {
+        const date = new Date(Date.now());
+        return date.getFullYear();
+    }
+
 	return (
         <div className='presentationFooter'>
             <div className="menu">
@@ -38,6 +43,9 @@ function PresentationFooter() {
                         <li className='link'>
                             <Link to='/#contact'>{misc().nav.contact}</Link>
                         </li>
+                        <li className='link'>
+                            <Link to="/mentions-legales">{misc().nav.legalMentions}</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="menuSection">
@@ -56,7 +64,7 @@ function PresentationFooter() {
                     <LanguageSelector />
                 </div>
                 <div className="copyright">
-                    <span>{ misc().footer.copyright } 2023 Cédric Guetté</span>
+                    <span>{ misc().footer.copyright } 2023-{year()} <Link to="./admin" className='secret-link'>Cédric Guetté</Link></span>
                 </div>
             </div>
         </div>

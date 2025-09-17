@@ -1,0 +1,240 @@
+presentation 
+1.
+{
+    "firstTitle":"Développeur Fullstack Junior",
+    "firstText": "Je m'appelle Cédric Guetté, 31 ans. Je suis passionné par le web depuis tout petit et j'ai appris au collège le HTML/CSS/PHP/SQL grâce au site du zéro. Pendant des années, je me suis contenté de faire des petites pages webs par ci, par là. L'idée d'en faire mon métier me trottait dans la tête depuis un bon moment.",
+    "secondTitle":"Titre Professionel En Poche",
+    "secondText":"J'ai récemment décidé de prendre cette direction en suivant une formation avec OpenClassrooms et en obtenant un titre professionel de développeur intégrateur web.",
+    "thirdTitle":"L'aventure Ne Fait Que \n Commencer",
+    "thirdText": "Je suis actuellement en train de m'inscrire à une formation de développeur d'application Java chez Openclassrooms."
+}
+2.
+{
+    "firstTitle":"Fullstack Developper Junior",
+    "firstText": "I am Cédric Guetté. I'm 31. I've been passionated by web universe since I was young and I've learned HTML/CSS/PHP/SQL when I was in middle school tanks to \"le site du zéro\". During years, I've only done some pages here and there. It's been a long time that making it my work was in my mind.",
+    "secondTitle":"I've Got My Professional Title",
+    "secondText":"Recently Ive decided to follow this direction doing a formation with OpenClassrooms and reaching a web developer and integrator professional title.",
+    "thirdTitle":"Journey Has Only Started",
+    "thirdText": "I'm currently enrolling in another formation with Openclassrooms, this one is about developing Java applications."
+}
+3.
+{
+    "firstTitle":"Desenvolvedor Fullstack Junior",
+    "firstText": "Eu sou Cédric Guetté e tenho 31 anos. Eu amo internet desde pequeno e eu aprendi quando eu era no colégio o HTML/CSS/PHP/SQL com o site \"Le site du zéro\". Por anos eu me contentei de fazer algumas pequenas paginas aqui e alí. A ideia de fazer disso meu trabalho estava em minha mente há muito tempo.",
+    "secondTitle":"Título Profissional na Mão",
+    "secondText":"Recentemente eu decidi de seguir o meu coração. Eu fiz um curso com OpenClassrooms e agora eu tenho um título profissional de desenvolvedor e integrador web.",
+    "thirdTitle":"A Aventura Apenas Começou",
+    "thirdText": "Atualmente estou me cadastrando em outra classe de desenvolvedor de aplicativo em Java com OpenClassrooms."
+}
+
+devStat
+
+{
+    "abilityName":"HTML",
+    "abilityLogo": "logo.png",
+    "abilityScore": 25
+}
+{
+    "abilityName":"CSS",
+    "abilityLogo": "logo.png",
+    "abilityScore": 25
+}
+{
+    "abilityName":"JavaScript",
+    "abilityLogo": "logo.png",
+    "abilityScore": 25
+}
+{
+    "abilityName":"TypeScript",
+    "abilityLogo": "logo.png",
+    "abilityScore": 15
+}
+{
+    "abilityName":"Sass",
+    "abilityLogo": "logo.png",
+    "abilityScore": 25
+}
+{
+    "abilityName":"React.js",
+    "abilityLogo": "logo.png",
+    "abilityScore": 20
+}
+{
+    "abilityName":"Node.js",
+    "abilityLogo": "logo.png",
+    "abilityScore": 20
+}
+{
+    "abilityName":"Express.js",
+    "abilityLogo": "logo.png",
+    "abilityScore": 20
+}
+{
+    "abilityName":"Angular.js",
+    "abilityLogo": "logo.png",
+    "abilityScore": 5
+}
+{
+    "abilityName":"MongoDb",
+    "abilityLogo": "logo.png",
+    "abilityScore": 20
+}
+{
+    "abilityName":"PHP",
+    "abilityLogo": "logo.png",
+    "abilityScore": 15
+}
+{
+    "abilityName":"SQL",
+    "abilityLogo": "logo.png",
+    "abilityScore": 20
+}
+{
+    "abilityName":"Java",
+    "abilityLogo": "logo.png",
+    "abilityScore": 20
+}
+{
+    "abilityName":"Spring",
+    "abilityLogo": "logo.png",
+    "abilityScore": 15
+}
+
+Weapon
+
+{
+    "weaponLogo":"image/logo.png",
+    "weaponisObtained": true,
+    "weaponDescriptionFrench":"Premières armes en autodidacte",
+    "weaponDescriptionEnglish":"First spurs won self-taught",
+    "weaponDescriptionPortuguese":"Primeiras armas em autodidata"
+}
+{
+    "weaponLogo":"image/logo.png",
+    "weaponisObtained": true,
+    "weaponDescriptionFrench":"Cours libres sur le site du zéro",
+    "weaponDescriptionEnglish":"Free classes on Le site du zéro",
+    "weaponDescriptionPortuguese":"Aulas grátis no site du zéro"
+}
+{
+    "weaponLogo":"image/logo.png",
+    "weaponisObtained": true,
+    "weaponDescriptionFrench":"Formation de développeur intégrateur web avec OpenClassrooms (Bac+2)",
+    "weaponDescriptionEnglish":"Web Developer and integrator formation with OpenClassrooms (Bac+2)",
+    "weaponDescriptionPortuguese":"Curso de desenvolvedor e integrador Web com OpenClassrooms (Bac+2)"
+}
+{
+    "weaponLogo":"image/logo.png",
+    "weaponisObtained": true,
+    "weaponDescriptionFrench":"Formation continue",
+    "weaponDescriptionEnglish":"Continue self-taught formation",
+    "weaponDescriptionPortuguese":"Curso autodidata continuo"
+}
+{
+    "weaponLogo":"image/logo.png",
+    "weaponisObtained": false,
+    "weaponDescriptionFrench":"Formation de développeur d'application Java avec OpenClassrooms (Bac+3/4)",
+    "weaponDescriptionEnglish":"Java application developer formation with O'clock (Bac+3/4)",
+    "weaponDescriptionPortuguese":"Curso de desenvolvedor de aplicativo em Java web com O'clock (Bac+3/4)"
+}
+
+project
+
+{
+    "projectNameFrench":"Projet pour OpenClassrooms : Booki",
+    "projectDescriptionFrench": "Durant ce projet,\n j'ai intégré une maquette\n fournie sur figma. Le projet\n se devait d'être en desktop\n first.",
+    "projectNameEnglish":"Project for OpenClassrooms : Booki",
+    "projectDescriptionEnglish": "During this project, I\n integrated a model given on\n figma. It had to be in\n desktop first.",
+    "projectNamePortuguese":"Projeto para OpenClassrooms : Booki",
+    "projectDescriptionPortuguese": "Durante esse projeto, eu\n transformei um modelo\n fornecido com figma. O\n projeto tinha que estar em\n \"desktop first\".",
+    "projectTechnologies":"> HTML\n > CSS",
+    "projectGitHubLink":"https://github.com/CedricGuette/OC-Project-2-Booki",
+    "projectLiveLink":"https://booki.cedric-guette.com",
+    "imageOne":"image1.jpeg",
+    "imageTwo":"image2.jpeg",
+    "imageThree":"image3.jpeg"
+}
+{
+    "projectNameFrench":"Projet pour OpenClassrooms : OhMyFood",
+    "projectDescriptionFrench": "Ce projet a été une\n intégration un peu plus\n recherchée. Il s'agissait\n aussi de mettre en place des\n animations plus poussées\n ainsi que de suivre une\n logique \"mobile first\".",
+    "projectNameEnglish":"Project for OpenClassrooms : OhMyFood",
+    "projectDescriptionEnglish": "This project was a little\n more sophisticated\n integration. It was about\n setting up more advanced\n animations as well as\n following a \"mobile first\"\n logic.",
+    "projectNamePortuguese":"Projeto para OpenClassrooms : OhMyFood",
+    "projectDescriptionPortuguese": "Esse projeto foi um trabalho\n um pouco mais sofisticado.\n Eu tinha que tratar com\n animações mais avançadas\n também, e seguir uma lógica\n de \"mobile first\".",
+    "projectTechnologies":"> HTML\n > SASS",
+    "projectGitHubLink":"https://github.com/CedricGuette/OC-Project-3-Ohmyfood",
+    "projectLiveLink":"https://ohmyfood.cedric-guette.com",
+    "imageOne":"image1.jpeg",
+    "imageTwo":"image2.jpeg",
+    "imageThree":"image3.jpeg"
+}
+{
+    "projectNameFrench":"Projet pour OpenClassrooms : La Panthère",
+    "projectDescriptionFrench": "Pour ce projet il s'agissait\n d'optimisation SEO et\n d'accessibilité. D'une part\n en mettant en place les\n bonnes pratiques, d'une\n autre en maximisant les\n performances du site donné.",
+    "projectNameEnglish":"Project for OpenClassrooms : La Panthère",
+    "projectDescriptionEnglish": "For this project I had to\n carry about SEO optimization\n and accessibility. On one\n hand by implementing best\n practices, on the other one\n by maximizing performances\n of the given site.",
+    "projectNamePortuguese":"Projeto para OpenClassrooms : La Panthère",
+    "projectDescriptionPortuguese": "Para esse projeto, eu tinha\n que otimização o SEO e a\n acessibilidade. Por um lado,\n usando as melhores práticas,\n por um outro, maximizando o\n desempenho do site.",
+    "projectTechnologies":"> HTML\n > SASS \n > Google Lighthouse \n > Divers logiciels d'accessibilité",
+    "projectGitHubLink":"https://github.com/CedricGuette/OC-Project-4-La-Panthere",
+    "projectLiveLink":"./la-panthere/",
+    "imageOne":"image1.jpeg",
+    "imageTwo":"image2.jpeg",
+    "imageThree":"image3.jpeg"
+}
+{
+    "projectNameFrench":"Projet pour OpenClassrooms : Kanap",
+    "projectDescriptionFrench": "Ce projet avait pour but de\n mettre en place un affichage\n dynamique à partir de\n requêtes http GET, de mettre\n en place un panier et enfin\n de commander grâce à une\n dernière requête http POST.",
+    "projectNameEnglish":"Project for OpenClassrooms : Kanap",
+    "projectDescriptionEnglish": "This project aimed to set a\n dynamic display from http\n GET requests. Then to set up\n a cart and finally to order\n thanks to a last http POST\n request.",
+    "projectNamePortuguese":"Projeto para OpenClassrooms : Kanap",
+    "projectDescriptionPortuguese": "Esse projeto teve como\n objetivo de configurar\n dinamicamente um site com\n solicitações http GET,\n configurar uma cesta e,\n finalmente, fazer o pedido\n graças a uma última\n solicitação http POST.",
+    "projectTechnologies":"> JavaScript (POO)",
+    "projectGitHubLink":"https://github.com/CedricGuette/OC-project-5-Kanap",
+    "projectLiveLink":"https://kanap.cedric-guette.com",
+    "imageOne":"image1.jpeg",
+    "imageTwo":"image2.jpeg",
+    "imageThree":"image3.jpeg"
+}
+{
+    "projectNameFrench":"Projet pour OpenClassrooms : Hot Takes",
+    "projectDescriptionFrench": "Pour ce projet il a fallu\n s'occuper du backend. J'ai\n utilisé pour se faire Node\n avec Express et une solution\n noSQL : MongoDB.",
+    "projectNameEnglish":"Project for OpenClassrooms : Hot Takes",
+    "projectDescriptionEnglish": "For this project I had to do\n with backend. I've used Node\n with Express and a noSQL\n solution : MongoDB",
+    "projectNamePortuguese":"Projeto para OpenClassrooms : Hot Takes",
+    "projectDescriptionPortuguese": "Pra esse projeto eu tinha\n que admministrar o backend.\n Eu usei Node e Express com\n uma solução noSQL :\n MongoDBQL",
+    "projectTechnologies":"> Javascript \n > Node \n > Express \n > MongoDb",
+    "projectGitHubLink":"https://github.com/CedricGuette/OC-Project-6-Hot-Takes",
+    "projectLiveLink":"",
+    "imageOne":"image1.jpeg",
+    "imageTwo":"image2.jpeg",
+    "imageThree":"image3.jpeg"
+}
+{
+    "projectNameFrench":"Projet pour OpenClassrooms : kasa",
+    "projectDescriptionFrench": "Celui-ci a été mon dernier\n projet pour OpenClassRooms.\n Il fallait mettre en place\n un site avec React à partir\n d'une maquette figma et\n d'une version mockée du\n backend.",
+    "projectNameEnglish":"Project for OpenClassrooms : kasa",
+    "projectDescriptionEnglish": "This was my last project for\n OpenClassRooms. We had to\n set up a site using React\n and all this from a figma\n model and a mocked version\n of the backend.",
+    "projectNamePortuguese":"Projeto para OpenClassrooms : kasa",
+    "projectDescriptionPortuguese": "Esse foi meu último projeto\n pra OpenClassRooms. Tivemos\n que configurar um site com\n React a partir de um modelo\n figma e uma versão simulada\n do back-end.",
+    "projectTechnologies":"> HTML\n > SASS \n > Javascript \n > React",
+    "projectGitHubLink":"https://github.com/CedricGuette/OC-Project-7-Kasa",
+    "projectLiveLink":"https://kasa.cedric-guette.com",
+    "imageOne":"image1.jpeg",
+    "imageTwo":"image2.jpeg",
+    "imageThree":"image3.jpeg"
+}
+{
+    "projectNameFrench":"Projet personnel : Portfolio",
+    "projectDescriptionFrench": "Premier projet personnel et\n site sur lequel vous\n naviguez en ce moment.\n En plus de son coté utile,\n j'ai pu me familliariser\n avec Typescript.",
+    "projectNameEnglish":"Personal project : Portfolio",
+    "projectDescriptionEnglish": "First personal project and\n the site you are currently\n navigating on. In addition\n to it useful side, it made\n me encounter with\n Typescript.",
+    "projectNamePortuguese":"Projeto pessoal : Portfolio",
+    "projectDescriptionPortuguese": "Primeiro projeto pessoal e\n site em que você esta\n navigando atualmente. Além\n de seu lado útil, ele me\n permitiu de mim familiarizar\n com o Typescript.",
+    "projectTechnologies":"> HTML\n > SASS \n > Typescript \n > React",
+    "projectGitHubLink":"",
+    "projectLiveLink":"https://cedric-guette.com/",
+    "imageOne":"image1.jpeg",
+    "imageTwo":"image2.jpeg",
+    "imageThree":"image3.jpeg"
+}

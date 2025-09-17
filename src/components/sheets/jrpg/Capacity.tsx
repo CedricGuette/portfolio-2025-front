@@ -17,18 +17,19 @@ function Capacity(props : CapacityProps) {
     const weapon = weaponContext?.capacities ? weaponContext.capacities[0] : defineDefaultWeapon();
 
     const valueToClassName = () => {
-        if(props.value === '05') {
-            return 'bar five'
-        } else if(props.value === '10') {
-            return 'bar ten'
-        } else if(props.value === '15') {
-            return 'bar fiveteen'
-        } else if(props.value === '20') {
-            return 'bar twenty'
-        } else if(props.value === '25') {
-            return 'bar twenty-five'
-        } else {
-            return 'bar zero'
+        switch (props.value) {
+            case '05':
+                return 'bar five';
+            case '10':
+                return 'bar ten'
+            case '15':
+                return 'bar fiveteen'
+            case '20':
+                return 'bar twenty'
+            case '25':
+                return 'bar twenty-five'
+            default:
+                return 'bar zero';
         }
     }
 
@@ -47,7 +48,7 @@ function Capacity(props : CapacityProps) {
 
     return(
         <div className={ weaponCapacity === true ? 'capacity active' : 'capacity'}>
-            <img src={ props.image } alt={ props.name } />
+            <img src={process.env.REACT_APP_BACKEND_URL + props.image } alt={ props.name } />
             <span className="valueName">{ props.name }</span><div className={ valueToClassName() }></div><span className="value">{ props.value }/25</span>
         </div>
     )

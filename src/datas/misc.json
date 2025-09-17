@@ -8,7 +8,8 @@
             "experience": "Qualifications",
             "realisation":"Mes Réalisations",
             "portfolio": "Portfolio",
-            "contact": "Contact"
+            "contact": "Contact",
+            "legalMentions": "Mentions Légales"
         },
         "portfolio": {
             "view": "Aperçu de ",
@@ -21,6 +22,11 @@
         "notfound":{
             "message": "Oh oh, on dirait que la page que vous cherchez n'existe pas!",
             "home": "Retour à l'accueil"
+        },
+        "legalMentions":{
+            "owned": "Ce site appartient à : Cédric Guetté",
+            "contact" : "Vous pouvez rentrer en contact avec moi à cette adresse : contact@cedric-guette.com",
+            "host": "Ce site est hebergé par : OVH SAS 2 rue Kellermann - 59100 Roubaix - France "
         },
         "footer" : {
             "copyright" : "Copyright ©, tous droits reservés"
@@ -35,7 +41,8 @@
             "experience": "Qualifications",
             "realisation":"My Realisations",
             "portfolio": "Portfolio",
-            "contact": "Contact"
+            "contact": "Contact",
+            "legalMentions": "Legal Mentions"
         },
         "portfolio": {
             "view": "A look to ",
@@ -48,6 +55,11 @@
         "notfound":{
             "message": "Oh oh, it looks like the page you are trying to reach doesn't exist!",
             "home": "Back to homepage"
+        },
+        "legalMentions":{
+            "owned": "This site is owned by : Cédric Guetté",
+            "contact" : "You can contact me at : contact@cedric-guette.com",
+            "host": "This site is hosted by : OVH SAS 2 rue Kellermann - 59100 Roubaix - France "
         },
         "footer" : {
             "copyright" : "Copyright ©, all rights reserved"
@@ -62,7 +74,8 @@
             "experience": "Qualificações",
             "realisation":"Minhas Realizações",
             "portfolio": "Portfólio",
-            "contact": "Contato"
+            "contact": "Contato",
+            "legalMentions": "Avisos Legais"
         },
         "portfolio": {
             "view": "Uma olhada no ",
@@ -75,6 +88,11 @@
         "notfound":{
             "message": "Oh oh, parece que a página que você esta procurando não existe!",
             "home": "Voltar pra page inicial"
+        },
+        "legalMentions":{
+            "owned": "Este site pertence à : Cédric Guetté",
+            "contact" : "Você pode entrar em contato comigo neste endereço : contact@cedric-guette.com",
+            "host": "Este site é hospedado por : OVH SAS 2 rue Kellermann - 59100 Roubaix - France "
         },
         "footer" : {
             "copyright" : "Copyright ©, todos direitos reservado"

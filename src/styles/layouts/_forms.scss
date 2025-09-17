@@ -1,0 +1,103 @@
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    color: $secondary_color;
+    font-size: 1.2rem;
+    margin-top: 50px;
+
+    &.change{
+        margin-top: 0;
+    }
+
+    input {
+        width: 300px !important;
+        height: 40px !important;
+        margin: 10px !important;
+        padding: 0 10px !important;
+        border: none !important;
+        border-radius: 5px !important;
+        font-size: 1rem !important;
+        outline: none !important;
+        background-color: white !important;
+        color: black !important;
+
+        &:focus {
+            border: 2px solid $secondary_color !important;
+        }
+    }
+
+    button {
+        width: 150px;
+        height: 40px;
+        margin: 10px;
+        border: 2px solid $tertiary_color;
+        border-radius: 5px;
+        background-color: transparent;
+        color: $tertiary_color;
+        font-size: 1rem;
+
+        &:hover {
+            background-color: $tertiary_color;
+            color: $neutral_alt_color;
+            cursor: pointer;
+        }
+    }
+}
+
+.presentation-text {
+
+    input, textarea {
+        width: 100% !important;
+        border: none !important;
+        background-color: transparent !important;
+        color: $tertiary_color !important;
+        font-size: 1rem !important;
+        margin-bottom: 10px !important;
+    }
+
+    .presentation-title {
+        font-size: 1.2rem !important;
+        font-weight: bold !important;
+        height: 30px !important;
+
+        &:focus {
+            outline: 2px solid $secondary_color !important;
+            border-radius: 0 !important;
+        }
+    }
+
+    .presentation-textarea {
+        height: 150px !important;
+        resize: none;
+        font-family: "Bahnschrift";
+
+        &:focus {
+            outline: 2px solid $secondary_color !important;
+        }
+    }
+}
+
+.login-sub-panel{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px 30px 20px 30px;
+    border-radius: 15px;
+    border: 2px solid $tertiary_color;
+}
+
+.sub-form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.admin-generator{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
